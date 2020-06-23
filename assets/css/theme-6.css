@@ -52,7 +52,8 @@ article, aside, figure, footer, header, hgroup, main, nav, section {
 }
 
 figcaption {
-    max-width: 360px
+    max-width: 360px;
+    font-size: 0.8rem
 }
 
 body {
