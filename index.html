@@ -1,377 +1,1300 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170282481-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-170282481-2');
-    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
 
-	<title>
-		田中統 | データサイエンティスト
-	</title>
-	
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="六本木でフリーランスのデータサイエンティストとして活動しています。">
-	<meta name="author" content="Suguru Tanaka ">    
-	<!-- <link rel="shortcut icon" href="favicon.ico">  -->
-	
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-	
-	<!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="assets/plugins/tiny-slider/tiny-slider.css">
+    <title> Social Data Science Lab </title>
+    <link rel="icon" href="images/icon.png">
+    <!-- <meta name="description" content="freelancer web developer and web designer -->
+     <!-- my web development skills: HTMl5 -CSS3 - bootstrap - scss -javaScript - jQuery - fabric.js - angular.js - Ajax -PHP (MVC) - wordpress -Mysql ;; I look forward to working with you soon, and i will be in time"> -->
+    <meta name="description" content="社会情報科学研究所では最先端のデータサイエンスによってビジネスの課題を解決します。">
+    <!-- <meta name="keywords" -->
+          <!-- content="HTML,CSS,jquery,JavaScript,mr kayo,saad tarek,mrkayo,mrkayo.com,karem tarek,karemtarek,saadtarek"> -->
+    <meta name="keywords"
+          content="data science, データサイエンス, データ分析, データ解析, データアナリティクス, 人工知能, AI, 機械学習, 統計学,
+          suguru,tanaka, 田中,統, social data science lab">
+    <meta name="author" content="Suguru Tanaka">
 
-	<!-- Theme CSS -->  
-	<link id="theme-style" rel="stylesheet" href="assets/css/theme-6.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900" rel="stylesheet">
 
-</head> 
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".app-links" data-offset="15" class="scrollspy-example sakura-demo2">
 
-<body>
-	<header class="header text-center">	    
-		<div class="force-overflow">
-			<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Suguru Tanaka</a></h1>
-			
-			<nav class="navbar navbar-expand-lg navbar-dark" >
-				
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				
-				<div id="navigation" class="collapse navbar-collapse flex-column" >
-					<div class="profile-section pt-3 pt-lg-0">
-						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/portrait copy.png" alt="image">			
-						<div class="bio mb-3">
-							六本木を拠点にデータサイエンティストとして活動しています。
-							データ解析から機械学習の実装まで、幅広く支援しています。
-						</div><!--//bio-->
-						<ul class="social-list list-inline py-2 mx-auto">
-							<li class="list-inline-item"><a href="https://twitter.com/Kenny10421373"><i class="fab fa-twitter fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="https://www.linkedin.com/in/suguru-tanaka-3b9758100/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-							<!-- <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li> -->
-							<!-- <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li> -->
-							<!-- <li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li> -->
-						</ul><!--//social-list-->
-						<hr> 
-					</div><!--//profile-section-->
-					
-					<ul class="navbar-nav flex-column text-left">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html"><i class="fas fa-user fa-fw mr-2"></i>ホーム<span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="portfolio.html"><i class="fas fa-laptop-code fa-fw mr-2"></i>プロジェクト</a>
-						</li>
-						<!-- <li class="nav-item"> -->
-							<!-- <a class="nav-link" href="services.html"><i class="fas fa-briefcase fa-fw mr-2"></i>Services &amp; Pricing</a> -->
-						<!-- </li> -->
-						<!-- <li class="nav-item"> -->
-							<!-- <a class="nav-link" href="contact.html"><i class="fas fa-envelope-open-text fa-fw mr-2"></i>Contact</a> -->
-						<!-- </li> -->
-						<li class="nav-item"> 
-								<a class="nav-link" href="./assets/images/resume.pdf"><i class="fas fa-file-alt fa-fw mr-2"></i>経歴書</a>
-						</li>
-						<!-- <li class="nav-item dropdown"> -->
-							<!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
-								<!-- <i class="fas fa-cogs fa-fw mr-2"></i>More Pages -->
-							<!-- </a> -->
-							<!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
-								<!-- <a class="dropdown-item" >Project Page</a> -->
-								<!-- <a class="dropdown-item" href="blog-home.html">Blog Home 1</a> -->
-								<!-- <a class="dropdown-item" href="blog-home-alt.html">Blog Home 2</a> -->
-								<!-- <a class="dropdown-item" href="blog-post.html">Blog Post</a> -->
-							<!-- </div> -->
-						<!-- </li> -->
-					</ul>
-					
-					<div class="my-2">
-						<a class="btn btn-primary" href="contact.html" target="_blank"><i class="fas fa-paper-plane mr-2"></i>お問い合わせ</a>
-					</div>
-					
-					<div class="dark-mode-toggle text-center w-100">
-						<hr class="mb-4">
-					    <h4 class="toggle-name mb-3 "><i class="fas fa-adjust mr-1"></i>Dark Mode</h4>
-					    
-					    <input class="toggle" id="darkmode" type="checkbox">
-					    <label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
-					    
-					</div><!--//dark-mode-toggle-->
-					
-				</div>
-			</nav>
-		</div><!--//force-overflow-->
-	</header>
-	
-	<div class="main-wrapper">
-		
-		<section class="about-me-section p-3 p-lg-5 theme-bg-light">
-			<div class="container">
-				<div class="profile-teaser media flex-column flex-lg-row">
-					
-					<div class="media-body">
-						<h2 class="name font-weight-bold mb-1">About me</h2>
-						<div class="tagline mb-3">田中統 | データサイエンティスト</div>
-						<div class="bio mb-4">
-							<p>
-								六本木周辺で活動しているデータサイエンティストの田中統(すぐる)と申します。
-								データ解析や機械学習を用いてデータを活用するビジネスの支援をしております。
-								<br>
-								現在、英国ロンドン・スクール・オブ・エコノミクスにおいてデータサイエンスの
-			                    修士課程に参加中です (2020年9月修了予定)。
-								Facebookロンドン本社と共同プロジェクトに取り組んでいます。
-							</p>
-							<!-- 過去の<a class="link-on-bg" href="projects.html">プロジェクトの実績</a>および<a class="link-on-bg" href="projects.html">経歴書</a>を見る。 -->
-						</div><!--//bio-->
-						<div class="mb-4">
-							<!-- <a class="btn btn-primary mr-2 mb-3" href="portfolio.html"><i class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-md-inline">View</span> Portfolio</a> -->
-							<a class="btn btn-secondary mb-3" href="./assets/images/resume.pdf"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline"></span> 経歴書を見る</a>
-							<a class="btn btn-primary mr-2 mb-3" href="https://www.linkedin.com/in/suguru-tanaka-3b9758100/"><i class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-md-inline"></span> Linkedinを見る</a>
-						</div>
-					</div><!--//media-body-->
-					<figure>
-						<img class="profile-image mb-3 mb-lg-0 ml-lg-0 mr-md-0" src="assets/images/lse.jpeg" alt="">
-							<figcaption>ロンドン・スクール・オブ・エコノミクス(LSE) は世界有数の社会科学の研究機関です。
-								2020年 QS世界大学ランキングでは
-								<a href="https://www.topuniversities.com/university-rankings/university-subject-rankings/2020/social-sciences-management">
-								世界2位</a>に選ばれました。
-								また100年を超える統計学の研究の歴史があります。
-								</figcaption>
-						</img>
-					</figure>
-				</div>
-			</div>
-		</section><!--//about-me-section-->
-		
-		<section class="overview-section p-3 p-lg-5">
-			<div class="container">
-				<h2 class="section-title font-weight-bold mb-3">業務支援内容</h2>
-				<!-- <div class="section-intro mb-5">例えば以下のような分野の支援を行なっています。</div> -->
-					<!-- <br>Check out my <a href="resume.html">online resume</a> and <a href="portfolio.html">project portfolio</a>.</div> -->
-				<div class="row">
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<!-- <div class="item-icon"><i class="fab fa-js-square"></i></div> -->
-							<div class="item-icon"><i class="far fa-chart-bar"></i><i class="fab fa-r-project"></i></div>
-							<h3 class="item-title">データ解析 / 仮説検証</h3>
-							<div class="item-desc">
-								私たちの脳は先入観や印象的な出来事に大きく左右されてしまうと言われています。
-								<br>統計学はそういった印象的なバイアスを取り除き、ビジネスにおける正しい判断の手助けをします。
-							</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
+<!-- navbar
+========================================-->
+<nav class="navbar navbar-default navbar-fixed-top appsLand-navbar sakura-navbar">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <span class="sakura-demo2-menu-toggle">
+                <i class="chart"></i>
+                <i class="chart"></i>
+                <i class="chart"></i>
+            </span>
+            <a class="navbar-brand" href="#">
+                <img alt="" src="images/icon2.png">
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="app-links" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right appsLand-links kayo-links">
+                <li class="visible-xs-block text-center mobile-size-logo">
+                    <a href="#">
+                        <img alt="" src="images/icon2.png" class="img-responsive">
+                    </a>
+                </li>
+                <li><a href="#home">Home</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+                <li><a href="#service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fab fa-creative-commons-sampling"></i></div>
-							<h3 class="item-title">時系列分析</h3>
-							<!-- <h3 class="item-title">Angular, React &amp;  Vue</h3> -->
-							<div class="item-desc">
-									ビッグデータの普及につれて、金融にはじまる時系列的なデータが増えています。
-									時系列分析はこのようなデータを適切に処理し、一般的なデータ分析や機械学習の性能を高めることができます。
-							</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fas fa-cogs"></i></div>
-							<h3 class="item-title">ベイズモデリング</h3>
-							<div class="item-desc">
-								近代のコンピュータの高速化により、高度な計算処理を必要とするベイズ統計学の利用が可能になりました。
-								ベイズモデリングは自然言語処理の他、センサーやロボティクスにも利用されています。
-							</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fas fa-brain"></i><i class="fab fa-python"></i></div>
-							<!-- <div class="item-icon"><i class="fab fa-python"></i></div> -->
-							<h3 class="item-title">人工知能 (深層学習 &amp; 強化学習)</h3>
-							<div class="item-desc">ビッグデータの利用と計算技術の向上により、人工知能の研究が急速に発展しています。
-								深層学習により画像など複雑なデータを処理することが可能になり、強化学習は機械が自ら学ぶことを可能にしました。</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fab fa-hubspot"></i></div>
-							<h3 class="item-title">ネットワーク分析 &amp; データ可視化</h3>
-							<div class="item-desc">SNSの普及により、データ間のリンクを分析するネットワーク理論と呼ばれる領域が近年注目を集めています。
-								これらのネットワークを含め、データ可視化はデータの背後にある思わぬ関係性を発掘します。</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fas fa-cloud"></i><i class="fab fa-aws"></i></div>
-							<h3 class="item-title">クラウド &amp; 分散処理</h3>
-							<div class="item-desc">クラウドにより、高度な演算処理能力を有するコンピュータを比較的手軽に利用できるようになりました。
-								深層学習を始めとする近代的な機械学習技術は並列計算処理の利用により高速化が可能です。</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fas fa-database"></i></div>
-							<h3 class="item-title">データベース</h3>
-							<div class="item-desc">データを正しく集積するデータベースは、情報化技術を根底で支える影の立役者と言えるでしょう。
-								大規模なデータ解析・機械学習等の開発はしっかりとしたデータ基盤によって支えられてます。</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fas fa-atom"></i></div>
-							<h3 class="item-title">ビジネス価値創出</h3>
-							<div class="item-desc">データを活かすには科学的な知見だけでなくビジネスの価値を生み出す創造力が大切です。
-								これまで経営企画・金融・広告をはじめとした様々な分野でデータを活用してきた経験により、お客様のイノベーションをサポートします。</div>
-						</div><!--//item-inner-->
-					</div><!--//item-->
-				</div><!--//row-->
-				<!-- <div class="text-center py-3"><a href="services.html" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>Services &amp; Pricing -->
-				<!-- </a></div> -->
-				
-			</div><!--//container-->
-		</section>
-		<div class="container"><hr></div>
-		
-		<section class="featured-section p-3 p-lg-5">
-			<div class="container">
-				<h2 class="section-title font-weight-bold mb-5">プロジェクト実績</h2>
-				<div class="row">
-					<div class="col-md-6 mb-5">
-						<div class="card project-card">
-							<div class="row no-gutters">
-								<div class="col-lg-4 card-img-holder">
-									<img src="assets/images/project/topic.png" class="card-img" alt="image">
-								</div>
-								<div class="col-lg-8">
-									<div class="card-body">
-										<h5 class="card-title"><a class="theme-link">Topic Modeling</a></h5>
-										<p class="card-text">Facebookに掲載されるニュース記事を活用したサービスの提案および実装を目的としたプロジェクトを行なっています。</p>
-										<p class="card-text"><small class="text-muted">
-                                            Facebook UK 本社
-                                            London School of Economics (LSE)
-                                        </small></p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<!-- <a class="link-mask-link" ></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" >
-										<i class="fas fa-eye mr-2"></i>View Case Study
-									</a>
-								</div> -->
-							</div><!--//link-mask-->
-						</div><!--//card-->
-					</div><!--//col-->
-					<div class="col-md-6 mb-5">	
-						<div class="card project-card">
-							<div class="row no-gutters">
-								<div class="col-lg-4 card-img-holder">
-									<img src="assets/images/project/head.png" class="card-img" alt="image">
-								</div>
-								<div class="col-lg-8">
-									<div class="card-body">
-										<h5 class="card-title"><a class="theme-link">脳波・視線データ解析</a></h5>
-										<p class="card-text">脳波や視線の動きといったデータの解析やサービスの提案・実装を行いました。</p>
-										<p class="card-text"><small class="text-muted">某大手広告会社</small></p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<!-- <a class="link-mask-link" ></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" >
-										<i class="fas fa-eye mr-2"></i>View Case Study
-									</a>
-								</div> -->
-							</div><!--//link-mask-->
-						</div><!--//card-->
-					</div><!--//col-->
-					<div class="col-md-6 mb-5">
-						<div class="card project-card">
-							<div class="row no-gutters">
-								<div class="col-lg-4 card-img-holder">
-									<img src="assets/images/project/nlp.png" class="card-img" alt="image">
-								</div>
-								<div class="col-lg-8">
-									<div class="card-body">
-										<h5 class="card-title"><a  class="theme-link">極性判定プロジェクト</a></h5>
-										<p class="card-text">テキストの内容から文章の極性を予測するソフトウェアの検証及び大幅な改善に貢献しました。</p>
-										<p class="card-text"><small class="text-muted">某ITベンチャー企業</small></p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<!-- <a class="link-mask-link" ></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" >
-										<i class="fas fa-eye mr-2"></i>View Case Study
-									</a>
-								</div> -->
-							</div><!--//link-mask-->
-						</div><!--//card-->
-					</div><!--//col-->
-					<div class="col-md-6 mb-5">
-						<div class="card project-card">
-							<div class="row no-gutters">
-								<div class="col-lg-4 card-img-holder">
-									<img src="assets/images/project/network.png" class="card-img" alt="image">
-								</div>
-								<div class="col-lg-8">
-									<div class="card-body">
-										<h5 class="card-title"><a  class="theme-link">ネットワーク分析手法の検証</a></h5>
-										<p class="card-text">ネットワークを予測する最新の手法の性能の検証や比較を行う研究を行いました。</p>
-										<p class="card-text"><small class="text-muted">London School of Economics (LSE)</small></p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<!-- <a class="link-mask-link" ></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" >
-										<i class="fas fa-eye mr-2"></i>View Case Study
-									</a> -->
-								</div>
-							</div><!--//link-mask-->
-						</div><!--//card-->
-					</div><!--//col-->
-				</div><!--//row-->
+<main class="main-page-content">
 
-				<div class="text-center py-3"><a href="portfolio.html" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>ポートフォリオを見る</a></div>
-				
-			</div><!--//container-->
-		</section><!--//featured-section-->
-		
-		<!-- <div class="container"><hr></div> -->
-		
-	</div><!--//main-wrapper-->
+    <!-- Start Home
+    ===================================-->
+    <section class="home bg-img" id="home">
+        <div class="overlay">
+            <div class="container">
+                <div class="intro-section display-table">
+                    <div class="display-table-cell">
+                        <h3 class="kayo-hello">社会情報科学研究所</h3>
+                        <!-- <h1 class="mr-kayo">田中統 | データサイエンティスト</h1> -->
+                        <h1 class="mr-kayo">Social Data Science Lab.</h1>
+                        <h3 class="kayo-work-description">&nbsp;<span class="kayo-work"></span></h3>
+                        <ul class="list-inline list-unstyled header-links">
+                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <a href="#contact" class="sakura-btn btn-inverse">
+                                    <i class="fa fa-rocket"></i> お問い合わせ
+                                </a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
+                                <a href="#portfolio" class="sakura-btn">
+                                    <i class="fa fa-download"></i>  ポートフォリオ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="open-page">
+                <a href="#about" class="scrollLink"><i class="fa fa-angle-down"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- End Home ==================-->
 
-	<!-- Javascript -->          
-	<script src="assets/plugins/jquery-3.4.1.min.js"></script>
-	<script src="assets/plugins/popper.min.js"></script> 
-	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-	
-	<script src="assets/plugins/tiny-slider/min/tiny-slider.js"></script>
-	<script src="assets/js/testimonials.js"></script>
+    <!-- Start About Me
+   ===================================-->
+    <div class="my-information">
+        <div class="container">
+            <div class="mrkayo-main-title">
+                <h2>
+                    What is Data Science?
+                    <span class="kayo-line"></span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="my-image">
+                        <img src="images/data_science.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="kayo-info-detail">
+                        <p>
+                            データサイエンスとは、以下の三つの領域を柱にビジネスの課題を解決する技術です。
+                        </p>
+                        <h4>データアナリティクス</h4>
+                        <p>
+                            データアナリティクスは、データを分析し意思決定を行う学問です。
+                            計量経済学・計量心理学・社会統計学・保険数理・金融工学など幅広い分野で利用されています。
+                            プロジェクト例)  広告の品質評価と効果測定・株価の分析と異常点検知・ネットワークの構造解析・交通所要時間マップの可視化・業務プロセス最適化
+                        </p>
+                        <h4>人工知能 (AI)</h4>
+                        <p>
+                            データアナリティクスで得られた知見をソフトウェアで自動化することにより、機会に高度な判断を行わせることが可能です。
+                            近年では深層学習などにより高度な認識が可能になり、機械が自ら学習する強化学習などの領域が注目されています。
+                            プロジェクト例) テキストの感情判定・文書の自動分類・推薦システム・物体検知
+                        </p>
+                        <h4>データベース</h4>
+                        <p>
+                            データエンジニアリングはデータを効率的に、安全にサーバー上に集積・加工・転送する技術です。
+                            ビッグデータに台頭される現代において、その土台であるデータベースの技術は急激に需要が増しています。
+                            プロジェクト例) データベースの構築・自動データ集計の開発
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About Me ==================-->
+
+    <!-- Start My Service
+    ===================================-->
+    <div class="kayo-service bg-img" id="service">
+        <div class="overlay">
+            <div class="container mb_-30px">
+                <div class="mrkayo-main-title">
+                    <h2>
+                        Service
+                        <span class="kayo-line"></span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-md-3 col-sm-6"> -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="kayo-icon-list-box">
+                            <div class="kayo-icon-box-container">
+                                <div class="kayo-icon-box">
+                                    <span class="pe-7s-graph1 kayo-icon"></span>
+                                </div>
+                            </div>
+                            <div class="kayo-list-info">
+                                <!-- <h4>データアナリティクス</h4> -->
+                                <h4>コンサルティング</h4>
+                                <p>
+                                    最先端のデータサイエンスの知見から、データを活用するサービスの提案とコンサルティングで支援します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-3 col-sm-6"> -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="kayo-icon-list-box">
+                            <div class="kayo-icon-box-container">
+                                <div class="kayo-icon-box">
+                                    <span class="pe-7s-phone kayo-icon"></span>
+                                </div>
+                            </div>
+                            <div class="kayo-list-info">
+                                <h4>データ分析</h4>
+                                <p>
+                                    データ解析を通して課題を解決し、業務プロセスの最適化を支援します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-3 col-sm-6"> -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="kayo-icon-list-box">
+                            <div class="kayo-icon-box-container">
+                                <div class="kayo-icon-box">
+                                    <span class="pe-7s-server kayo-icon"></span>
+                                </div>
+                            </div>
+                            <div class="kayo-list-info">
+                                <h4>ソフトウェア開発支援</h4>
+                                <p>
+                                    データベースやAIに関するソフトウェアの開発をハンズオンで支援いたします。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-3 col-sm-6"> -->
+                        <!-- <div class="kayo-icon-list-box"> -->
+                            <!-- <div class="kayo-icon-box-container"> -->
+                                <!-- <div class="kayo-icon-box"> -->
+                                    <!-- <span class="pe-7s-camera kayo-icon"></span> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- <div class="kayo-list-info"> -->
+                                <!-- <h4>photography</h4> -->
+                                <!-- <p> -->
+                                    <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod -->
+                                    <!-- tempor. -->
+                                <!-- </p> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End My Service ==================-->
+
+    <!-- Start Resume
+    ===================================-->
+    <!-- End Resume ==================-->
+
+    <!-- Start portfolio
+    ===================================-->
+        <div class="portfolio" id="portfolio">
+            <div class="port-box">
+                <div class="container">
+                    <div class="mrkayo-main-title">
+                        <h2>
+                            My Work
+                            <span class="kayo-line"></span>
+                        </h2>
+                    </div>
+                    <div class="text-center">
+                        <ul class="portfolio-sorting list-unstyled text-center kayo-taps">
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".consultancy">コンサルティング</li>
+                            <li data-filter=".analytics">データ解析</li>
+                            <li data-filter=".software">ソフトウェア</li>
+                        </ul> <!--end portfolio sorting -->
+                    </div>
+                    <div class="portfolio-items">
+                        <div class="row grid">
+
+                            <!-- Post topic model START-->
+                            <div class="col-md-6 col-sm-6 grid-item analytics software" position=relative>
+                                <div>
+                                    <article class="normal-post">
+                                        <figure class="entry-header">
+                                            <div class="post-image">
+                                                <img src="images/blog/odtm.jpeg" class="img-responsive" alt="">
+                                            </div>
+                                            <ul class="post-category list-unstyled">
+                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                                <li><a href="#">Big Data</a></li>
+                                                <li><a href="#">Data Analysis</a></li>
+                                            </ul>
+                                            <ul class="post-share list-unstyled">
+                                                <li class="open-post-share">
+                                                    <span><i class="fa fa-share-alt"></i></span>
+                                                    <ul class="post-share-links list-unstyled">
+                                                        <!-- <li>
+                                                            <a href="https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href)" class="facebook-bg-hover">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="twitter-bg-hover">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="google-plus-bg-hover">
+                                                                <i class="fa fa-google-plus"></i>
+                                                            </a>
+                                                        </li> -->
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </figure>
+                                        <div class="entry-content">
+                                            <div class="entry-post-info">
+                                                <h4><a href="#">文書 自動分類の新手法の開発</a></h4>
+                                                <p>Tanaka, Lin, Tse, Vojnovic (Lonodn School of Economics), Karamshuk (Facebook); 2020</p>
+                                            </div>
+                                            <div class="entry-expert">
+                                                <p>
+                                                    文書の ダイナミックな自動分類手法 (Blei and Lafferty, 2006) を高速で処理する手法 Online DTM を提案し開発しました。
+                                                    提案した手法は既存の手法の速度を遥かに上回り、かつ高い精度を得られました。
+                                                    Facebookのニュース記事に利用し実用性を示しました。
+                                                </p>
+                                                <!-- <div class="post-readMore"> -->
+                                                    <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="entry-footer">
+                                            <ul class="entry-tags list-unstyled list-inline">
+                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                                <li><a href="#">Big Data</a></li>
+                                                <li><a href="#">Data Analysis</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <!-- POST TOPIC MODEL END -->
+
+                            <!-- POST BRAIN WAVE START -->
+                            <div class="col-md-6 col-sm-6 grid-item consultancy analytics software" position=relative>
+                                <div>
+                                    <article class="normal-post">
+                                        <figure class="entry-header">
+                                            <div class="post-image">
+                                                <img src="images/blog/brainwave.jpeg" class="img-responsive" alt="">
+                                            </div>
+                                            <ul class="post-category list-unstyled">
+                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                                <li><a href="#">Data Analysis</a></li>
+                                                <li><a href="#">Database</a></li>
+                                            </ul>
+                                            <ul class="post-share list-unstyled">
+                                                <li class="open-post-share">
+                                                    <span><i class="fa fa-share-alt"></i></span>
+                                                    <ul class="post-share-links list-unstyled">
+                                                        <!-- <li>
+                                                            <a href="#" class="facebook-bg-hover">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="twitter-bg-hover">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="google-plus-bg-hover">
+                                                                <i class="fa fa-google-plus"></i>
+                                                            </a>
+                                                        </li> -->
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </figure>
+                                        <div class="entry-content">
+                                            <div class="entry-post-info">
+                                                <h4><a href="#">脳波・視線による広告の評価手法の開発</a></h4>
+                                                <p>Tanaka, 2019</p>
+                                            </div>
+                                            <div class="entry-expert">
+                                                <p>
+                                                    脳波や視線のデータは事前の情報が少なく解釈が困難です。
+                                                    また広告の評価は定量的に行われず、しばしば主観的に評価されてしまいます。
+                                                    本プロジェクトでは、広告の品質を人工知能を用いて自動的に分析する新手法を考案し、開発しました。
+                                                </p>
+                                                <!-- <div class="post-readMore"> -->
+                                                    <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="entry-footer">
+                                            <ul class="entry-tags list-unstyled list-inline">
+                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                                <li><a href="#">Data Analysis</a></li>
+                                                <li><a href="#">Database</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <!-- POST BRAIN WAVE END -->
+
+                            <!-- POST MAP START -->
+                            <div class="col-md-6 col-sm-6 grid-item software" position=relative>
+                                <div>
+                                    <article class="normal-post">
+                                        <figure class="entry-header">
+                                            <div class="post-image">
+                                                <img src="images/blog/map.jpeg" class="img-responsive" alt="">
+                                            </div>
+                                            <ul class="post-category list-unstyled">
+                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                                <li><a href="#">App</a></li>
+                                                <li><a href="#">Database</a></li>
+                                            </ul>
+                                            <ul class="post-share list-unstyled">
+                                                <li class="open-post-share">
+                                                    <span><i class="fa fa-share-alt"></i></span>
+                                                    <ul class="post-share-links list-unstyled">
+                                                        <!-- <li>
+                                                            <a href="#" class="facebook-bg-hover">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="twitter-bg-hover">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="google-plus-bg-hover">
+                                                                <i class="fa fa-google-plus"></i>
+                                                            </a>
+                                                        </li> -->
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </figure>
+                                        <div class="entry-content">
+                                            <div class="entry-post-info">
+                                                <h4><a href="#">交通所要時間マップ可視化アプリ</a></h4>
+                                                <p>Tanaka, Yamaguchi; 2019</p>
+                                            </div>
+                                            <div class="entry-expert">
+                                                <p>
+                                                    転勤や引越しの際に目的地から住宅への勤務時間を可視化するアプリを開発しました。
+                                                    移動時間の計算に最適化アルゴリズムを採用しています。
+                                                    また住宅の周辺施設を加味して住む街を推薦するシステムを導入しました。
+                                                </p>
+                                                <!-- <div class="post-readMore"> -->
+                                                    <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="entry-footer">
+                                            <ul class="entry-tags list-unstyled list-inline">
+                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                                <li><a href="#">Data Analysis</a></li>
+                                                <li><a href="#">Database</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <!-- POST MAP END -->
 
 
-	<!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-	<script src="assets/js/demo/style-switcher.js"></script>  
-	
-	<!-- Dark Mode -->
-	<script src="assets/plugins/js-cookie.min.js"></script>
-	<script src="assets/js/dark-mode.js"></script>   
-	
+                            <!-- POST RISK START -->
+                            <div class="col-md-6 col-sm-6 grid-item analytics" position=relative>
+                                <div>
+                                    <article class="normal-post">
+                                        <figure class="entry-header">
+                                            <div class="post-image">
+                                                <img src="images/blog/insurance.jpeg" class="img-responsive" alt="">
+                                            </div>
+                                            <ul class="post-category list-unstyled">
+                                                <!-- <li><a href="#">Artificial Intelligence (AI)</a></li> -->
+                                                <li><a href="#">Statistical Modelling</a></li>
+                                                <li><a href="#">Data Analysis</a></li>
+                                                <!-- <li><a href="#">Database</a></li> -->
+                                            </ul>
+                                            <ul class="post-share list-unstyled">
+                                                <li class="open-post-share">
+                                                    <span><i class="fa fa-share-alt"></i></span>
+                                                    <ul class="post-share-links list-unstyled">
+                                                        <!-- <li>
+                                                            <a href="#" class="facebook-bg-hover">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="twitter-bg-hover">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="google-plus-bg-hover">
+                                                                <i class="fa fa-google-plus"></i>
+                                                            </a>
+                                                        </li> -->
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </figure>
+                                        <div class="entry-content">
+                                            <div class="entry-post-info">
+                                                <h4><a href="#">被保険者のリスク算出モデルの作成</a></h4>
+                                                <p>Tanaka, 2018</p>
+                                            </div>
+                                            <div class="entry-expert">
+                                                <p>
+                                                    車両保険会社の顧客の属性からリスクを算出するモデルを作成しました。
+                                                    保険料はモデルの提示する被保険者のリスクに応じた保険料を請求します。
+                                                    これにより、より公平でお手頃な価格設定を提供できます。
+                                                </p>
+                                                <!-- <div class="post-readMore"> -->
+                                                    <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="entry-footer">
+                                            <ul class="entry-tags list-unstyled list-inline">
+                                                <!-- <li><a href="#">Artificial Intelligence (AI)</a></li> -->
+                                                <li><a href="#">Statistical Modelling</a></li>
+                                                <li><a href="#">Data Analysis</a></li>
+                                                <!-- <li><a href="#">Database</a></li> -->
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <!-- POST RISK END -->
+
+                            <!-- POST COVID START -->
+                            <div class="col-md-6 col-sm-6 grid-item analytics" position=relative>
+                                <div>
+                                    <article class="normal-post">
+                                        <figure class="entry-header">
+                                            <div class="post-image">
+                                                <img src="images/blog/covid.jpeg" class="img-responsive" alt="">
+                                            </div>
+                                            <ul class="post-category list-unstyled">
+                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                                <li><a href="#">Data Analysis</a></li>
+                                                <!-- <li><a href="#">Database</a></li> -->
+                                            </ul>
+                                            <ul class="post-share list-unstyled">
+                                                <li class="open-post-share">
+                                                    <span><i class="fa fa-share-alt"></i></span>
+                                                    <ul class="post-share-links list-unstyled">
+                                                        <!-- <li>
+                                                            <a href="#" class="facebook-bg-hover">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="twitter-bg-hover">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="google-plus-bg-hover">
+                                                                <i class="fa fa-google-plus"></i>
+                                                            </a>
+                                                        </li> -->
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </figure>
+                                        <div class="entry-content">
+                                            <div class="entry-post-info">
+                                                <h4><a href="#">ウィルスの感染地域と時系列の可視化手法の開発</a></h4>
+                                                <p>Tanaka, 2020</p>
+                                            </div>
+                                            <div class="entry-expert">
+                                                <p>
+                                                    最新の機械学習の手法をウィルスの感染地帯の分析に応用する、確認の範囲で世界初の試みを行いました。
+                                                    感染の状況がより直感的に表現され、さらに時系列の推移を可視化できます。
+                                                    これにより感染が急拡大している地域が一目でわかります。
+                                                </p>
+                                                <!-- <div class="post-readMore"> -->
+                                                    <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="entry-footer">
+                                            <ul class="entry-tags list-unstyled list-inline">
+                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                                <li><a href="#">Data Analysis</a></li>
+                                                <li><a href="#">Database</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <!-- POST COVID END -->
+
+                            <!-- POST RECOMMENDER START -->
+                            <div class="col-md-6 col-sm-6 grid-item consultancy software" position=relative>
+                                <div>
+                                    <article class="normal-post">
+                                        <figure class="entry-header">
+                                            <div class="post-image">
+                                                <img src="images/blog/recommendation.jpeg" class="img-responsive" alt="">
+                                            </div>
+                                            <ul class="post-category list-unstyled">
+                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                                <!-- <li><a href="#">Data Analysis</a></li> -->
+                                                <li><a href="#">Database</a></li>
+                                            </ul>
+                                            <ul class="post-share list-unstyled">
+                                                <li class="open-post-share">
+                                                    <span><i class="fa fa-share-alt"></i></span>
+                                                    <ul class="post-share-links list-unstyled">
+                                                        <!-- <li>
+                                                            <a href="#" class="facebook-bg-hover">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="twitter-bg-hover">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="google-plus-bg-hover">
+                                                                <i class="fa fa-google-plus"></i>
+                                                            </a>
+                                                        </li> -->
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </figure>
+                                        <div class="entry-content">
+                                            <div class="entry-post-info">
+                                                <h4><a href="#">ECサイト推薦システムの研究開発</a></h4>
+                                                <p>Tanaka, 2018</p>
+                                            </div>
+                                            <div class="entry-expert">
+                                                <p>
+                                                    オンライン取引所の扱う様々なアイテムを顧客の属性や購買推移の情報を元に推薦するソフトウェアの研究およびプロトタイプ開発を行いました。
+                                                </p>
+                                                <!-- <div class="post-readMore"> -->
+                                                    <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="entry-footer">
+                                            <ul class="entry-tags list-unstyled list-inline">
+                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                                <li><a href="#">Data Analysis</a></li>
+                                                <li><a href="#">Database</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <!-- POST RECOMMENDER END -->
+
+                            <!-- OTHER POSTS START-->
+                            <!-- <div class="col-md-4 col-sm-6 grid-item graphic-design"> -->
+                                <!-- <div class="portfolio-item"> -->
+                                    <!-- <div class="port-data"> -->
+                                        <!-- <div class="port-data-front-card"> -->
+                                            <!-- <div><i class="fa fa-paint-brush"></i></div> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="port-data-back-card"> -->
+                                            <!-- <h4 class="project-name">Project Name</h4> -->
+                                            <!-- <a href="#" target="_blank" class="port-show-info glyphicon glyphicon-link"></a> -->
+                                            <!-- <div class="project-category"> -->
+                                                <!-- <h5>Graphic Design <i class="fa fa-paint-brush pull-right"></i></h5> -->
+                                            <!-- </div> -->
+                                        <!-- </div> -->
+                                    <!-- </div> -->
+                                    <!-- <div class="port-image"> -->
+                                        <!-- <img src="images/work/06.png" class="img-responsive" alt=""> -->
+                                    <!-- </div> -->
+                                <!-- </div> -->
+                            <!-- </div> --> 
+                            <!-- OTHER POST END -->
+
+                        </div>
+                    </div> <!--end row -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End portfolio ================-->
+
+    <!-- Start Facts About Me
+    ===================================-->
+    <div class="kayo-facts-about-me bg-img" id="pricing">
+        <div class="overlay">
+            <div class="container mb_-50px">
+                <div class="mrkayo-main-title">
+                    <h2>
+                        Pricing
+                        <span class="kayo-line"></span>
+                    </h2>
+                </div>
+                <div class="kayo-info-list">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="single-info">
+                                <p class="info-icon">
+                                    <i class="pe-7s-display1"></i>
+                                    <span class="facts-numbers" data-from="1" data-to="3" data-speed="1100"></span>
+                                    <small>万円 〜</small>
+                                    <tiny>(税込)</tiny>
+                                </p>
+                                <h3> 
+                                    <p>
+                                        1週間以内の単発プロジェクト
+                                    </p>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="single-info">
+                                <p class="info-icon">
+                                    <i class="pe-7s-alarm"></i>
+                                    <span class="facts-numbers" data-from="1" data-to="13" data-speed="1100"></span>
+                                    <small>
+                                        万円 / 週
+                                    </small>
+                                    <tiny>(税込)</tiny>
+                                </p>
+                                <h3> 
+                                    <p>
+                                        1週間以上にわたるプロジェクト
+                                    </p>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Facts About Me ================-->
+
+        <!-- Start About Me
+   ===================================-->
+    <!-- <div class="my-information" id="about"> -->
+    <div class="my-information" id="aboutme">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="my-image">
+                        <img src="images/portrait.jpeg" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="kayo-info-detail">
+                        <h3>About Me</h3>
+                        <p>
+                            社会科学系 世界2位の研究機関 ロンドン・スクール・オブ・エコノミクス で 機械学習を研究。
+                            <br>
+                            Prof. Milan Vojnovic (Chair of Data Science) に師事し、データサイエンス修士課程を完了。
+                            <br>
+                            東京工業大学で社会工学を専攻し副総代として卒業。
+                            <br>
+                            スウェーデン王立工科大学で統計科学を専攻。
+                            <br>
+                            新卒で金融系ベンチャーに入社し、退職後データサイエンティストとして独立。
+                            <br><br>
+                            学科最優秀研究論文賞受賞。
+                            <br>
+                            王立統計学会 (RSS) の 認可付き 統計学資格 (GradStat) を保有。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Me ==================-->
+
+
+    <!-- Start Testimonials -->
+
+    <!-- End Testimonials ================-->
+
+    <!-- Start Blog -->
+ 
+    <!-- End Blog ================-->
+
+
+    <!-- Start Contact From
+    ===================================-->
+    <div class="contact-form bg-img" id="contact">
+        <div class="overlay">
+            <div class="container">
+                <div class="mrkayo-main-title">
+                    <h2>
+                        Contact
+                        <span class="kayo-line"></span>
+                    </h2>
+                </div>
+
+            <!-- GET IN TOUCH ICONS START -->
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="kayo-icon-list-box">
+                        <div class="kayo-icon-box-container">
+                            <div class="kayo-icon-box">
+                                <span class="glyphicon glyphicon-map-marker kayo-icon"></span>
+                            </div>
+                        </div>
+                        <div class="kayo-list-info">
+                            <h4>Location</h4>
+                            <p>
+                                Minato-ku, Tokyo <br>
+                                JAPAN
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="kayo-icon-list-box">
+                        <div class="kayo-icon-box-container">
+                            <div class="kayo-icon-box">
+                                <span class="glyphicon glyphicon-phone kayo-icon"></span>
+                            </div>
+                        </div>
+                        <div class="kayo-list-info">
+                            <h4>Phone</h4>
+                            <p>
+                                080-5493-9647
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="kayo-icon-list-box">
+                        <div class="kayo-icon-box-container">
+                            <div class="kayo-icon-box">
+                                <span class="fa fa-envelope kayo-icon"></span>
+                            </div>
+                        </div>
+                        <div class="kayo-list-info">
+                            <h4>Email</h4>
+                            <p>
+                                sugurutanaka@aol.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GET IN TOUCH ICON END -->
+
+            <!-- EMAIL FORM START -->
+
+                <!-- <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                        <form class="kayo-form" action="php/sendMessage.php" method="post" id="contact_form">
+                            <div class="input-row">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="タイトル" name="messageAbout" data-messageAboutValidation>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="お名前" name="full_name" data-nameValidation>
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="E-mail" name="email" data-emailValidation>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Phone" name="phone" data-phoneValidation>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="メッセージ" name="message" data-messageValidation></textarea>
+                            </div>
+                            <div>
+                                <button class="btn kayo-btn-1 btn-block btn-rgba" type="submit" name="submit_contact_form">
+                                    <i class="fa fa-send-o"></i> Send Your Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div> -->
+
+            <!-- EMAIL FORM END -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Start Contact From -->
+
+    <!-- Start Contact Ways
+    ===================================-->
+    <div class="contact-ways">
+        <div class="container mb_-30px">
+            <div class="mrkayo-main-title">
+                <h2>
+                    <!-- Get In Touch -->
+                    事業概要
+                    <!-- <span class="kayo-line"></span> -->
+                </h2>
+            </div>
+
+            <!-- GET IN TOUCH ICONS START -->
+<!-- 
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="kayo-icon-list-box">
+                        <div class="kayo-icon-box-container">
+                            <div class="kayo-icon-box">
+                                <span class="glyphicon glyphicon-map-marker kayo-icon"></span>
+                            </div>
+                        </div>
+                        <div class="kayo-list-info">
+                            <h4>Location</h4>
+                            <p>
+                                Minato-ku, Tokyo <br>
+                                JAPAN
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="kayo-icon-list-box">
+                        <div class="kayo-icon-box-container">
+                            <div class="kayo-icon-box">
+                                <span class="glyphicon glyphicon-phone kayo-icon"></span>
+                            </div>
+                        </div>
+                        <div class="kayo-list-info">
+                            <h4>Phone</h4>
+                            <p>
+                                080-5493-9647
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="kayo-icon-list-box">
+                        <div class="kayo-icon-box-container">
+                            <div class="kayo-icon-box">
+                                <span class="fa fa-envelope kayo-icon"></span>
+                            </div>
+                        </div>
+                        <div class="kayo-list-info">
+                            <h4>Email</h4>
+                            <p>
+                                sugurutanaka@aol.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- GET IN TOUCH ICON END -->
+
+            <!-- <table class="table table-borderless"> -->
+            <table class="table">
+                <tbody>
+                <tr>
+                  <th scope="row">屋号</th>
+                  <td>社会情報科学研究所 (Social Data Science Lab.)</td>
+                </tr>
+                <tr>
+                  <th scope="row">登記</th>
+                  <td>2019年4月1日</td>
+                </tr>
+                <tr>
+                  <th scope="row">所在地</th>
+                  <td>〒106-0031 東京都港区西麻布一丁目 11-8</td>
+                </tr>
+                <tr>
+                  <th scope="row">お問い合わせ</th>
+                  <td>sugurutanaka@aol.com</td>
+                </tr>
+                <tr>
+                  <th scope="row">事業内容</th>
+                  <td>
+                      企業のデータ活用サービス <br>
+                      ソフトウェア開発 <br>
+                      自社サービス(今後展開予定)
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">取引銀行</th>
+                  <td>三井住友銀行</td>
+                </tr>
+                <tr></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- End Contact Ways ================-->
+
+    <!-- Start Map
+    ===================================-->
+    <div id="map"></div>
+    <!-- End Map ================-->
+
+
+
+    <!-- Start Client Logo
+    ===================================-->
+    <!-- <div class="my-clients-logo small-section"> -->
+        <!-- <div class="container"> -->
+            <!-- <div class="sakura-demo2-clients-slider"> -->
+                <!-- <div class="client-logo"> -->
+                    <!-- <a href="https://rss.org.uk/" target="_blank"> -->
+                        <!-- <img src="images/clients-logo/RSS_logo.jpg" alt=""> -->
+                    <!-- </a> -->
+                <!-- </div> -->
+                <!-- <div class="client-logo"> -->
+                    <!-- <a href="#" target="_blank"> -->
+                        <!-- <img src="images/clients-logo/data_scientist_society.png" alt=""> -->
+                    <!-- </a> -->
+                <!-- </div> -->
+                <!-- <div class="client-logo"> -->
+                    <!-- <a href="#" target="_blank"> -->
+                        <!-- <img src="images/clients-logo/logo-3.png" alt=""> -->
+                    <!-- </a> -->
+                <!-- </div> -->
+                <!-- <div class="client-logo">  -->
+                    <!-- <a href="#" target="_blank"> -->
+                        <!-- <img src="images/clients-logo/logo-4.png" alt=""> -->
+                    <!-- </a> -->
+                <!-- </div> -->
+                <!-- <div class="client-logo"> -->
+                    <!-- <a href="#" target="_blank"> -->
+                        <!-- <img src="images/clients-logo/logo-5.png" alt=""> -->
+                    <!-- </a> -->
+                <!-- </div> -->
+                <!-- <div class="client-logo"> -->
+                    <!-- <a href="#" target="_blank"> -->
+                        <!-- <img src="images/clients-logo/logo-6.png" alt=""> -->
+                    <!-- </a> -->
+                <!-- </div> -->
+                <!-- <div class="client-logo"> -->
+                    <!-- <a href="#" target="_blank"> -->
+                        <!-- <img src="images/clients-logo/logo-7.png" alt=""> -->
+                    <!-- </a> -->
+                <!-- </div> -->
+                <!-- <div class="client-logo"> -->
+                    <!-- <a href="#" target="_blank"> -->
+                        <!-- <img src="images/clients-logo/logo-8.png" alt=""> -->
+                    <!-- </a> -->
+                <!-- </div>  -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+    <!-- End Client Logo ==================-->
+
+
+</main>
+
+<!-- Footer
+========================================-->
+<footer class="apps-footer">
+    <!-- <div class="footer-top">
+        <div class="container">
+            <div class="apps-short-info">
+                <a href="#">
+                    <img alt="" src="images/icon2.png">
+                </a>
+            </div>
+            <ul class="list-inline list-unstyled footer-social-links">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </div>
+    </div> -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p>All Rights Reserved © 2020 <a href="https://mrkayo.com/">Suguru Tanaka</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Start ScrollToTop
+===================================-->
+<div class="scrollToTop"><i class="fa fa-angle-up"></i></div>
+
+
+<!-- Start Loading
+===================================-->
+<div class="loading">
+    <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+    </div>
+</div>
+<!-- End Loading ==================-->
+
+<!-- start the script -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.countTo.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/progressbar.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/ajax.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.come/ajax/libs/jquery/3.5.0/jquery.min.js"></script> -->
+<!-- end the script -->
+
+<script>
+    function initMap() {
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+            // center: {lat: 40.674, lng: -73.945},
+            center: {lat: 35.663, lng: 139.732},
+            // zoom: 12,
+            zoom: 9,
+            styles: [
+                {
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#212121"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#212121"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.country",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.land_parcel",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.locality",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#bdbdbd"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#181818"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#616161"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#1b1b1b"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#2c2c2c"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#8a8a8a"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#373737"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#3c3c3c"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway.controlled_access",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#4e4e4e"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#616161"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#000000"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#3d3d3d"
+                        }
+                    ]
+                }
+            ]
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?language=en&region=UK&key=AIzaSyCMaN8SDH_bgvk116IWNP-j8h9Pw834g-c&callback=initMap"></script>
+
 </body>
-</html> 
-
+</html>
