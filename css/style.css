@@ -842,10 +842,11 @@ body {
   line-height: 24px;
   letter-spacing: 0.7px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #3a4a5d;
+  border-bottom: 1px solid #4a4a5d;
   margin-bottom: 15px;
   font-weight: 400;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 16px;
   font-style: italic;
 }
 
@@ -2710,26 +2711,31 @@ rk */
     padding-bottom: 10px;
   }
 
-  .my-information {
+  .aboutMe .kayo-info-detail p{
+    color: #BBB;
+  }
+
+  /* .my-information2 {
     padding: 60px 0;
   }
-  .my-information .kayo-info-detail {
+  .my-information2 .kayo-info-detail {
     padding-top: 15px;
   }
-  .my-information .kayo-info-detail h3 {
+  .my-information2 .kayo-info-detail h3 {
     font-size: 20px;
   }
-  .my-information .kayo-info-detail p {
+  .my-information2 .kayo-info-detail p {
     line-height: 22px;
     letter-spacing: 0.4px;
     font-size: 13px;
     margin-bottom: 0;
+    border-bottom: 1px solid #4a4a5d;
   }
-  .my-information .my-image img {
+  .my-information2 .my-image img {
     margin: auto;
     max-width: 300px;
     width: 100%;
-  }
+  } */
 
   .testimonials {
     padding: 60px 0 50px;
