@@ -1825,7 +1825,8 @@ rk */
   font-weight: 400;
   margin-bottom: 0;
   font-size: 13px;
-  height: 96px;
+  /* height: 96px; */
+  height: auto;
   line-height: 24px;
   overflow: hidden;
 }
@@ -2978,4 +2979,16 @@ rk */
 
 .table > tbody > tr:first-child > th{ 
   border: none;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+input:valid {
+  border: 2px solid black;
 }

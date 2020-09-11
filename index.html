@@ -28,6 +28,120 @@
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+
+    <!-- <script>
+        // $(document).ready(function () {
+            // $('#form_id').on('submit', function(e) {
+            // $('#form_id').submit(function(e) {
+            function submitToAPI(e) {
+                e.preventDefault();
+                var post_url = $(this).attr("action");
+                var name = $("name").val() ;
+                var phone = $("phone").val() ;
+                var email = $("email").val() ;
+                var message = $("message").val() ;
+                var data = {
+                    name : name,
+                    phone : phone,
+                    email: email,
+                    desc : desc
+                } ;
+                $.ajax({
+                    // url : $(this).attr('action') || window.location.pathname,
+                    type: "POST",
+                    url: $(this).attr("action"),
+                    dataType: "json"
+                    crossDomain: "true",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(data)
+    
+                    success: function() {
+                        alert("Successfull")
+                        document.getElementById("form_id").reset();
+                        location.reload();
+                    },
+                    error: function() {
+                        alert("Unsuccessful");
+                    }
+                    // data: $(this).serialize(),
+                    // success: function (data) {
+                        // $("#form_output").html(data);
+                    // },
+                    // error: function (jXHR, textStatus, errorThrown) {
+                        // alert(errorThrown);
+                    // }
+                }).done(function(response){
+                    $("#server-results").html(response);
+                });
+            };
+        // });
+    </script> -->
+
+    <script>
+    function submitToAPI(e) {
+        e.preventDefault();
+        //設定したAPI GatewayのエンドポイントURLをここに入れます。
+        // var URL = "API-GATEWAY-ENDPOINT-URL";
+    
+        //フォームの入力値をチェック
+        // var name = /[A-Za-z]{1}[A-Za-z]/;
+        // if (!name.test($("#name-input").val())) {
+        //     alert("2文字以上記入してください。");
+        //     return;
+        // }
+        // var subject = /[A-Za-z]{1}[A-Za-z]/;
+        // if (!subject.test($("#subject").val())) {
+        //     alert("2文字以上記入してください。");
+        //     return;
+        // }
+        // if ($("#email-input").val() == "") {
+        //     alert("メールを入力してください。");
+        //     return;
+        // }
+    
+        // var email = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+        // if (!email.test($("#email-input").val())) {
+        //     alert("メールアドレスは正しくありません。");
+        //     return;
+        // }
+    
+        var title = $("#title").val();
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var phone = $("#phone").val();
+        var desc = $("#desc").val();
+
+        var data = {
+            title: title,
+            name: name,
+            email: email,
+            phone: phone,
+            desc: desc
+        };
+    
+        $.ajax({
+            type: "POST",
+            url: "https://jvzw9788r1.execute-api.us-east-1.amazonaws.com/production/submit",
+            dataType: "json",
+            crossDomain: "true",
+            contentType: "application/json;",
+            data: JSON.stringify(data),
+    
+            success: function() {
+                // フォームをクリアし、送信成功のメッセージを表示する
+                alert("メッセージが送信されました。")
+                document.getElementById("form_id").reset();
+                location.reload();
+            },
+            error: function() {
+                // 送信エラーのメッセージを表示する
+                alert("メッセージの送信が失敗しました。");
+            }
+        });
+    }
+    </script>
+
+
 </head>
 <body data-spy="scroll" data-target=".app-links" data-offset="15" class="scrollspy-example sakura-demo2">
 
@@ -96,7 +210,8 @@
                 </div>
             </div>
             <div class="open-page">
-                <a href="#about" class="scrollLink"><i class="fa fa-angle-down"></i></a>
+                <!-- <a href="#about" class="scrollLink"><i class="fa fa-angle-down"></i></a> -->
+                <a href="#service" class="scrollLink"><i class="fa fa-angle-down"></i></a>
             </div>
         </div>
     </section>
@@ -173,7 +288,7 @@
                                 <!-- <h4>データアナリティクス</h4> -->
                                 <h4>コンサルティング</h4>
                                 <p>
-                                    幅広いのデータサイエンスの知見から、課題を具体化し、データを活用するサービスの提案させていただきます。
+                                    最新のデータサイエンスの知見から、データを利用した最適なサービスを提案させていただきます。
                                 </p>
                             </div>
                         </div>
@@ -238,440 +353,440 @@
 
     <!-- Start portfolio
     ===================================-->
-        <div class="portfolio" id="portfolio">
-            <div class="port-box">
-                <div class="container">
-                    <div class="mrkayo-main-title">
-                        <h2>
-                            My Work
-                            <span class="kayo-line"></span>
-                        </h2>
-                    </div>
-                    <div class="text-center">
-                        <ul class="portfolio-sorting list-unstyled text-center kayo-taps">
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".consultancy">コンサルティング</li>
-                            <li data-filter=".analytics">データ解析</li>
-                            <li data-filter=".software">ソフトウェア</li>
-                        </ul> <!--end portfolio sorting -->
-                    </div>
-                    <div class="portfolio-items">
-                        <div class="row grid">
+    <section class="portfolio" id="portfolio">
+        <div class="port-box">
+            <div class="container">
+                <div class="mrkayo-main-title">
+                    <h2>
+                        My Work
+                        <span class="kayo-line"></span>
+                    </h2>
+                </div>
+                <div class="text-center">
+                    <ul class="portfolio-sorting list-unstyled text-center kayo-taps">
+                        <li class="active" data-filter="*">All</li>
+                        <li data-filter=".consultancy">コンサルティング</li>
+                        <li data-filter=".analytics">データ解析</li>
+                        <li data-filter=".software">ソフトウェア</li>
+                    </ul> <!--end portfolio sorting -->
+                </div>
+                <div class="portfolio-items">
+                    <div class="row grid">
 
-                            <!-- Post topic model START-->
-                            <div class="col-md-6 col-sm-6 grid-item analytics software" position=relative>
-                                <div>
-                                    <article class="normal-post">
-                                        <figure class="entry-header">
-                                            <div class="post-image">
-                                                <img src="images/blog/odtm.jpeg" class="img-responsive" alt="">
-                                            </div>
-                                            <ul class="post-category list-unstyled">
-                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
-                                                <li><a href="#">Big Data</a></li>
-                                                <li><a href="#">Data Analysis</a></li>
-                                            </ul>
-                                            <ul class="post-share list-unstyled">
-                                                <li class="open-post-share">
-                                                    <span><i class="fa fa-share-alt"></i></span>
-                                                    <ul class="post-share-links list-unstyled">
-                                                        <!-- <li>
-                                                            <a href="https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href)" class="facebook-bg-hover">
-                                                                <i class="fa fa-facebook"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="twitter-bg-hover">
-                                                                <i class="fa fa-twitter"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="google-plus-bg-hover">
-                                                                <i class="fa fa-google-plus"></i>
-                                                            </a>
-                                                        </li> -->
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </figure>
-                                        <div class="entry-content">
-                                            <div class="entry-post-info">
-                                                <h4><a href="#">文書 自動分類の新手法の研究開発</a></h4>
-                                                <!-- <p>Tanaka, Lin, Tse, Vojnovic (Lonodn School of Economics), Karamshuk (Facebook); 2020</p> -->
-                                                <p>August. 2020</p>
-                                            </div>
-                                            <div class="entry-expert">
-                                                <p>
-                                                    文書の自動分類を高速で処理する手法を提案し開発しました。
-                                                    提案した手法は 既存の手法の速度を遥かに上回り、かつより高い精度の分類を行えます。
-                                                    某SNSのニュース記事を利用しその高い実用性を示しました。
-                                                </p>
-                                                <!-- <div class="post-readMore"> -->
-                                                    <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
-                                                <!-- </div> -->
-                                            </div>
+                        <!-- Post topic model START-->
+                        <div class="col-md-6 col-sm-6 grid-item analytics software" position=relative>
+                            <div>
+                                <article class="normal-post">
+                                    <figure class="entry-header">
+                                        <div class="post-image">
+                                            <img src="images/blog/odtm.jpeg" class="img-responsive" alt="">
                                         </div>
-                                        <div class="entry-footer">
-                                            <ul class="entry-tags list-unstyled list-inline">
-                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
-                                                <li><a href="#">Big Data</a></li>
-                                                <li><a href="#">Data Analysis</a></li>
-                                            </ul>
+                                        <ul class="post-category list-unstyled">
+                                            <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                            <li><a href="#">Big Data</a></li>
+                                            <li><a href="#">Data Analysis</a></li>
+                                        </ul>
+                                        <ul class="post-share list-unstyled">
+                                            <li class="open-post-share">
+                                                <span><i class="fa fa-share-alt"></i></span>
+                                                <ul class="post-share-links list-unstyled">
+                                                    <!-- <li>
+                                                        <a href="https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href)" class="facebook-bg-hover">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="twitter-bg-hover">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="google-plus-bg-hover">
+                                                            <i class="fa fa-google-plus"></i>
+                                                        </a>
+                                                    </li> -->
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </figure>
+                                    <div class="entry-content">
+                                        <div class="entry-post-info">
+                                            <h4><a href="#">文書 自動分類の新手法の研究開発</a></h4>
+                                            <!-- <p>Tanaka, Lin, Tse, Vojnovic (Lonodn School of Economics), Karamshuk (Facebook); 2020</p> -->
+                                            <p>August. 2020</p>
                                         </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- POST TOPIC MODEL END -->
-
-                            <!-- POST BRAIN WAVE START -->
-                            <div class="col-md-6 col-sm-6 grid-item consultancy analytics software" position=relative>
-                                <div>
-                                    <article class="normal-post">
-                                        <figure class="entry-header">
-                                            <div class="post-image">
-                                                <img src="images/blog/brainwave.jpeg" class="img-responsive" alt="">
-                                            </div>
-                                            <ul class="post-category list-unstyled">
-                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
-                                                <li><a href="#">Data Analysis</a></li>
-                                                <li><a href="#">Database</a></li>
-                                            </ul>
-                                            <ul class="post-share list-unstyled">
-                                                <li class="open-post-share">
-                                                    <span><i class="fa fa-share-alt"></i></span>
-                                                    <ul class="post-share-links list-unstyled">
-                                                        <!-- <li>
-                                                            <a href="#" class="facebook-bg-hover">
-                                                                <i class="fa fa-facebook"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="twitter-bg-hover">
-                                                                <i class="fa fa-twitter"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="google-plus-bg-hover">
-                                                                <i class="fa fa-google-plus"></i>
-                                                            </a>
-                                                        </li> -->
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </figure>
-                                        <div class="entry-content">
-                                            <div class="entry-post-info">
-                                                <h4><a href="#">脳波・視線による広告の評価手法の開発</a></h4>
-                                                <p>September, 2019</p>
-                                            </div>
-                                            <div class="entry-expert">
-                                                <p>
-                                                    脳波や視線のデータは前提となる情報が少なく解釈が困難です。
-                                                    また広告の評価は定量的に行われず、しばしば主観的に評価されてしまいます。
-                                                    本プロジェクトでは、広告の品質を人工知能を用いて自動的に分析する新手法を考案し、開発しました。
-                                                </p>
-                                                <!-- <div class="post-readMore"> -->
-                                                    <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
-                                                <!-- </div> -->
-                                            </div>
-                                        </div>
-                                        <div class="entry-footer">
-                                            <ul class="entry-tags list-unstyled list-inline">
-                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
-                                                <li><a href="#">Data Analysis</a></li>
-                                                <li><a href="#">Database</a></li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- POST BRAIN WAVE END -->
-
-                            <!-- POST MAP START -->
-                            <div class="col-md-6 col-sm-6 grid-item software" position=relative>
-                                <div>
-                                    <article class="normal-post">
-                                        <figure class="entry-header">
-                                            <div class="post-image">
-                                                <img src="images/blog/map.jpeg" class="img-responsive" alt="">
-                                            </div>
-                                            <ul class="post-category list-unstyled">
-                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
-                                                <li><a href="#">App</a></li>
-                                                <li><a href="#">Database</a></li>
-                                            </ul>
-                                            <ul class="post-share list-unstyled">
-                                                <li class="open-post-share">
-                                                    <span><i class="fa fa-share-alt"></i></span>
-                                                    <ul class="post-share-links list-unstyled">
-                                                        <!-- <li>
-                                                            <a href="#" class="facebook-bg-hover">
-                                                                <i class="fa fa-facebook"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="twitter-bg-hover">
-                                                                <i class="fa fa-twitter"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="google-plus-bg-hover">
-                                                                <i class="fa fa-google-plus"></i>
-                                                            </a>
-                                                        </li> -->
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </figure>
-                                        <div class="entry-content">
-                                            <div class="entry-post-info">
-                                                <h4><a href="#">交通所要時間マップ可視化アプリ</a></h4>
-                                                <p>December, 2019</p>
-                                            </div>
-                                            <div class="entry-expert">
-                                                <p>
-                                                    転勤や引越しの際に目的地から住宅への勤務時間を可視化するアプリを開発しました。
-                                                    移動時間の計算に最適化アルゴリズムを採用しています。
-                                                    また住宅の周辺施設を加味して引っ越す街を推薦するシステムを導入しました。
-                                                </p>
-                                                <!-- <div class="post-readMore"> -->
-                                                    <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
-                                                <!-- </div> -->
-                                            </div>
-                                        </div>
-                                        <div class="entry-footer">
-                                            <ul class="entry-tags list-unstyled list-inline">
-                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
-                                                <li><a href="#">Data Analysis</a></li>
-                                                <li><a href="#">Database</a></li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- POST MAP END -->
-
-
-                            <!-- POST RISK START -->
-                            <div class="col-md-6 col-sm-6 grid-item analytics" position=relative>
-                                <div>
-                                    <article class="normal-post">
-                                        <figure class="entry-header">
-                                            <div class="post-image">
-                                                <img src="images/blog/insurance.jpeg" class="img-responsive" alt="">
-                                            </div>
-                                            <ul class="post-category list-unstyled">
-                                                <!-- <li><a href="#">Artificial Intelligence (AI)</a></li> -->
-                                                <li><a href="#">Statistical Modelling</a></li>
-                                                <li><a href="#">Data Analysis</a></li>
-                                                <!-- <li><a href="#">Database</a></li> -->
-                                            </ul>
-                                            <ul class="post-share list-unstyled">
-                                                <li class="open-post-share">
-                                                    <span><i class="fa fa-share-alt"></i></span>
-                                                    <ul class="post-share-links list-unstyled">
-                                                        <!-- <li>
-                                                            <a href="#" class="facebook-bg-hover">
-                                                                <i class="fa fa-facebook"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="twitter-bg-hover">
-                                                                <i class="fa fa-twitter"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="google-plus-bg-hover">
-                                                                <i class="fa fa-google-plus"></i>
-                                                            </a>
-                                                        </li> -->
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </figure>
-                                        <div class="entry-content">
-                                            <div class="entry-post-info">
-                                                <h4><a href="#">被保険者のリスク算出モデルの作成</a></h4>
-                                                <p>Feb, 2017</p>
-                                            </div>
-                                            <div class="entry-expert">
-                                                <p>
-                                                    車両保険会社の顧客の属性からリスクを算出するモデルを作成しました。
-                                                    保険料はモデルの提示する被保険者のリスクに応じた保険料を請求します。
-                                                    これにより、より公平でお手頃な価格設定を提供できます。
-                                                </p>
-                                                <!-- <div class="post-readMore"> -->
-                                                    <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
-                                                <!-- </div> -->
-                                            </div>
-                                        </div>
-                                        <div class="entry-footer">
-                                            <ul class="entry-tags list-unstyled list-inline">
-                                                <!-- <li><a href="#">Artificial Intelligence (AI)</a></li> -->
-                                                <li><a href="#">Statistical Modelling</a></li>
-                                                <li><a href="#">Data Analysis</a></li>
-                                                <!-- <li><a href="#">Database</a></li> -->
-                                            </ul>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- POST RISK END -->
-
-                            <!-- POST COVID START -->
-                            <div class="col-md-6 col-sm-6 grid-item analytics" position=relative>
-                                <div>
-                                    <article class="normal-post">
-                                        <figure class="entry-header">
-                                            <div class="post-image">
-                                                <img src="images/blog/covid.jpeg" class="img-responsive" alt="">
-                                            </div>
-                                            <ul class="post-category list-unstyled">
-                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
-                                                <li><a href="#">Data Analysis</a></li>
-                                                <!-- <li><a href="#">Database</a></li> -->
-                                            </ul>
-                                            <ul class="post-share list-unstyled">
-                                                <li class="open-post-share">
-                                                    <span><i class="fa fa-share-alt"></i></span>
-                                                    <ul class="post-share-links list-unstyled">
-                                                        <!-- <li>
-                                                            <a href="#" class="facebook-bg-hover">
-                                                                <i class="fa fa-facebook"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="twitter-bg-hover">
-                                                                <i class="fa fa-twitter"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="google-plus-bg-hover">
-                                                                <i class="fa fa-google-plus"></i>
-                                                            </a>
-                                                        </li> -->
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </figure>
-                                        <div class="entry-content">
-                                            <div class="entry-post-info">
-                                                <h4><a href="#">ウィルスの感染地域と、推移の可視化手法の開発</a></h4>
-                                                <p>May, 2020</p>
-                                            </div>
-                                            <div class="entry-expert">
-                                                <p>
-                                                    最新の機械学習の手法をウィルスの感染地帯の分析に応用する、確認の範囲で世界初の試みを行いました。
-                                                    感染の状況がより直感的に表現され、さらに時系列の推移を可視化できます。
-                                                    これにより感染が急拡大している地域が一目でわかります。
-                                                </p>
-                                                <!-- <div class="post-readMore"> -->
-                                                    <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
-                                                <!-- </div> -->
-                                            </div>
-                                        </div>
-                                        <div class="entry-footer">
-                                            <ul class="entry-tags list-unstyled list-inline">
-                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
-                                                <li><a href="#">Data Analysis</a></li>
-                                                <li><a href="#">Database</a></li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- POST COVID END -->
-
-                            <!-- POST RECOMMENDER START -->
-                            <div class="col-md-6 col-sm-6 grid-item consultancy software" position=relative>
-                                <div>
-                                    <article class="normal-post">
-                                        <figure class="entry-header">
-                                            <div class="post-image">
-                                                <img src="images/blog/recommendation.jpeg" class="img-responsive" alt="">
-                                            </div>
-                                            <ul class="post-category list-unstyled">
-                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
-                                                <!-- <li><a href="#">Data Analysis</a></li> -->
-                                                <li><a href="#">Database</a></li>
-                                            </ul>
-                                            <ul class="post-share list-unstyled">
-                                                <li class="open-post-share">
-                                                    <span><i class="fa fa-share-alt"></i></span>
-                                                    <ul class="post-share-links list-unstyled">
-                                                        <!-- <li>
-                                                            <a href="#" class="facebook-bg-hover">
-                                                                <i class="fa fa-facebook"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="twitter-bg-hover">
-                                                                <i class="fa fa-twitter"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="google-plus-bg-hover">
-                                                                <i class="fa fa-google-plus"></i>
-                                                            </a>
-                                                        </li> -->
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </figure>
-                                        <div class="entry-content">
-                                            <div class="entry-post-info">
-                                                <h4><a href="#">ECサイト推薦システムの研究開発</a></h4>
-                                                <p>May, 2018</p>
-                                            </div>
-                                            <div class="entry-expert">
-                                                <p>
-                                                    オンライン取引所の扱う様々なアイテムを顧客の属性や購買推移の情報を元に推薦するソフトウェアの研究およびプロトタイプ開発を行いました。
-                                                </p>
-                                                <!-- <div class="post-readMore"> -->
-                                                    <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
-                                                <!-- </div> -->
-                                            </div>
-                                        </div>
-                                        <div class="entry-footer">
-                                            <ul class="entry-tags list-unstyled list-inline">
-                                                <li><a href="#">Artificial Intelligence (AI)</a></li>
-                                                <li><a href="#">Data Analysis</a></li>
-                                                <li><a href="#">Database</a></li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- POST RECOMMENDER END -->
-
-                            <!-- OTHER POSTS START-->
-                            <!-- <div class="col-md-4 col-sm-6 grid-item graphic-design"> -->
-                                <!-- <div class="portfolio-item"> -->
-                                    <!-- <div class="port-data"> -->
-                                        <!-- <div class="port-data-front-card"> -->
-                                            <!-- <div><i class="fa fa-paint-brush"></i></div> -->
-                                        <!-- </div> -->
-                                        <!-- <div class="port-data-back-card"> -->
-                                            <!-- <h4 class="project-name">Project Name</h4> -->
-                                            <!-- <a href="#" target="_blank" class="port-show-info glyphicon glyphicon-link"></a> -->
-                                            <!-- <div class="project-category"> -->
-                                                <!-- <h5>Graphic Design <i class="fa fa-paint-brush pull-right"></i></h5> -->
+                                        <div class="entry-expert">
+                                            <p>
+                                                文書の自動分類を高速で処理する手法を提案し開発しました。
+                                                提案した手法は 既存の手法の速度を遥かに上回り、かつより高い精度の分類を行えます。
+                                                某SNSのニュース記事を利用しその高い実用性を示しました。
+                                            </p>
+                                            <!-- <div class="post-readMore"> -->
+                                                <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
                                             <!-- </div> -->
-                                        <!-- </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="entry-footer">
+                                        <ul class="entry-tags list-unstyled list-inline">
+                                            <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                            <li><a href="#">Big Data</a></li>
+                                            <li><a href="#">Data Analysis</a></li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- POST TOPIC MODEL END -->
+
+                        <!-- POST BRAIN WAVE START -->
+                        <div class="col-md-6 col-sm-6 grid-item consultancy analytics software" position=relative>
+                            <div>
+                                <article class="normal-post">
+                                    <figure class="entry-header">
+                                        <div class="post-image">
+                                            <img src="images/blog/brainwave.jpeg" class="img-responsive" alt="">
+                                        </div>
+                                        <ul class="post-category list-unstyled">
+                                            <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                            <li><a href="#">Data Analysis</a></li>
+                                            <li><a href="#">Database</a></li>
+                                        </ul>
+                                        <ul class="post-share list-unstyled">
+                                            <li class="open-post-share">
+                                                <span><i class="fa fa-share-alt"></i></span>
+                                                <ul class="post-share-links list-unstyled">
+                                                    <!-- <li>
+                                                        <a href="#" class="facebook-bg-hover">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="twitter-bg-hover">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="google-plus-bg-hover">
+                                                            <i class="fa fa-google-plus"></i>
+                                                        </a>
+                                                    </li> -->
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </figure>
+                                    <div class="entry-content">
+                                        <div class="entry-post-info">
+                                            <h4><a href="#">脳波・視線による広告の評価手法の開発</a></h4>
+                                            <p>September, 2019</p>
+                                        </div>
+                                        <div class="entry-expert">
+                                            <p>
+                                                脳波や視線のデータは前提となる情報が少なく解釈が困難です。
+                                                また広告の評価は定量的に行われず、しばしば主観的に評価されてしまいます。
+                                                本プロジェクトでは、広告の品質を人工知能を用いて自動的に分析する新手法を考案し、開発しました。
+                                            </p>
+                                            <!-- <div class="post-readMore"> -->
+                                                <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="entry-footer">
+                                        <ul class="entry-tags list-unstyled list-inline">
+                                            <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                            <li><a href="#">Data Analysis</a></li>
+                                            <li><a href="#">Database</a></li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- POST BRAIN WAVE END -->
+
+                        <!-- POST MAP START -->
+                        <div class="col-md-6 col-sm-6 grid-item software" position=relative>
+                            <div>
+                                <article class="normal-post">
+                                    <figure class="entry-header">
+                                        <div class="post-image">
+                                            <img src="images/blog/map.jpeg" class="img-responsive" alt="">
+                                        </div>
+                                        <ul class="post-category list-unstyled">
+                                            <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                            <li><a href="#">App</a></li>
+                                            <li><a href="#">Database</a></li>
+                                        </ul>
+                                        <ul class="post-share list-unstyled">
+                                            <li class="open-post-share">
+                                                <span><i class="fa fa-share-alt"></i></span>
+                                                <ul class="post-share-links list-unstyled">
+                                                    <!-- <li>
+                                                        <a href="#" class="facebook-bg-hover">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="twitter-bg-hover">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="google-plus-bg-hover">
+                                                            <i class="fa fa-google-plus"></i>
+                                                        </a>
+                                                    </li> -->
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </figure>
+                                    <div class="entry-content">
+                                        <div class="entry-post-info">
+                                            <h4><a href="#">交通所要時間マップ可視化アプリ</a></h4>
+                                            <p>December, 2019</p>
+                                        </div>
+                                        <div class="entry-expert">
+                                            <p>
+                                                転勤や引越しの際に目的地から住宅への勤務時間を可視化するアプリを開発しました。
+                                                移動時間の計算に最適化アルゴリズムを採用しています。
+                                                また住宅の周辺施設を加味して引っ越す街を推薦するシステムを導入しました。
+                                            </p>
+                                            <!-- <div class="post-readMore"> -->
+                                                <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="entry-footer">
+                                        <ul class="entry-tags list-unstyled list-inline">
+                                            <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                            <li><a href="#">Data Analysis</a></li>
+                                            <li><a href="#">Database</a></li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- POST MAP END -->
+
+
+                        <!-- POST RISK START -->
+                        <div class="col-md-6 col-sm-6 grid-item analytics" position=relative>
+                            <div>
+                                <article class="normal-post">
+                                    <figure class="entry-header">
+                                        <div class="post-image">
+                                            <img src="images/blog/insurance.jpeg" class="img-responsive" alt="">
+                                        </div>
+                                        <ul class="post-category list-unstyled">
+                                            <!-- <li><a href="#">Artificial Intelligence (AI)</a></li> -->
+                                            <li><a href="#">Statistical Modelling</a></li>
+                                            <li><a href="#">Data Analysis</a></li>
+                                            <!-- <li><a href="#">Database</a></li> -->
+                                        </ul>
+                                        <ul class="post-share list-unstyled">
+                                            <li class="open-post-share">
+                                                <span><i class="fa fa-share-alt"></i></span>
+                                                <ul class="post-share-links list-unstyled">
+                                                    <!-- <li>
+                                                        <a href="#" class="facebook-bg-hover">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="twitter-bg-hover">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="google-plus-bg-hover">
+                                                            <i class="fa fa-google-plus"></i>
+                                                        </a>
+                                                    </li> -->
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </figure>
+                                    <div class="entry-content">
+                                        <div class="entry-post-info">
+                                            <h4><a href="#">被保険者のリスク算出モデルの作成</a></h4>
+                                            <p>Feb, 2017</p>
+                                        </div>
+                                        <div class="entry-expert">
+                                            <p>
+                                                車両保険会社の顧客の属性からリスクを算出するモデルを作成しました。
+                                                保険料はモデルの提示する被保険者のリスクに応じた保険料を請求します。
+                                                これにより、より公平でお手頃な価格設定を提供できます。
+                                            </p>
+                                            <!-- <div class="post-readMore"> -->
+                                                <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="entry-footer">
+                                        <ul class="entry-tags list-unstyled list-inline">
+                                            <!-- <li><a href="#">Artificial Intelligence (AI)</a></li> -->
+                                            <li><a href="#">Statistical Modelling</a></li>
+                                            <li><a href="#">Data Analysis</a></li>
+                                            <!-- <li><a href="#">Database</a></li> -->
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- POST RISK END -->
+
+                        <!-- POST COVID START -->
+                        <div class="col-md-6 col-sm-6 grid-item analytics" position=relative>
+                            <div>
+                                <article class="normal-post">
+                                    <figure class="entry-header">
+                                        <div class="post-image">
+                                            <img src="images/blog/covid.jpeg" class="img-responsive" alt="">
+                                        </div>
+                                        <ul class="post-category list-unstyled">
+                                            <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                            <li><a href="#">Data Analysis</a></li>
+                                            <!-- <li><a href="#">Database</a></li> -->
+                                        </ul>
+                                        <ul class="post-share list-unstyled">
+                                            <li class="open-post-share">
+                                                <span><i class="fa fa-share-alt"></i></span>
+                                                <ul class="post-share-links list-unstyled">
+                                                    <!-- <li>
+                                                        <a href="#" class="facebook-bg-hover">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="twitter-bg-hover">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="google-plus-bg-hover">
+                                                            <i class="fa fa-google-plus"></i>
+                                                        </a>
+                                                    </li> -->
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </figure>
+                                    <div class="entry-content">
+                                        <div class="entry-post-info">
+                                            <h4><a href="#">ウィルスの感染地域と、推移の可視化手法の開発</a></h4>
+                                            <p>May, 2020</p>
+                                        </div>
+                                        <div class="entry-expert">
+                                            <p>
+                                                最新の機械学習の手法をウィルスの感染地帯の分析に応用する、確認の範囲で世界初の試みを行いました。
+                                                感染の状況がより直感的に表現され、さらに時系列の推移を可視化できます。
+                                                これにより感染が急拡大している地域が一目でわかります。
+                                            </p>
+                                            <!-- <div class="post-readMore"> -->
+                                                <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="entry-footer">
+                                        <ul class="entry-tags list-unstyled list-inline">
+                                            <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                            <li><a href="#">Data Analysis</a></li>
+                                            <li><a href="#">Database</a></li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- POST COVID END -->
+
+                        <!-- POST RECOMMENDER START -->
+                        <div class="col-md-6 col-sm-6 grid-item consultancy software" position=relative>
+                            <div>
+                                <article class="normal-post">
+                                    <figure class="entry-header">
+                                        <div class="post-image">
+                                            <img src="images/blog/recommendation.jpeg" class="img-responsive" alt="">
+                                        </div>
+                                        <ul class="post-category list-unstyled">
+                                            <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                            <!-- <li><a href="#">Data Analysis</a></li> -->
+                                            <li><a href="#">Database</a></li>
+                                        </ul>
+                                        <ul class="post-share list-unstyled">
+                                            <li class="open-post-share">
+                                                <span><i class="fa fa-share-alt"></i></span>
+                                                <ul class="post-share-links list-unstyled">
+                                                    <!-- <li>
+                                                        <a href="#" class="facebook-bg-hover">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="twitter-bg-hover">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="google-plus-bg-hover">
+                                                            <i class="fa fa-google-plus"></i>
+                                                        </a>
+                                                    </li> -->
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </figure>
+                                    <div class="entry-content">
+                                        <div class="entry-post-info">
+                                            <h4><a href="#">ECサイト推薦システムの研究開発</a></h4>
+                                            <p>May, 2018</p>
+                                        </div>
+                                        <div class="entry-expert">
+                                            <p>
+                                                オンライン取引所の扱う様々なアイテムを顧客の属性や購買推移の情報を元に推薦するソフトウェアの研究およびプロトタイプ開発を行いました。
+                                            </p>
+                                            <!-- <div class="post-readMore"> -->
+                                                <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="entry-footer">
+                                        <ul class="entry-tags list-unstyled list-inline">
+                                            <li><a href="#">Artificial Intelligence (AI)</a></li>
+                                            <li><a href="#">Data Analysis</a></li>
+                                            <li><a href="#">Database</a></li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- POST RECOMMENDER END -->
+
+                        <!-- OTHER POSTS START-->
+                        <!-- <div class="col-md-4 col-sm-6 grid-item graphic-design"> -->
+                            <!-- <div class="portfolio-item"> -->
+                                <!-- <div class="port-data"> -->
+                                    <!-- <div class="port-data-front-card"> -->
+                                        <!-- <div><i class="fa fa-paint-brush"></i></div> -->
                                     <!-- </div> -->
-                                    <!-- <div class="port-image"> -->
-                                        <!-- <img src="images/work/06.png" class="img-responsive" alt=""> -->
+                                    <!-- <div class="port-data-back-card"> -->
+                                        <!-- <h4 class="project-name">Project Name</h4> -->
+                                        <!-- <a href="#" target="_blank" class="port-show-info glyphicon glyphicon-link"></a> -->
+                                        <!-- <div class="project-category"> -->
+                                            <!-- <h5>Graphic Design <i class="fa fa-paint-brush pull-right"></i></h5> -->
+                                        <!-- </div> -->
                                     <!-- </div> -->
                                 <!-- </div> -->
-                            <!-- </div> --> 
-                            <!-- OTHER POST END -->
+                                <!-- <div class="port-image"> -->
+                                    <!-- <img src="images/work/06.png" class="img-responsive" alt=""> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                        <!-- </div> --> 
+                        <!-- OTHER POST END -->
 
-                        </div>
-                    </div> <!--end row -->
-                </div>
+                    </div>
+                </div> <!--end row -->
             </div>
         </div>
     </section>
+    <!-- </section> -->
     <!-- End portfolio ================-->
 
     <!-- Start Facts About Me
@@ -685,6 +800,7 @@
                         <span class="kayo-line"></span>
                     </h2>
                 </div>
+            </div>
 
             <div class="row">
                 <div class="col-sm-4">
@@ -735,7 +851,6 @@
             </div>
         </div>
     </div>
-</div>
 
     <!-- End Facts About Me ================-->
 
@@ -755,13 +870,13 @@
                     <div class="kayo-info-detail">
                         <h3>About Me</h3>
                         <p>
+                            東京工業大学で社会工学を専攻し、卒業 (副総代)。
+                            <br>
+                            スウェーデン王立工科大学で統計科学を研究。
+                            <br>
                             社会科学系 世界2位の研究機関 ロンドン・スクール・オブ・エコノミクス で 機械学習を研究。
                             <br>
                             Prof. Milan Vojnovic に師事し、データサイエンス修士課程を完了。
-                            <br>
-                            東京工業大学で社会工学を専攻し、副総合代表として卒業。
-                            <br>
-                            スウェーデン王立工科大学で統計科学を研究。
                             <br>
                             新卒で金融系ベンチャーに入社し、退職後データサイエンティストとして独立。
                             <br><br>
@@ -774,7 +889,7 @@
             </div>
         </div>
     </div>
-</section>
+<!-- </section> -->
 <!-- End About Me ==================-->
 
 
@@ -856,31 +971,41 @@
 
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1">
-                        <form class="kayo-form" action="php/sendMessage.php" method="post" id="contact_form">
+                        <!-- <form class="kayo-form" action="https://jvzw9788r1.execute-api.us-east-1.amazonaws.com/production/submit"  -->
+                        <!-- id="form_id" method="post"> -->
+                        <form class="kayo-form" id="form_id" method="post">
                             <div class="input-row">
                                 <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="タイトル" name="messageAbout" data-messageAboutValidation>
+                                    <input class="form-control" type="text" placeholder="タイトル" id="title" required
+                                    oninvalid="this.setCustomValidity('タイトルを記入してください。')" oninput="this.setCustomValidity('')">
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="お名前" name="full_name" data-nameValidation>
+                                    <input class="form-control" type="text" placeholder="お名前" id="name" data-nameValidation required
+                                    oninvalid="this.setCustomValidity('お名前を記入してください。')" oninput="this.setCustomValidity('')">
                                 </div>
                             </div>
                             <div class="input-row">
                                 <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="E-mail" name="email" data-emailValidation>
+                                    <input class="form-control" type="text" placeholder="E-mail" id="email" data-emailValidation required
+                                    oninvalid="this.setCustomValidity('Emailを記入してください。')" oninput="this.setCustomValidity('')">
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="Phone" name="phone" data-phoneValidation>
+                                    <input class="form-control" type="text" placeholder="Phone" id="phone" data-phoneValidation required
+                                    oninvalid="this.setCustomValidity('内容を記入してください。')" oninput="this.setCustomValidity('')">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="メッセージ" name="message" data-messageValidation></textarea>
+                                <textarea class="form-control" placeholder="メッセージ" id="desc" data-messageValidation required></textarea>
                             </div>
                             <div>
-                                <button class="btn kayo-btn-1 btn-block btn-rgba" type="submit" name="submit_contact_form">
+                                <!-- <button class="btn kayo-btn-1 btn-block btn-rgba" type="submit" name="submit_contact_form"> -->
+                                <!-- <button class="btn kayo-btn-1 btn-block btn-rgba" type="submit" name="submit_contact_form"> -->
+                                <!-- <button class="btn kayo-btn-1 btn-block btn-rgba" name="submit_contact_form" type="submit"> -->
+                                <button class="btn kayo-btn-1 btn-block btn-rgba" name="submit_contact_form" onClick="submitToAPI(event)">
                                     <i class="fa fa-send-o"></i> Send Your Message
                                 </button>
                             </div>
+                            <div id="server-results"><!-- For server results --></div>
                         </form>
                     </div>
                 </div>
@@ -1057,8 +1182,10 @@
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/ajax.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.come/ajax/libs/jquery/3.5.0/jquery.min.js"></script> -->
-<!-- end the script -->
+
+
+// <!-- <script src="https://cdnjs.cloudflare.come/ajax/libs/jquery/3.5.0/jquery.min.js"></script> -->
+// <!-- end the script -->
 
 <script>
     function initMap() {
