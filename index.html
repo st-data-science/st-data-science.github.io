@@ -29,53 +29,15 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
-    <!-- <script>
-        // $(document).ready(function () {
-            // $('#form_id').on('submit', function(e) {
-            // $('#form_id').submit(function(e) {
-            function submitToAPI(e) {
-                e.preventDefault();
-                var post_url = $(this).attr("action");
-                var name = $("name").val() ;
-                var phone = $("phone").val() ;
-                var email = $("email").val() ;
-                var message = $("message").val() ;
-                var data = {
-                    name : name,
-                    phone : phone,
-                    email: email,
-                    desc : desc
-                } ;
-                $.ajax({
-                    // url : $(this).attr('action') || window.location.pathname,
-                    type: "POST",
-                    url: $(this).attr("action"),
-                    dataType: "json"
-                    crossDomain: "true",
-                    contentType: "application/json; charset=utf-8",
-                    data: JSON.stringify(data)
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177805505-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
     
-                    success: function() {
-                        alert("Successfull")
-                        document.getElementById("form_id").reset();
-                        location.reload();
-                    },
-                    error: function() {
-                        alert("Unsuccessful");
-                    }
-                    // data: $(this).serialize(),
-                    // success: function (data) {
-                        // $("#form_output").html(data);
-                    // },
-                    // error: function (jXHR, textStatus, errorThrown) {
-                        // alert(errorThrown);
-                    // }
-                }).done(function(response){
-                    $("#server-results").html(response);
-                });
-            };
-        // });
-    </script> -->
+      gtag('config', 'UA-177805505-1');
+    </script>
 
     <script>
     function submitToAPI(e) {
