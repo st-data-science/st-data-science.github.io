@@ -46,26 +46,26 @@
         // var URL = "API-GATEWAY-ENDPOINT-URL";
     
         //フォームの入力値をチェック
-        // var name = /[A-Za-z]{1}[A-Za-z]/;
-        // if (!name.test($("#name-input").val())) {
-        //     alert("2文字以上記入してください。");
-        //     return;
-        // }
-        // var subject = /[A-Za-z]{1}[A-Za-z]/;
-        // if (!subject.test($("#subject").val())) {
-        //     alert("2文字以上記入してください。");
-        //     return;
-        // }
-        // if ($("#email-input").val() == "") {
-        //     alert("メールを入力してください。");
-        //     return;
-        // }
+        var name = /[A-Za-z]{1}[A-Za-z]/;
+        if (!name.test($("#name").val())) {
+            alert("2文字以上記入してください。");
+            return;
+        }
+        var subject = /[A-Za-z]{1}[A-Za-z]/;
+        if (!subject.test($("#title").val())) {
+            alert("2文字以上記入してください。");
+            return;
+        }
+        if ($("#email").val() == "") {
+            alert("メールを入力してください。");
+            return;
+        }
     
-        // var email = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
-        // if (!email.test($("#email-input").val())) {
-        //     alert("メールアドレスは正しくありません。");
-        //     return;
-        // }
+        var email = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+        if (!email.test($("#email").val())) {
+            alert("メールアドレスは正しくありません。");
+            return;
+        }
     
         var title = $("#title").val();
         var name = $("#name").val();
