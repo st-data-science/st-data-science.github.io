@@ -847,7 +847,7 @@ body {
   font-weight: 400;
   /* font-size: 14px; */
   font-size: 16px;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 /* 5.3 My Service */
@@ -2991,4 +2991,16 @@ input:invalid:required {
 
 input:valid {
   border: 2px solid black;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+  }
+
+.right-aligned {
+  text-align: right;
+}
+.right-aligned a{
+  color: #FFF;
 }
