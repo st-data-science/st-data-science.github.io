@@ -2680,6 +2680,12 @@ rk */
     top: 0;
   }
 
+  .kayo-icon-list-box .kayo-list-info link {
+    color: #FFF;
+    opacity: 1;
+    top: 0;
+  }
+
   .home .intro-section .mr-kayo {
     font-size: 30px;
     letter-spacing: 1px;
