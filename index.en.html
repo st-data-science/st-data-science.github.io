@@ -14,12 +14,12 @@
     <link rel="icon" href="images/icon.png">
     <!-- <meta name="description" content="freelancer web developer and web designer -->
      <!-- my web development skills: HTMl5 -CSS3 - bootstrap - scss -javaScript - jQuery - fabric.js - angular.js - Ajax -PHP (MVC) - wordpress -Mysql ;; I look forward to working with you soon, and i will be in time"> -->
-    <meta name="description" content="社会情報科学研究所では最先端のデータサイエンスによってビジネスの課題を解決します。">
-    <!-- <meta name="keywords" -->
-          <!-- content="HTML,CSS,jquery,JavaScript,mr kayo,saad tarek,mrkayo,mrkayo.com,karem tarek,karemtarek,saadtarek"> -->
+    <!-- <meta name="description" content="社会情報科学研究所では最先端のデータサイエンスによってビジネスの課題を解決します。"> -->
+    <meta name="description" content="We help clients solve real-world business problems by cutting-edge technology of data science">
     <meta name="keywords"
           content="data science, データサイエンス, データ分析, データ解析, データアナリティクス, 人工知能, AI, 機械学習, 統計学,
-          suguru,tanaka, 田中,統, social data science lab">
+          suguru,tanaka, 田中,統, social data science lab, data analytics, data science, artificial intelligence,
+          machine learning, statistics">
     <meta name="author" content="Suguru Tanaka">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900" rel="stylesheet">
@@ -28,7 +28,10 @@
     <link rel="stylesheet" href="css/pe-icon-7-stroke.min.css">
     <link rel="stylesheet" href="css/slick.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.en.css">
+
+
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
@@ -53,22 +56,26 @@
         //フォームの入力値をチェック
         var name = /[A-Za-z]{1}[A-Za-z]/;
         if (!name.test($("#name").val())) {
-            alert("2文字以上記入してください。");
+            // alert("2文字以上記入してください。");
+            alert("Please enter a valid name.");
             return;
         }
         var subject = /[A-Za-z]{1}[A-Za-z]/;
         if (!subject.test($("#title").val())) {
-            alert("2文字以上記入してください。");
+            // alert("2文字以上記入してください。");
+            alert("Please enter a valid title.");
             return;
         }
         if ($("#email").val() == "") {
-            alert("メールを入力してください。");
+            // alert("メールを入力してください。");
+            alert("Please enter a valid email address.");
             return;
         }
     
         var email = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
         if (!email.test($("#email").val())) {
-            alert("メールアドレスは正しくありません。");
+            // alert("メールアドレスは正しくありません。");
+            alert("This email address is not valid");
             return;
         }
     
@@ -96,16 +103,17 @@
     
             success: function() {
                 // フォームをクリアし、送信成功のメッセージを表示する
-                alert("メッセージが送信されました。")
+                alert("Message sent successfully!")
+                // alert("メッセージが送信されました。")
                 document.getElementById("form_id").reset();
                 location.reload();
             },
             error: function() {
                 // 送信エラーのメッセージを表示する
-                alert("メッセージの送信が失敗しました。");
+                alert("Failed to send a message");
             }
         });
-    }
+    } 
     </script>
 
 
@@ -123,9 +131,9 @@
                 <i class="chart"></i>
                 <i class="chart"></i>
             </span>
-            <a class="navbar-brand" href="index.en.html">
+            <a class="navbar-brand" href="index.html">
                 <!-- <img alt="" src="images/icon2.png"> -->
-                <img alt="" src="images/en.svg">
+                <img alt="" src="images/jp.svg">
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -133,7 +141,8 @@
             <ul class="nav navbar-nav navbar-right appsLand-links kayo-links">
                 <li class="visible-xs-block text-center mobile-size-logo">
                     <a href="#">
-                        <img alt="" src="images/icon2.png" class="img-responsive">
+                        <!-- <img alt="" src="images/icon2.png" class="img-responsive"> -->
+                        <img alt="" src="images/jp.svg" class="img-responsive">
                     </a>
                 </li>
                 <li><a href="#home">Home</a></li>
@@ -151,26 +160,24 @@
 
 <main class="main-page-content">
 
-    <!-- Start Home
-    ===================================-->
     <section class="home bg-img" id="home">
         <div class="overlay">
             <div class="container">
                 <div class="intro-section display-table">
                     <div class="display-table-cell">
-                        <h3 class="kayo-hello">社会情報科学研究所</h3>
-                        <!-- <h1 class="mr-kayo">田中統 | データサイエンティスト</h1> -->
+                        <h3 class="kayo-hello">Social Data Science Lab</h3>
+                        <!-- <h1 class="mr-kayo">Suguru Tanaka | Data Scientist</h1> -->
                         <h1 class="mr-kayo">Social Data Science Lab</h1>
                         <h3 class="kayo-work-description">&nbsp;<span class="kayo-work"></span></h3>
                         <ul class="list-inline list-unstyled header-links">
                             <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                                 <a href="#contact" class="sakura-btn btn-inverse">
-                                    <i class="fa fa-rocket"></i> お問い合わせ
+                                    <i class="fa fa-rocket"></i> Contact
                                 </a>
                             </li>
                             <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
                                 <a href="#portfolio" class="sakura-btn">
-                                    <i class="fa fa-download"></i>  ポートフォリオ
+                                    <i class="fa fa-download"></i>  Portfolio
                                 </a>
                             </li>
                         </ul>
@@ -183,10 +190,8 @@
             </div>
         </div>
     </section>
-    <!-- End Home ==================-->
 
-    <!-- Start About Me
-   ===================================-->
+
     <div class="my-information">
         <div class="container">
             <!-- <div class="mrkayo-main-title"> -->
@@ -204,26 +209,23 @@
                 <div class="col-sm-8">
                     <div class="kayo-info-detail">
                         <h4>
-                            三つの領域の実績と知見で企業の目標達成を支援します。
+                            We help companies by unleashing a knowledge in the following three areas.
                         </h4>
-                        <!-- <p> -->
-                            <!-- 三つの領域による技術と知見で企業の目標達成を支援します。 -->
-                        <!-- </p> -->
                         <br>
-                        <h4>データアナリティクス</h4>
+                        <h4>Data Analytics</h4>
                         <p>
-                            データを元に現状を正確に分析し、意思決定を行う領域です。
-                            プロジェクト例）広告の品質評価と効果測定・業務プロセス最適化
+                            Data analytics helps us to measure a situation accurately and to make the right decision. 
+                            <!-- プロジェクト例）広告の品質評価と効果測定・業務プロセス最適化 -->
                         </p>
-                        <h4>人工知能 (AI)</h4>
+                        <h4>Artificial Intelligence (AI)</h4>
                         <p>
-                            機械学習の技術により、機械に自動的に高度な判断を行わせる領域です。
-                            プロジェクト例）文書の自動分類・商品の自動推薦・物体検知
+                            The state-of-art machine learning enables to automate tasks that require advanced intelligence..
+                            <!-- プロジェクト例）文書の自動分類・商品の自動推薦・物体検知 -->
                         </p>
-                        <h4>データベース</h4>
+                        <h4>Database / Big data</h4>
                         <p>
-                            データを効率的に、安全に集積・加工・転送する技術です。
-                            プロジェクト例）データベースの構築と運用・データパイプラインの開発
+                            Database technology helps to securely process and send a large amount of information, so-called Big Data.
+                            <!-- プロジェクト例）データベースの構築と運用・データパイプラインの開発 -->
                         </p>
                     </div>
                 </div>
@@ -254,9 +256,10 @@
                             </div>
                             <div class="kayo-list-info">
                                 <!-- <h4>データアナリティクス</h4> -->
-                                <h4>コンサルティング</h4>
+                                <h4>Consultancy</h4>
                                 <p>
-                                    最新のデータサイエンスの知見から、データを利用した最適なサービスを提案させていただきます。
+                                    We provide you with ideas to utilize your data based on the latest data science technologies.
+                                    <!-- 最新のデータサイエンスの知見から、データを利用した最適なサービスを提案させていただきます。 -->
                                 </p>
                             </div>
                         </div>
@@ -270,9 +273,10 @@
                                 </div>
                             </div>
                             <div class="kayo-list-info">
-                                <h4>データ分析</h4>
+                                <h4>Data Analysis</h4>
                                 <p>
-                                    データ解析を通して課題を発見・解決し、業務プロセスの最適化を支援します。
+                                    We help improving business process by finding and solving the root cause via data analysis.
+                                    <!-- データ解析を通して課題を発見・解決し、業務プロセスの最適化を支援します。 -->
                                 </p>
                             </div>
                         </div>
@@ -286,9 +290,10 @@
                                 </div>
                             </div>
                             <div class="kayo-list-info">
-                                <h4>ソフトウェア開発支援</h4>
+                                <h4>Software Engineering</h4>
                                 <p>
-                                    データベースやAIに関するソフトウェア開発をハンズオンで支援いたします。
+                                    We support hands-on software devlopments related to database and artificial intellicence.
+                                    <!-- データベースやAIに関するソフトウェア開発をハンズオンで支援いたします。 -->
                                 </p>
                             </div>
                         </div>
@@ -333,9 +338,9 @@
                 <div class="text-center">
                     <ul class="portfolio-sorting list-unstyled text-center kayo-taps">
                         <li class="active" data-filter="*">All</li>
-                        <li data-filter=".consultancy">コンサルティング</li>
-                        <li data-filter=".analytics">データ解析</li>
-                        <li data-filter=".software">ソフトウェア</li>
+                        <li data-filter=".consultancy">Consultancy</li>
+                        <li data-filter=".analytics">Data Analytics</li>
+                        <li data-filter=".software">Software</li>
                     </ul> <!--end portfolio sorting -->
                 </div>
                 <div class="portfolio-items">
@@ -379,15 +384,18 @@
                                     </figure>
                                     <div class="entry-content">
                                         <div class="entry-post-info">
-                                            <h4><a href="#">文書 自動分類の新手法の研究開発</a></h4>
+                                            <!-- <h4><a href="#">文書 自動分類の新手法の研究開発</a></h4> -->
+                                            <h4><a href="#">Developing the state-of-art text classification automation algorithm</a></h4>
                                             <!-- <p>Tanaka, Lin, Tse, Vojnovic (Lonodn School of Economics), Karamshuk (Facebook); 2020</p> -->
                                             <p>August. 2020</p>
                                         </div>
                                         <div class="entry-expert">
                                             <p>
-                                                文書の自動分類を高速で処理する手法を提案し開発しました。
-                                                提案した手法は 既存の手法の速度を遥かに上回り、かつより高い精度の分類を行えます。
-                                                SNS上のニュース記事を利用しその高い実用性を示しました。
+                                                We proposed and developed a novel text classification algorithm.
+                                                The algorithm runs significantly faster than the conventional method, with even higher quality based on simulation experiment.
+                                                <!-- 文書の自動分類を高速で処理する手法を提案し開発しました。 -->
+                                                <!-- 提案した手法は 既存の手法の速度を遥かに上回り、かつより高い精度の分類を行えます。 -->
+                                                <!-- SNS上のニュース記事を利用しその高い実用性を示しました。 -->
                                             </p>
                                             <!-- <div class="post-readMore"> -->
                                                 <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
@@ -444,14 +452,15 @@
                                     </figure>
                                     <div class="entry-content">
                                         <div class="entry-post-info">
-                                            <h4><a href="#">脳波・視線による広告の評価手法の開発</a></h4>
+                                            <!-- <h4><a href="#">脳波・視線による広告の評価手法の開発</a></h4> -->
+                                            <h4><a href="#">Automatic evaluation of video advertisement via brain-wave and eye-tracking data.</a></h4>
                                             <p>September, 2019</p>
                                         </div>
                                         <div class="entry-expert">
                                             <p>
-                                                脳波や視線のデータは前提となる情報が少なく解釈が困難です。
-                                                また広告の評価は定量的に行われず、しばしば主観的に評価されてしまいます。
-                                                本プロジェクトでは、広告の品質を人工知能を用いて自動的に分析する新手法を考案し、開発しました。
+                                                A quality of video advertisement is often made based on subjective judgement.
+                                                In this project, we developed a novel analysis framework that can automatically evaluate a quality of video advertisements.
+                                                The challenge is to properly analyze the data of brain-wave and eye-tracking data of audience.
                                             </p>
                                             <!-- <div class="post-readMore"> -->
                                                 <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
@@ -508,14 +517,15 @@
                                     </figure>
                                     <div class="entry-content">
                                         <div class="entry-post-info">
-                                            <h4><a href="#">交通所要時間マップ可視化アプリ</a></h4>
+                                            <!-- <h4><a href="#">交通所要時間マップ可視化アプリ</a></h4> -->
+                                            <h4><a href="#">Developing transportation time visualization app</a></h4>
                                             <p>December, 2019</p>
                                         </div>
                                         <div class="entry-expert">
                                             <p>
-                                                転勤や引越しの際に目的地から住宅への勤務時間を可視化するアプリを開発しました。
-                                                移動時間の計算に最適化アルゴリズムを採用しています。
-                                                また住宅の周辺施設を加味して引っ越す街を推薦するシステムを導入しました。
+                                                We developed an application that visualizes the commuting time between different locations.
+                                                The app recommends user a city to relocate, based on his/her preference.
+                                                The computation of transportation time utilizes an efficient mathematical optimization algorithm.
                                             </p>
                                             <!-- <div class="post-readMore"> -->
                                                 <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
@@ -574,14 +584,14 @@
                                     </figure>
                                     <div class="entry-content">
                                         <div class="entry-post-info">
-                                            <h4><a href="#">被保険者のリスク算出モデルの作成</a></h4>
+                                            <!-- <h4><a href="#">被保険者のリスク算出モデルの作成</a></h4> -->
+                                            <h4><a href="#">Modelling insurance risk of customers</a></h4>
                                             <p>Feb, 2017</p>
                                         </div>
                                         <div class="entry-expert">
                                             <p>
-                                                車両保険会社の顧客の属性からリスクを算出するモデルを作成しました。
-                                                保険料はモデルの提示する被保険者のリスクに応じた保険料を請求します。
-                                                これにより、より公平でお手頃な価格設定を提供できます。
+                                                We created a mathematical model which evaluates a risk of customers based on their attributes.
+                                                An insurance fee can be individualized based on the model, providing an affordable insurance fee for customers.
                                             </p>
                                             <!-- <div class="post-readMore"> -->
                                                 <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
@@ -639,14 +649,14 @@
                                     </figure>
                                     <div class="entry-content">
                                         <div class="entry-post-info">
-                                            <h4><a href="#">ウイルスの感染地域と、推移の可視化手法の開発</a></h4>
+                                            <!-- <h4><a href="#">ウイルスの感染地域と、推移の可視化手法の開発</a></h4> -->
+                                            <h4><a href="#">Tracking and visualizing regions in risk of virus spreading</a></h4>
                                             <p>May, 2020</p>
                                         </div>
                                         <div class="entry-expert">
                                             <p>
-                                                最新の機械学習の手法をウイルスの感染地帯の分析に応用する、確認の範囲で世界初の試みを行いました。
-                                                感染の状況がより直感的に表現され、さらに時系列の推移を可視化できます。
-                                                これにより感染が急拡大している地域が一目でわかります。
+                                                We examined a new method to keep track a region in risk of virus using the latest machine learning algorithm.
+                                                The situation is captured intuitively, by taking into account a time transition of virus spread.
                                             </p>
                                             <!-- <div class="post-readMore"> -->
                                                 <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
@@ -703,12 +713,12 @@
                                     </figure>
                                     <div class="entry-content">
                                         <div class="entry-post-info">
-                                            <h4><a href="#">ECサイト推薦システムの研究開発</a></h4>
+                                            <h4><a href="#">Research and development of recommendation system in E-commerce platform</a></h4>
                                             <p>May, 2018</p>
                                         </div>
                                         <div class="entry-expert">
                                             <p>
-                                                オンライン取引所の扱う様々なアイテムを顧客の属性や購買推移の情報を元に推薦するソフトウェアの研究およびプロトタイプ開発を行いました。
+                                                We researched and developed a prototype of a system to recommend goods to users in E-commerce platform, based on users attributes and purchasing history.
                                             </p>
                                             <!-- <div class="post-readMore"> -->
                                                 <!-- <a href="javascript:void();" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a> -->
@@ -769,23 +779,24 @@
                     </h2>
                 </div>
                 <div class="row">
-                    <!-- <div class="col-md-4 col-sm-6"> -->
-                        <!-- <div class="kayo-icon-list-box"> -->
-                            <!-- <div class="kayo-icon-box-container"> -->
-                                <!-- <div class="kayo-icon-box"> -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="kayo-icon-list-box">
+                            <div class="kayo-icon-box-container">
+                                <div class="kayo-icon-box">
                                     <!-- <span class="pe-7s-graph1 kayo-icon"></span> -->
-                                    <!-- <span class="glyphicon glyphicon-map-marker kayo-icon"></span> -->
-                                <!-- </div> -->
-                            <!-- </div> -->
-                            <!-- <div class="kayo-list-info"> -->
-                                <!-- <h4>Location</h4> -->
-                                <!-- <p> -->
-                                    <!-- 東京都 港区  -->
-                                <!-- </p> -->
-                            <!-- </div> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
-                    <div class="col-md-6 col-sm-6">
+                                    <span class="glyphicon glyphicon-map-marker kayo-icon"></span>
+                                </div>
+                            </div>
+                            <div class="kayo-list-info">
+                                <h4>Location</h4>
+                                <p>
+                                    Minato-ku Tokyo<br>
+                                    JAPAN
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
                         <div class="kayo-icon-list-box">
                             <div class="kayo-icon-box-container">
                                 <div class="kayo-icon-box">
@@ -794,19 +805,16 @@
                                 </div>
                             </div>
                             <div class="kayo-list-info">
-                                <h4>Lancers</h4>
+                                <h4>Phone</h4>
                                 <p>
                                     <!-- データ解析を通して課題を発見・解決し、業務プロセスの最適化を支援します。 -->
-                                    <!-- 080-5493-9647 -->
-                                    <a href="https://www.lancers.jp/profile/st-data-science" target="_blank">
-                                        ランサーズで仕事を依頼する
-                                    </a>
+                                    080-5493-9647
                                 </p>
                             </div>
                         </div>
                     </div>
                     <!-- <div class="col-md-3 col-sm-6"> -->
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="kayo-icon-list-box">
                             <div class="kayo-icon-box-container">
                                 <div class="kayo-icon-box">
@@ -847,19 +855,16 @@
                     <div class="kayo-info-detail">
                         <h3>About Me</h3>
                         <p>
-                            東京工業大学で社会工学を専攻し、卒業(副総代)。
+                            Suguru Tanaka is a data scientist and the individual business owner of Social Data Science Lab since 2019. 
                             <br>
-                            スウェーデン王立工科大学で統計科学を研究。
+                            He completed MSc Data Science program at the London School of Economics and advised by Milan Vojnovic, Chair of Data Science.
                             <br>
-                            社会科学系 世界2位の研究機関 ロンドン・スクール・オブ・エコノミクス で 機械学習を研究。
+                            Prior to that, he graduated as a Salutatorian from Tokyo Institue of Technology, the most prestgious engineering university in Japan.
                             <br>
-                            Prof. Milan Vojnovic に師事し、データサイエンス修士課程を完了。
                             <br>
-                            新卒で金融系ベンチャーに入社し、退職後データサイエンティストとして独立。
-                            <br><br>
-                            学科最優秀研究論文賞受賞。
+                            Suguru won the Best Bachelor's Thesis Award from the department of social engineering from Tokyo Institue of Technology.
                             <br>
-                            王立統計学会 (RSS) の 認可付き 専門職会員資格(GradStat) を保有。
+                            He is the graduate statistician accredited by the Royal Statistical Society, the most important organization for statisticians and data scientists in the world.
                         </p>
                     </div>
                 </div>
@@ -886,63 +891,10 @@
             <div class="container">
                 <div class="mrkayo-main-title">
                     <h2>
-                        お問い合わせ
+                        Message
                         <span class="kayo-line"></span>
                     </h2>
                 </div>
-
-            <!-- GET IN TOUCH ICONS START -->
-
-            <!-- <div class="row">
-                <div class="col-sm-4">
-                    <div class="kayo-icon-list-box">
-                        <div class="kayo-icon-box-container">
-                            <div class="kayo-icon-box">
-                                <span class="glyphicon glyphicon-map-marker kayo-icon"></span>
-                            </div>
-                        </div>
-                        <div class="kayo-list-info">
-                            <h4>Location</h4>
-                            <p>
-                                Minato-ku, Tokyo <br>
-                                JAPAN
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="kayo-icon-list-box">
-                        <div class="kayo-icon-box-container">
-                            <div class="kayo-icon-box">
-                                <span class="glyphicon glyphicon-phone kayo-icon"></span>
-                            </div>
-                        </div>
-                        <div class="kayo-list-info">
-                            <h4>Phone</h4>
-                            <p>
-                                080-5493-9647
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="kayo-icon-list-box">
-                        <div class="kayo-icon-box-container">
-                            <div class="kayo-icon-box">
-                                <span class="fa fa-envelope kayo-icon"></span>
-                            </div>
-                        </div>
-                        <div class="kayo-list-info">
-                            <h4>Email</h4>
-                            <p>
-                                sugurutanaka@aol.com
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- GET IN TOUCH ICON END -->
 
             <!-- EMAIL FORM START -->
 
@@ -953,11 +905,11 @@
                         <form class="kayo-form" id="form_id" method="post">
                             <div class="input-row">
                                 <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="タイトル" id="title" required
+                                    <input class="form-control" type="text" placeholder="Title" id="title" required
                                     oninvalid="this.setCustomValidity('タイトルを記入してください。')" oninput="this.setCustomValidity('')">
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="お名前" id="name" data-nameValidation required
+                                    <input class="form-control" type="text" placeholder="Name" id="name" data-nameValidation required
                                     oninvalid="this.setCustomValidity('お名前を記入してください。')" oninput="this.setCustomValidity('')">
                                 </div>
                             </div>
@@ -972,17 +924,17 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="メッセージ" id="desc" data-messageValidation required></textarea>
+                                <textarea class="form-control" placeholder="Message" id="desc" data-messageValidation required></textarea>
                             </div>
                             <div>
                                 <!-- <button class="btn kayo-btn-1 btn-block btn-rgba" type="submit" name="submit_contact_form"> -->
                                 <!-- <button class="btn kayo-btn-1 btn-block btn-rgba" type="submit" name="submit_contact_form"> -->
                                 <!-- <button class="btn kayo-btn-1 btn-block btn-rgba" name="submit_contact_form" type="submit"> -->
                                 <button class="btn kayo-btn-1 btn-block btn-rgba" name="submit_contact_form" onClick="submitToAPI(event)">
-                                    <i class="fa fa-send-o"></i> メッセージを送信する
+                                    <i class="fa fa-send-o"></i> Send message
                                 </button>
                                 <div class="right-aligned">
-                                    <a href="privacy.html">* プライバシーポリシー（個人情報保護方針)</a>
+                                    <a href="privacy.en.html">* Privacy policy</a>
                                 </div>
                             </div>
                             <div id="server-results"><!-- For server results --></div>
@@ -1004,7 +956,7 @@
             <div class="mrkayo-main-title">
                 <h2>
                     <!-- Get In Touch -->
-                    事業概要
+                    Business Information
                     <!-- <span class="kayo-line"></span> -->
                 </h2>
             </div>
@@ -1013,33 +965,32 @@
             <table class="table">
                 <tbody>
                 <tr>
-                  <th scope="row">屋号</th>
-                  <td>社会情報科学研究所 (Social Data Science Lab.)</td>
+                  <th scope="row">Name</th>
+                  <td>Social Data Science Lab (社会情報科学研究所)</td>
                 </tr>
                 <tr>
-                  <th scope="row">登記</th>
-                  <td>2019年4月1日</td>
+                  <th scope="row">Date of registration</th>
+                  <td>1st April, 2019</td>
                 </tr>
                 <tr>
-                  <th scope="row">所在地</th>
-                  <td>〒106-0031 東京都港区西麻布一丁目 11-8</td>
+                  <th scope="row">Place</th>
+                  <td>〒106-0031 Minato-ku Nishi-Azabu</td>
                 </tr>
                 <tr>
-                  <th scope="row">お問い合わせ</th>
+                  <th scope="row">Contact</th>
                   <!-- <td>sugurutanaka@aol.com</td> -->
                   <td>suguru.tanaka@sds-lab.net</td>
                 </tr>
                 <tr>
-                  <th scope="row">事業内容</th>
+                  <th scope="row">Services</th>
                   <td>
-                      データ活用支援・コンサルティング<br>
-                      ソフトウェア開発 <br>
-                      自社サービス(今後展開予定)
+                      Data Analysis and Consultancy<br>
+                      Software Engineering
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">取引銀行</th>
-                  <td>三井住友銀行</td>
+                  <th scope="row">Bank</th>
+                  <td>Sumitomo Mitsui Bank</td>
                 </tr>
                 <tr></tr>
                 </tbody>
@@ -1160,7 +1111,7 @@
 <script src="js/slick.min.js"></script>
 <script src="js/progressbar.min.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
-<script src="js/plugins.js"></script>
+<script src="js/plugins.en.js"></script>
 <script src="js/ajax.js"></script>
 
 
