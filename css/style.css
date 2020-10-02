@@ -833,6 +833,7 @@ body {
   -o-transition: all 0.25s ease-in-out 0s;
   -ms-transition: all 0.25s ease-in-out 0s;
   transition: all 0.25s ease-in-out 0s;
+  margin: 0 auto;
 }
 .my-information .my-image img {
   /* opacity: 0.7; */
@@ -2508,6 +2509,7 @@ rk */
 }
 .sakura-demo2 .home .overlay .header-links > li {
   display: inline-block;
+  margin-bottom: 10px;
   padding-right: 10px;
   padding-left: 10px;
 }
