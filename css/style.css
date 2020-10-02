@@ -89,7 +89,9 @@ table, th {
 }
 
 .main-bg, .apps-footer .footer-bottom, .apps-footer .footer-top .footer-social-links a, .appsLand-navbar.active-navbar, .loading, .normal-post .entry-header .post-share li a, .normal-post .entry-header .post-share li span, .normal-post .entry-header .post-category a, .education-workHistory .timeline-content .timeline-box .timeline-info, .education-workHistory .timeline-content .timeline-box .timeline-date, .education-workHistory .timeline-content:before, .port-box .kayo-taps, .testimonials .testi-desc-box i:last-child, .testimonials .testi-box, .slide-menu-container .slide-menu.kayo-menu-style-2 .kayo-links, .slide-menu-container .slide-menu .kayo-user-info.kayo-menu-style-1:after, .slide-menu-container .slide-menu .kayo-user-info.kayo-menu-style-1:before, .slide-menu-container .slide-menu .kayo-user-info .kayo-img-box, .slide-menu-container .slide-menu .kayo-user-info .social-media, .control-bar, .overlay-container, .kayo-icon-box-container .kayo-icon-box, .kayo-btn-1, body {
-  background: #2c3e50;
+  /* background: #2c3e50; */
+  background-color: #354b60;
+  background-image: url("../images/carbon-fibre.png");
 }
 
 .main-bg-rgba, .contact-form .kayo-form .form-control, .kayo-icon-list-box:hover .kayo-list-info, .kayo-btn-1.btn-rgba {
@@ -120,10 +122,14 @@ table, th {
 }
 
 .main-shadow-2, .sakura-demo2 .my-clients-logo .sakura-demo2-clients-slider .client-logo a:hover, .education-workHistory .timeline-content .timeline-box .timeline-info, .education-workHistory .timeline-content .timeline-box .timeline-date, .education-workHistory .timeline-content:before, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .port-show-info:hover, .port-box .kayo-taps, .slide-menu-container .slide-menu.kayo-menu-style-2 .kayo-links li.active a i {
-  -webkit-box-shadow: 0 0 15px 0px #1b2838;
-  -o-box-shadow: 0 0 15px 0px #1b2838;
-  -moz-box-shadow: 0 0 15px 0px #1b2838;
-  box-shadow: 0 0 15px 0px #1b2838;
+  /* -webkit-box-shadow: 0 0 15px 0px #1b2838; */
+  /* -o-box-shadow: 0 0 15px 0px #1b2838; */
+  /* -moz-box-shadow: 0 0 15px 0px #1b2838; */
+  /* box-shadow: 0 0 15px 0px #1b2838; */
+  -webkit-box-shadow: 0 0 15px 5px #11181f;
+  -o-box-shadow: 0 0 15px 5px #11181f;
+  -moz-box-shadow: 0 0 15px 5px #11181f;
+  box-shadow: 0 0 15px 5px #11181f;
 }
 
 .mb_-50px {
@@ -861,7 +867,13 @@ body {
 
 /* 5.3 My Service */
 .kayo-service {
-  background: url("../images/melbourne.jpeg") center center no-repeat fixed;
+  /* background: url("../images/melbourne.jpeg") center center no-repeat fixed; */
+  background: url("../images/london.jpeg") center center no-repeat fixed;
+  background-size: cover;
+}
+.kayo-contact{
+  /* background: url("../images/melbourne.jpeg") center center no-repeat fixed; */
+  background: url("../images/prague.jpeg") center center no-repeat fixed;
   background-size: cover;
 }
 .kayo-service .kayo-container {
@@ -2451,7 +2463,14 @@ rk */
   display: block;
   width: 50%;
   height: 100%;
-  background: #2c3e50;
+  /* background: #2c3e50; */
+  /* background-color: #354b60; */
+  background-color: #11181f;
+  opacity: 0.8;
+  /* background-color: #354b60; */
+/* background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-big.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  /* background-image: url("../images/carbon-fibre.png"); */
   position: absolute;
   bottom: 0;
 }
