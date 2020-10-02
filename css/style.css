@@ -52,10 +52,10 @@ Last change:  30/10/2017
 [ Headings h1 & h2 & h3 ]   ===> #FFF
 [ Content Color ]           ===> #FFF
 [ Experience Headings ]     ===> #1894ff
-[ Paragraphs ]              ===> #BBB
+[ Paragraphs ]              ===> #d4d4d4
 
 [ Portfolio Filter Links ]
-a (standard):	#BBB (Gray)
+a (standard):	#d4d4d4 (Gray)
 a (hover):	#1894ff (blue)
 a (active):	#1894ff (blue)
 
@@ -75,12 +75,12 @@ a (active):	#FFF (White)
 
 .sup_main_txt, .normal-post .entry-footer .entry-tags a, .normal-post .entry-content .entry-expert .post-readMore a, .normal-post .entry-content .entry-expert p, .normal-post .entry-content .entry-post-info p, .education-workHistory .timeline-content .timeline-box .timeline-info .timeline-info-header p, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .project-category h5, .slide-menu-container .slide-menu.kayo-menu-style-2 .kayo-links a {
   /* color: #869cb1; */
-  color: #BBB;
+  color: #d4d4d4;
 }
 
 table, td {
   /* color: #869cb1; */
-  color: #BBB;
+  color: #d4d4d4;
 }
 
 table, th {
@@ -111,7 +111,7 @@ table, th {
 }
 
 .content-txt-1, .education-workHistory .timeline-content .timeline-box .timeline-info .timeline-info-details p, .port-box .kayo-taps li, .testimonials .testi-desc-box p, .testimonials .testi-user-info h5, .my-information .kayo-info-detail p, .home .intro-section .kayo-work-description, .home .intro-section .kayo-hello, .kayo-icon-list-box .kayo-list-info p {
-  color: #BBB;
+  color: #d4d4d4;
 }
 
 .main-shadow-1, .normal-post:hover, .normal-post .entry-header .post-share li a, .normal-post .entry-header .post-share li span, .take-my-resume .kayo-btn-1, .port-box .portfolio-items .portfolio-item .port-data, .port-box .portfolio-items .portfolio-item, .testimonials .img-box img, .testimonials .testi-box, .testimonials .slick-dots i, .testimonials .testimonials-arrows, .slide-menu-container .slide-menu, .control-bar, .overlay-container, .sakura-btn {
@@ -2747,7 +2747,7 @@ rk */
   }
 
   .aboutMe .kayo-info-detail p{
-    color: #BBB;
+    color: #d4d4d4;
   }
 
   /* .my-information2 {
