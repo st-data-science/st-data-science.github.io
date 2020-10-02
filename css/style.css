@@ -843,6 +843,7 @@ body {
   -o-transition: all 0.25s ease-in-out 0s;
   -ms-transition: all 0.25s ease-in-out 0s;
   transition: all 0.25s ease-in-out 0s;
+  margin: 0 auto;
 }
 .my-information .my-image-portrait img:hover {
   opacity: 1;
