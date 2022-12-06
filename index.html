@@ -1,1282 +1,2093 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>田中統のホームページ | データサイエンティスト</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta name="author" content="Retrina Group" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>田中統のホームページ | データサイエンティスト</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Retrina Group" />
 
-        <meta property="og:url" content="https://st-data-science.github.io/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="田中統のホームページ | データサイエンティスト" />
-        <meta property="og:description" content="データサイエンティスト 田中統 (Suguru Tanaka) のホームページです. 経歴やお仕事、所属、リンク、ご連絡先など載せています. 今後ポートフォリオや簡易なブログも載せるかもしれません." />
-        <meta property="og:site_name" content="田中統のホームページ | データサイエンティスト" />
-        <meta property="og:image" content="assets/img/home.jpeg" />
+    <meta property="og:url" content="https://st-data-science.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="田中統のホームページ | データサイエンティスト"
+    />
+    <meta
+      property="og:description"
+      content="データサイエンティスト 田中統 (Suguru Tanaka) のホームページです. 経歴やお仕事、所属、リンク、ご連絡先など載せています. 今後ポートフォリオや簡易なブログも載せるかもしれません."
+    />
+    <meta
+      property="og:site_name"
+      content="田中統のホームページ | データサイエンティスト"
+    />
+    <meta property="og:image" content="assets/img/home.jpeg" />
 
-        <!--  FavIcon  -->
-        <link rel="shortcut icon" href="assets/img/bdlab.png">
+    <!--  FavIcon  -->
+    <link rel="shortcut icon" href="assets/img/bdlab.png" />
 
-        <!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:300,400,600"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700"
+      rel="stylesheet"
+    />
 
-        <!-- FontAwesome Css -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <!-- Line icon Css -->
-        <link rel="stylesheet" href="assets/css/LineIcons.css">
-        <!-- Bootstrap Css -->
-        <link rel="stylesheet" href="assets/css/bootstrap.css">
-        <!-- Owl Carousel Css -->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <!-- Magnific Popup Css -->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <!-- Colors Css -->
-        <link rel="stylesheet" href="assets/css/color/blue-color.css" id="option-color">
-        <!--  Custom Style CSS  -->
-        <link rel="stylesheet" href="assets/css/main.css">
-        <!-- Colorfull Css -->
-        <link rel="stylesheet" href="assets/css/color/colorfull-main.css">
-    </head>
-    <body class="flat-demo">
-
+    <!-- FontAwesome Css -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <!-- Line icon Css -->
+    <link rel="stylesheet" href="assets/css/LineIcons.css" />
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- Owl Carousel Css -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <!-- Magnific Popup Css -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- Colors Css -->
+    <link
+      rel="stylesheet"
+      href="assets/css/color/blue-color.css"
+      id="option-color"
+    />
+    <!--  Custom Style CSS  -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Colorfull Css -->
+    <link rel="stylesheet" href="assets/css/color/colorfull-main.css" />
+  </head>
+  <body class="flat-demo">
     <!--  Pre Loader  -->
     <div id="overlayer"></div>
     <span class="loader"></span>
 
     <!-- Portfolio Single Modal Start -->
-    <div class="portfolio-single modal fade" id="portfolio-single" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content text-muted">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="portfolioModalScrollable">My Work</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="pt-4 pb-5">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-md-10 mx-auto">
-                                    <div class="text-center">
-                                        <h2 class="mb-3">Single <span class="base-color"> Portfolio</span></h2>
-                                        <p class="max-width-450">In a professional context it often happens that private clients corder a publication to be made.</p>
-                                    </div>
-                                    <div class="row contact-info mt-5">
-                                        <div class="col-md-4">
-                                            <div class="text-center">
-                                                <div>
-                                                    <h6>Created by:</h6>
-                                                    <p class="mb-0">Jessy Doe</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 p-title-border mt-3 mt-md-0">
-                                            <div class="text-center">
-                                                <div>
-                                                    <h6 class="contact_detail-title">Completed on:</h6>
-                                                    <p class="mb-0">September 30, 2019</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mt-3 mt-md-0">
-                                            <div class="text-center">
-                                                <div>
-                                                    <h6>Skills:</h6>
-                                                    <p class="mb-0">HTML5 / PHP / CSS3</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-5">
-                                        <div class="portfolio-single-item image-border">
-                                            <img src="https://placehold.co/600x450" class="d-block" alt="...">
-                                        </div>
-                                    </div>
-                                    <div class="text-md-left mt-5">
-                                        <p class="my-3">データサイエンティスト 田中統 (Suguru Tanaka) のホームページです. 経歴やお仕事、所属、リンク、ご連絡先など載せています. 今後ポートフォリオや簡易なブログも載せるかもしれません.</p>
-                                        <p class="mt-3 mb-0">データサイエンティスト 田中統 (Suguru Tanaka) のホームページです. 経歴やお仕事、所属、リンク、ご連絡先など載せています. 今後ポートフォリオや簡易なブログも載せるかもしれません.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <div
+      class="portfolio-single modal fade"
+      id="portfolio-single"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolioModalScrollable"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content text-muted">
+          <div class="modal-header">
+            <h5 class="modal-title" id="portfolioModalScrollable">My Work</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="pt-4 pb-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-10 mx-auto">
+                    <div class="text-center">
+                      <h2 class="mb-3">
+                        Single <span class="base-color"> Portfolio</span>
+                      </h2>
+                      <p class="max-width-450">
+                        In a professional context it often happens that private
+                        clients corder a publication to be made.
+                      </p>
                     </div>
+                    <div class="row contact-info mt-5">
+                      <div class="col-md-4">
+                        <div class="text-center">
+                          <div>
+                            <h6>Created by:</h6>
+                            <p class="mb-0">Jessy Doe</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 p-title-border mt-3 mt-md-0">
+                        <div class="text-center">
+                          <div>
+                            <h6 class="contact_detail-title">Completed on:</h6>
+                            <p class="mb-0">September 30, 2019</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mt-3 mt-md-0">
+                        <div class="text-center">
+                          <div>
+                            <h6>Skills:</h6>
+                            <p class="mb-0">HTML5 / PHP / CSS3</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-5">
+                      <div class="portfolio-single-item image-border">
+                        <img
+                          src="https://placehold.co/600x450"
+                          class="d-block"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <div class="text-md-left mt-5">
+                      <p class="my-3">
+                        データサイエンティスト 田中統 (Suguru Tanaka)
+                        のホームページです.
+                        経歴やお仕事、所属、リンク、ご連絡先など載せています.
+                        今後ポートフォリオや簡易なブログも載せるかもしれません.
+                      </p>
+                      <p class="mt-3 mb-0">
+                        データサイエンティスト 田中統 (Suguru Tanaka)
+                        のホームページです.
+                        経歴やお仕事、所属、リンク、ご連絡先など載せています.
+                        今後ポートフォリオや簡易なブログも載せるかもしれません.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!--  Portfolio Single Modal End  -->
 
     <!-- Blog Single Modal Start -->
-    <div class="blog-single modal fade" id="blog-single" tabindex="-1" role="dialog" aria-labelledby="blogModalScrollable" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="blogModalScrollable">Blog Single Modal</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <!--   Blog-single   Start -->
-                    <div class="pt-4 pb-5 text-muted">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-10 mx-auto blog">
-                                    <div class="rounded">
-                                        <div class="text-md-left">
-                                            <h1 class="mb-4 h4">The best way to become a good web designer</h1>
-                                            <div class="entry-meta mb-4">
-                                                <ul class="list-inline">
-                                                    <li class="list-inline-item">
-                                                        <a class="base-color" href="blog.html"><i class="fa fa-calendar"></i>21 Jul 2020</a>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <a class="base-color" href="blog.html" title="Posts by admin" rel="author"><i class="fa fa-user"></i>admin</a>                                    
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <a class="base-color" href="blog.html" rel="category tag"><i class="fa fa-folder-open"></i>Logo Design</a>                                    
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <a class="base-color" href="blog.html"><i class="fa fa-comments"></i>No Comments.</a>                                 
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="entry-image image-border mb-4">
-                                                <img src="https://placehold.co/720x480" alt="">
-                                            </div>
-                                            <div class="entry-content box-border p-3">
-                                                <p>These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. Only for show.</p>
-                                                <div class="px-md-5 px-3 py-4 quotation">
-                                                    <i class="base-color lni-quotation size-md"></i>
-                                                    <h6 class="base-color font-italic mb-0">We Love Buna, lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper.</h6>
-                                                </div>
-                                                <p class="my-3">This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. Only for show.</p>
-                                                <ul class="mt-4 checkmark-list mb-0">
-                                                    <!-- Item-01 -->
-                                                    <li class="mb-2">
-                                                        <span>The purpose of lorem ipsum is to create</span>
-                                                    </li>
-                                                    <!-- Item-02 -->
-                                                    <li class="mb-2">
-                                                        <span>In particular, the garbled words of lorem ipsum</span>
-                                                    </li>
-                                                    <!-- Item-03 -->
-                                                    <li class="">
-                                                        <span>occasionally circumstances occur in which toil</span>
-                                                    </li>
-                                                </ul>
-                                                <p class="mt-3 mb-0">These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. Only for show.</p>
-                                            </div>
-                                            <!-- Comments -->
-                                            <h2 class="text-left my-4">Comments</h2>
-                                            <div id="user-comments" class="comments mt-4 box-border">
-                                                <ul class="comment even thread-even depth-1 list-unstyled comments-list m-0" id="comment-1">
-                                                    <li id="div-comment-1" class="p-3">
-                                                        <div class="comment-wrap">
-                                                            <div class="comment-image float-left">
-                                                                <div class="commnet-image-border">
-                                                                    <img alt="/" src="https://placehold.co/85x85" class="avatar avatar-65 photo" height="65" width="65">
-                                                                </div>
-                                                            </div>
-                                                            <div class="comment-content">
-                                                                <div class="comment-author">
-                                                                    <span>Jessy Doe</span>
-                                                                    <p class="text-muted comment-date">July 23, 2020 at 9:32 am</p>
-                                                                    <a href="#" class="comment-reply-link"><i class="fa fa-reply"></i> Reply</a>
-                                                                </div>
-                                                                <div class="comment-text">
-                                                                    <span>Hi, this is a comment. To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard. Commenter avatars come from Gravatar.</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li id="div-comment-1-2" class="reply-comment p-3">
-                                                        <div class="comment-wrap">
-                                                            <div class="comment-image float-left">
-                                                                <div class="commnet-image-border">
-                                                                    <img alt="/" src="https://placehold.co/85x85" class="avatar avatar-65 photo" height="65" width="65">
-                                                                </div>
-                                                            </div>
-                                                            <div class="comment-content">
-                                                                <div class="comment-author">
-                                                                    <span>Marry Doe</span>
-                                                                    <p class="text-muted comment-date">July 23, 2020 at 9:32 am</p>
-                                                                    <a href="#" class="comment-reply-link"><i class="fa fa-reply"></i> Reply</a>
-                                                                </div>
-                                                                <div class="comment-text">
-                                                                    <span>Hi, this is a comment. To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard. Commenter avatars come from Gravatar.</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <div class="comments-devider"></div>
-                                                <ul class="comment even thread-even depth-1 list-unstyled comments-list m-0" id="comment-2">
-                                                    <li id="div-comment-2" class="p-3">
-                                                        <div class="comment-wrap">
-                                                            <div class="comment-image float-left">
-                                                                <div class="commnet-image-border">
-                                                                    <img alt="/" src="https://placehold.co/85x85" class="avatar avatar-65 photo" height="65" width="65">
-                                                                </div>
-                                                            </div>
-                                                            <div class="comment-content">
-                                                                <div class="comment-author">
-                                                                    <span>Michael Anderson</span>
-                                                                    <p class="text-muted comment-date">July 23, 2020 at 9:32 am</p>
-                                                                    <a href="#" class="comment-reply-link"><i class="fa fa-reply"></i> Reply</a>
-                                                                </div>
-                                                                <div class="comment-text">
-                                                                    <span>Hi, this is a comment. To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard. Commenter avatars come from Gravatar.</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <div class="comments-devider"></div>
-                                                <ul class="comment even thread-even depth-1 list-unstyled comments-list m-0" id="comment-3">
-                                                    <li id="div-comment-3" class="p-3">
-                                                        <div class="comment-wrap">
-                                                            <div class="comment-image float-left">
-                                                                <div class="commnet-image-border">
-                                                                    <img alt="/" src="https://placehold.co/85x85" class="avatar avatar-65 photo" height="65" width="65">
-                                                                </div>
-                                                            </div>
-                                                            <div class="comment-content">
-                                                                <div class="comment-author">
-                                                                    <span>Olivia Anderson</span>
-                                                                    <p class="text-muted comment-date">July 23, 2020 at 9:32 am</p>
-                                                                    <a href="#" class="comment-reply-link"><i class="fa fa-reply"></i> Reply</a>
-                                                                </div>
-                                                                <div class="comment-text">
-                                                                    <span>Hi, this is a comment. To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard. Commenter avatars come from Gravatar.</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!--Blog Reply-->
-                                            <div class="contact mt-4">
-                                                <div class="contact-form">
-                                                    <h2 class="text-left mb-4">Leave a reply</h2>
-                                                    <form>
-                                                        <div class="row">
-                                                            <div class="col-lg-6 form-item">
-                                                                <div class="form-group">
-                                                                    <input name="name" id="blog-name" type="text" class="form-control" placeholder="Your Name*" required>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-6 form-item">
-                                                                <div class="form-group">
-                                                                    <input name="email" id="blog-email" type="email" class="form-control" placeholder="Your Email*" required>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12 form-item">
-                                                                <div class="form-group">
-                                                                    <textarea name="comments" id="blog-comments" rows="4" class="form-control" placeholder="Your message..."></textarea>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-12 mt-4 text-left">
-                                                                <div class="button-border">
-                                                                    <button type="submit" class="pill-button" id="blog-submit-btn">Submit</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+    <div
+      class="blog-single modal fade"
+      id="blog-single"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="blogModalScrollable"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="blogModalScrollable">
+              Blog Single Modal
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!--   Blog-single   Start -->
+            <div class="pt-4 pb-5 text-muted">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-10 mx-auto blog">
+                    <div class="rounded">
+                      <div class="text-md-left">
+                        <h1 class="mb-4 h4">
+                          The best way to become a good web designer
+                        </h1>
+                        <div class="entry-meta mb-4">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <a class="base-color" href="blog.html"
+                                ><i class="fa fa-calendar"></i>21 Jul 2020</a
+                              >
+                            </li>
+                            <li class="list-inline-item">
+                              <a
+                                class="base-color"
+                                href="blog.html"
+                                title="Posts by admin"
+                                rel="author"
+                                ><i class="fa fa-user"></i>admin</a
+                              >
+                            </li>
+                            <li class="list-inline-item">
+                              <a
+                                class="base-color"
+                                href="blog.html"
+                                rel="category tag"
+                                ><i class="fa fa-folder-open"></i>Logo Design</a
+                              >
+                            </li>
+                            <li class="list-inline-item">
+                              <a class="base-color" href="blog.html"
+                                ><i class="fa fa-comments"></i>No Comments.</a
+                              >
+                            </li>
+                          </ul>
                         </div>
+                        <div class="entry-image image-border mb-4">
+                          <img src="https://placehold.co/720x480" alt="" />
+                        </div>
+                        <div class="entry-content box-border p-3">
+                          <p>
+                            These words are here to provide the reader with a
+                            basic impression of how actual text will appear in
+                            its final presentation. This is dummy copy. It is
+                            not meant to be read. It has been placed here solely
+                            to demonstrate the look and feel of finished,
+                            typeset text. These words are here to provide the
+                            reader with a basic impression of how actual text
+                            will appear in its final presentation. Only for
+                            show.
+                          </p>
+                          <div class="px-md-5 px-3 py-4 quotation">
+                            <i class="base-color lni-quotation size-md"></i>
+                            <h6 class="base-color font-italic mb-0">
+                              We Love Buna, lorem ipsum dolor sit amet,
+                              consectetur adipiscing elit. Vestibulum id ligula
+                              felis euismod semper.
+                            </h6>
+                          </div>
+                          <p class="my-3">
+                            This is dummy copy. It is not meant to be read. It
+                            has been placed here solely to demonstrate the look
+                            and feel of finished, typeset text. These words are
+                            here to provide the reader with a basic impression
+                            of how actual text will appear in its final
+                            presentation. Only for show.
+                          </p>
+                          <ul class="mt-4 checkmark-list mb-0">
+                            <!-- Item-01 -->
+                            <li class="mb-2">
+                              <span
+                                >The purpose of lorem ipsum is to create</span
+                              >
+                            </li>
+                            <!-- Item-02 -->
+                            <li class="mb-2">
+                              <span
+                                >In particular, the garbled words of lorem
+                                ipsum</span
+                              >
+                            </li>
+                            <!-- Item-03 -->
+                            <li class="">
+                              <span
+                                >occasionally circumstances occur in which
+                                toil</span
+                              >
+                            </li>
+                          </ul>
+                          <p class="mt-3 mb-0">
+                            These words are here to provide the reader with a
+                            basic impression of how actual text will appear in
+                            its final presentation. This is dummy copy. It is
+                            not meant to be read. It has been placed here solely
+                            to demonstrate the look and feel of finished,
+                            typeset text. These words are here to provide the
+                            reader with a basic impression of how actual text
+                            will appear in its final presentation. Only for
+                            show.
+                          </p>
+                        </div>
+                        <!-- Comments -->
+                        <h2 class="text-left my-4">Comments</h2>
+                        <div
+                          id="user-comments"
+                          class="comments mt-4 box-border"
+                        >
+                          <ul
+                            class="comment even thread-even depth-1 list-unstyled comments-list m-0"
+                            id="comment-1"
+                          >
+                            <li id="div-comment-1" class="p-3">
+                              <div class="comment-wrap">
+                                <div class="comment-image float-left">
+                                  <div class="commnet-image-border">
+                                    <img
+                                      alt="/"
+                                      src="https://placehold.co/85x85"
+                                      class="avatar avatar-65 photo"
+                                      height="65"
+                                      width="65"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="comment-content">
+                                  <div class="comment-author">
+                                    <span>Jessy Doe</span>
+                                    <p class="text-muted comment-date">
+                                      July 23, 2020 at 9:32 am
+                                    </p>
+                                    <a href="#" class="comment-reply-link"
+                                      ><i class="fa fa-reply"></i> Reply</a
+                                    >
+                                  </div>
+                                  <div class="comment-text">
+                                    <span
+                                      >Hi, this is a comment. To get started
+                                      with moderating, editing, and deleting
+                                      comments, please visit the Comments screen
+                                      in the dashboard. Commenter avatars come
+                                      from Gravatar.</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li id="div-comment-1-2" class="reply-comment p-3">
+                              <div class="comment-wrap">
+                                <div class="comment-image float-left">
+                                  <div class="commnet-image-border">
+                                    <img
+                                      alt="/"
+                                      src="https://placehold.co/85x85"
+                                      class="avatar avatar-65 photo"
+                                      height="65"
+                                      width="65"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="comment-content">
+                                  <div class="comment-author">
+                                    <span>Marry Doe</span>
+                                    <p class="text-muted comment-date">
+                                      July 23, 2020 at 9:32 am
+                                    </p>
+                                    <a href="#" class="comment-reply-link"
+                                      ><i class="fa fa-reply"></i> Reply</a
+                                    >
+                                  </div>
+                                  <div class="comment-text">
+                                    <span
+                                      >Hi, this is a comment. To get started
+                                      with moderating, editing, and deleting
+                                      comments, please visit the Comments screen
+                                      in the dashboard. Commenter avatars come
+                                      from Gravatar.</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="comments-devider"></div>
+                          <ul
+                            class="comment even thread-even depth-1 list-unstyled comments-list m-0"
+                            id="comment-2"
+                          >
+                            <li id="div-comment-2" class="p-3">
+                              <div class="comment-wrap">
+                                <div class="comment-image float-left">
+                                  <div class="commnet-image-border">
+                                    <img
+                                      alt="/"
+                                      src="https://placehold.co/85x85"
+                                      class="avatar avatar-65 photo"
+                                      height="65"
+                                      width="65"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="comment-content">
+                                  <div class="comment-author">
+                                    <span>Michael Anderson</span>
+                                    <p class="text-muted comment-date">
+                                      July 23, 2020 at 9:32 am
+                                    </p>
+                                    <a href="#" class="comment-reply-link"
+                                      ><i class="fa fa-reply"></i> Reply</a
+                                    >
+                                  </div>
+                                  <div class="comment-text">
+                                    <span
+                                      >Hi, this is a comment. To get started
+                                      with moderating, editing, and deleting
+                                      comments, please visit the Comments screen
+                                      in the dashboard. Commenter avatars come
+                                      from Gravatar.</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="comments-devider"></div>
+                          <ul
+                            class="comment even thread-even depth-1 list-unstyled comments-list m-0"
+                            id="comment-3"
+                          >
+                            <li id="div-comment-3" class="p-3">
+                              <div class="comment-wrap">
+                                <div class="comment-image float-left">
+                                  <div class="commnet-image-border">
+                                    <img
+                                      alt="/"
+                                      src="https://placehold.co/85x85"
+                                      class="avatar avatar-65 photo"
+                                      height="65"
+                                      width="65"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="comment-content">
+                                  <div class="comment-author">
+                                    <span>Olivia Anderson</span>
+                                    <p class="text-muted comment-date">
+                                      July 23, 2020 at 9:32 am
+                                    </p>
+                                    <a href="#" class="comment-reply-link"
+                                      ><i class="fa fa-reply"></i> Reply</a
+                                    >
+                                  </div>
+                                  <div class="comment-text">
+                                    <span
+                                      >Hi, this is a comment. To get started
+                                      with moderating, editing, and deleting
+                                      comments, please visit the Comments screen
+                                      in the dashboard. Commenter avatars come
+                                      from Gravatar.</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <!--Blog Reply-->
+                        <div class="contact mt-4">
+                          <div class="contact-form">
+                            <h2 class="text-left mb-4">Leave a reply</h2>
+                            <form>
+                              <div class="row">
+                                <div class="col-lg-6 form-item">
+                                  <div class="form-group">
+                                    <input
+                                      name="name"
+                                      id="blog-name"
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Your Name*"
+                                      required
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 form-item">
+                                  <div class="form-group">
+                                    <input
+                                      name="email"
+                                      id="blog-email"
+                                      type="email"
+                                      class="form-control"
+                                      placeholder="Your Email*"
+                                      required
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-12 form-item">
+                                  <div class="form-group">
+                                    <textarea
+                                      name="comments"
+                                      id="blog-comments"
+                                      rows="4"
+                                      class="form-control"
+                                      placeholder="Your message..."
+                                    ></textarea>
+                                  </div>
+                                </div>
+                                <div class="col-sm-12 mt-4 text-left">
+                                  <div class="button-border">
+                                    <button
+                                      type="submit"
+                                      class="pill-button"
+                                      id="blog-submit-btn"
+                                    >
+                                      Submit
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!--  Blog Single Modal End  -->
 
     <!--   Header Start -->
     <header>
-        <div class="header-navbar h-100">
-            <a class="navbar-brand" href="#"><b>S</b><span>Tanaka</span></a>
-            <ul class="list-group menu text-center" id="menu">
-                <li class="list-group-item"><a class="active" href="#title"><i class="fa fa-home"></i><span>home</span></a></li>
-                <li class="list-group-item"><a href="#about"><i class="fa fa-user"></i><span>about</span></a></li>
-                <li class="list-group-item"><a href="#resume"><i class="fa fa-address-book"></i><span>resume</span></a></li>
-                <!-- <li class="list-group-item"><a href="#portfolio"><i class="fa fa-briefcase"></i><span>works</span></a></li> -->
-                <!-- <li class="list-group-item"><a href="#blog"><i class="fa fa-file-text"></i><span>blog</span></a></li> -->
-                <li class="list-group-item"><a href="#contact"><i class="fa fa-envelope-open"></i><span>contact</span></a></li>
-            </ul>
-            <div class="menu-toggler">
-                <span>
-                    <i class="text-white lni-menu"></i>
-                </span>
-            </div>
+      <div class="header-navbar h-100">
+        <a class="navbar-brand" href="#"><b>S</b><span>Tanaka</span></a>
+        <ul class="list-group menu text-center" id="menu">
+          <li class="list-group-item">
+            <a class="active" href="#title"
+              ><i class="fa fa-home"></i><span>home</span></a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="#about"><i class="fa fa-user"></i><span>about</span></a>
+          </li>
+          <li class="list-group-item">
+            <a href="#resume"
+              ><i class="fa fa-address-book"></i><span>resume</span></a
+            >
+          </li>
+          <!-- <li class="list-group-item"><a href="#portfolio"><i class="fa fa-briefcase"></i><span>works</span></a></li> -->
+          <!-- <li class="list-group-item"><a href="#blog"><i class="fa fa-file-text"></i><span>blog</span></a></li> -->
+          <li class="list-group-item">
+            <a href="#contact"
+              ><i class="fa fa-envelope-open"></i><span>contact</span></a
+            >
+          </li>
+        </ul>
+        <div class="menu-toggler">
+          <span>
+            <i class="text-white lni-menu"></i>
+          </span>
         </div>
+      </div>
     </header>
     <!--   Header End   -->
 
     <main id="main">
-
-        <!--  Hero Start  -->
-        <section id="title" class="section hero-06 active">
-            <div class="display-table">
-                <div class="display-content">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 order-2 order-lg-1">
-                                <div class="hero-content">
-                                    <h1 class="mb-3">田中統 | Suguru K. Tanaka</h1>
-                                    <h4 class="text-capitalize mb-0"><span class="element" data-elements="データサイエンティスト, Statistician(統計家), Big Data Lab 代表."></span></h4>
-                                    <p class="max-width-450 mx-0 my-4">データからビジネスの価値を生むお仕事をしています.</p>
-                                    <ul class="list-inline hero-social">
-                                        <li class="list-inline-item">
-                                            <a href="https://www.facebook.com/suguru.tanaka.167">
-                                                <img src="assets/img/facebook.svg" alt="">
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="https://twitter.com/st_data_science">
-                                                <img src="assets/img/twitter.svg" alt="">
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="https://github.com/st-data-science">
-                                                <img src="assets/img/github.svg" alt="">
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="https://www.linkedin.com/in/suguru-tanaka">
-                                                <img src="assets/img/linkedin.svg" alt="">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2">
-                                <div class="hero-images">
-                                    <div class="square">
-                                        <img src="assets/img/element_square.png" alt="/">
-                                    </div>
-                                    <div class="circle"></div>
-                                    <div class="circle-2"></div>
-                                    <div class="circle-3"></div>
-                                    <div class="floating"></div>
-                                    <div class="rounded-circle">
-                                        <img src="assets/img/home.jpeg" alt="/" class="rounded-circle img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--  Hero End  -->
-
-        <!--   About Start   -->
-        <section id="about" class="section about">
-            <div class="display-table">
-                <div class="display-content">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="text-center title">
-                                    <h2 class="text-dark">About <span class="base-color">Me</span></h2>
-                                    <p class="text-muted max-width-450 mb-5">統計とエンジニアリングに興味のある<br>経営者 兼 データサイエンティストです.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="image-border">
-                                    <img src="assets/img/about.jpeg" alt="/">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 mt-4 mt-lg-0">
-                                <div class="personal-item ">
-                                    <!-- <h3 class="text-dark mt-4 mt-lg-0"><span class="base-color">田中統</span> データサイエンティスト</h3> -->
-                                    <h3 class="text-dark mt-4 mt-lg-0">略歴 <span class="base-color"> Profile</span></h3>
-                                    <div class="row">
-                                        <div class="col-12 personal-info">
-                                            <ul class="list-unstyled pt-4">
-                                                Big Data Lab 代表. 英国の王立統計学会から認定を受けた統計学者. 
-                                                社会科学の分野で世界2位の研究機関 LSE で MSc Data Science のプログラムに参加し, M. Vojnovic に師事. 
-                                                データサイエンスの優等修士号(理学)を授与されている.
-                                                <br><br>
-                                                幼少時代をカリフォルニア州で過ごす. 
-                                                東工大で社会工学を専攻し, 在学中スウェーデン王立工科大学で統計科学および統計的機械学習の研究に従事した.  
-                                                東京工業大学を副総代として卒業後, 新卒で某ユニコーン企業にデータサイエンティストとして参画. 
-                                                その後 Big Data Lab を創業し, データ解析・AI開発に関する業務を幅広く支援している.
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Count up Start -->
-
-                        <!--  Count up End  -->
-                        <!--  Service Start  -->
-                        <div class="services colorfull-service">
-                            <div class="row mt-5 ">
-                                <div class="col-12">
-                                    <!-- <h3 class="mb-0 text-dark">What <span class="base-color">I'm Doing</span></h3> -->
-                                    <h3 class="mb-0 text-dark">お仕事 <span class="base-color">What I do</span></h3>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <!-- Item 01 -->
-                                <div class="col-lg-4 text-left">
-                                    <div class="image-border">
-                                        <!-- <div class="services-item box-hover-border data-background" data-color="#fbdd62"> -->
-                                        <div class="services-item box-hover-border data-background" data-color="#1c64ac">
-                                            <div class="float-left mt-lg-1 d-inline-block services-icon">
-                                                <img src="assets/img/stat.png" alt="/">
-                                            </div>
-                                            <div class="services-content">
-                                                <h5 class="mb-3 text-white">統計分析・モデリング</h5>
-                                                <p class="text-white mb-0">主に統計的な視点から, データを分析します. システムやサービスの効果検証, 最適化など</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Item 02 -->
-                                <div class="col-lg-4 text-left">
-                                    <div class="image-border">
-                                        <div class="services-item box-hover-border data-background" data-color="#fbdd62">
-                                            <div class="float-left mt-lg-1 d-inline-block services-icon">
-                                                <img src="assets/img/code.png" alt="/">
-                                            </div>
-                                            <div class="services-content">
-                                                <h5 class="mb-3 text-dark">機械学習エンジニアリング</h5>
-                                                <p class="text-muted mb-0">データを使ったアルゴリズムの実装やその運用をします. 予測モデルやレコメンドモデルの実装 など</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Item 03 -->
-                                <div class="col-lg-4 text-left">
-                                    <div class="image-border">
-                                        <div class="services-item box-hover-border data-background" data-color="#1c64ac">
-                                            <div class="float-left mt-lg-1 d-inline-block services-icon">
-                                                <img src="assets/img/server.png" alt="/">
-                                            </div>
-                                            <div class="services-content">
-                                                <h5 class="mb-3 text-white">データ基盤開発</h5>
-                                                <p class="text-white mb-0">データを取得し,蓄積しするデータ基盤を作って運用します. 主にSQLを使います</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--   Service End   -->
-                        <!--   Client Start  -->
-                        <div class="testimonial mt-5">
-                            <div class="col-12">
-                                <h3 class="mb-0 text-dark">ご推薦 <span class="base-color"> Testimonials</span></h3>
-                            </div>
-                            <div class="owl-carousel">
-                                <!-- Testimonial Item-01 -->
-                                <div class="testimonial-item box-border">
-                                    <div class="testimonial-image">
-                                        <div class="testimonial-image-border">
-                                            <img src="assets/img/michel.jpg" alt="/">
-                                        </div>
-                                    </div>
-                                    <p class="mb-0 mt-2 text-muted">優れた分析能力と数理統計学の深い知識を持つ, 信頼のおける真のチームプレーヤーです</p>
-                                    <span class="d-block mt-3 font-weight-bold mr-2">Michel P.S., <small class="text-muted">NASDAQ, Sweden</small></span>
-                                </div>
-                                <!-- Testimonial Item-02 -->
-                                <div class="testimonial-item box-border">
-                                    <div class="testimonial-image">
-                                        <div class="testimonial-image-border">
-                                            <img src="assets/img/dima.jpg" alt="/">
-                                        </div>
-                                    </div>
-                                    <p class="mb-0 mt-2 text-muted">科学的な厳密さと, データの課題を解決するための実用的なアプローチに大きな情熱を持った, 熟練のデータサイエンティストです</p>
-                                    <span class="d-block mt-3 font-weight-bold mr-2">Dima Karamshuk, <small class="text-muted">Facebook, UK</small></span>
-                                </div>
-                                <!-- Testimonial Item-03 -->
-                                <div class="testimonial-item box-border">
-                                    <div class="testimonial-image">
-                                        <div class="testimonial-image-border">
-                                            <img src="assets/img/naganuma.jpg" alt="/">
-                                        </div>
-                                    </div>
-                                    <p class="mb-0 mt-2 text-muted">統計のバックグラウンドを必要とする研究で, 初学者にとって混同しがちな概念を, 丁寧に解説していただけました</p>
-                                    <span class="d-block mt-3 font-weight-bold mr-2">Hiroki Naganuma, <small class="text-muted">MILA, Canada</small></span>
-                                </div>
-                                <!-- Testimonial Item-04 -->
-                                <div class="testimonial-item box-border">
-                                    <div class="testimonial-image">
-                                        <div class="testimonial-image-border">
-                                            <img src="assets/img/marion.jpg" alt="/">
-                                        </div>
-                                    </div>
-                                    <p class="mb-0 mt-2 text-muted">自身と異なる思想や文化への理解と柔軟さを兼ね備えた信頼のできる人物です</p>
-                                    <span class="d-block mt-3 font-weight-bold mr-2">Marion F.E., <small class="text-muted">AXA, France</small></span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--    Client End   -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--    About End    -->
-
-        <!--    Resume Start   -->
-        <section id="resume" class="section resume">
-            <div class="display-table">
-                <div class="display-content">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="text-center title">
-                                    <h2 class="text-dark">Skills <span class="base-color">&</span> Associations</h2>
-                                    <p class="text-muted max-width-450 mb-5">過去と現在所属している組織や、スキルやツールです.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--    TimeLine Start   -->
-                        <div class="row">
-
-                            <div class="col-lg-6 mt-5 mt-lg-0">
-                                <h3 class="text-dark">
-                                    <i class="lni-pencil base-color"></i>現在の所属
-                                </h3>
-                                <div class="timeline-items box-border colorfull-timeline">
-                                    <!--    Item 01   -->
-                                    <div class="timeline-item timeline-border" data-color="#ff5380">
-                                        <div class="timeline-icon data-background" data-color="#ff5380"></div>
-                                        <div class="timeline-contents">
-                                            <div class="time-line-header">
-                                                <h6 class="timeline-title"><a href="https://www.bdlab.or.jp" style="color:#212529">一般社団法人 Big Data Lab</a></h6>
-                                                <p class="timeline-year">代表理事 兼 CEO</p>
-                                            </div>
-                                            <div class="timeline-content">
-                                                <p>Big Data Lab は組織や国境を超えたデータサイエンティストによる職能団体です.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--    Item 02   -->
-                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
-                                        <div class="timeline-icon data-background" data-color="#fbdd62"></div>
-                                        <div class="timeline-contents">
-                                            <div class="time-line-header">
-                                                <h6 class="timeline-title"><a href="https://www.rss.org.uk/" style="color:#212529">Royal Statistical Society, RSS</a></h6>
-                                                <p class="timeline-year">専門資格認定会員 (Professionally Qualified Fellow)</p>
-                                            </div>
-                                            <div class="timeline-content">
-                                                <p>RSSはイギリスに本拠地を置く, 1834年に設立された世界最大の統計学会の内の一つです.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--    Item 03   -->
-                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
-                                        <div class="timeline-icon data-background" data-color="#0bceaf"></div>
-                                        <div class="timeline-contents">
-                                            <div class="time-line-header">
-                                                <h6 class="timeline-title"><a href="https://www.datascientist.or.jp/" style="color:#212529">データサイエンティスト協会</a></h6>
-                                                <p class="timeline-year">正会員</p>
-                                            </div>
-                                            <div class="timeline-content">
-                                                <p>データサイエンティスト協会は、新しい職種であるデータサイエンティストに必要となるスキル・知識を定義する団体です.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <h3 class="text-dark">
-                                    <i class="lni-graduation base-color"></i>
-                                    所属していた機関
-                                </h3>
-                                <div class="timeline-items box-border colorfull-timeline">
-                                    <!--    Item 01   -->
-                                    <div class="timeline-item timeline-border" data-color="#ff5380">
-                                        <div class="timeline-icon data-background" data-color="#ff5380"></div>
-                                        <div class="timeline-contents">
-                                            <div class="time-line-header">
-                                                <h6 class="timeline-title"><a href="https://www.lse.ac.uk/" style="color:#212529">London School of Economics and Political Science, LSE</a></h6>
-                                                <p class="timeline-year">統計学科 (Department of Statistics)</p>
-                                            </div>
-                                            <div class="timeline-content">
-                                                <!-- <p>LSEは社会科学, 政治科学, 経済科学の分野の教育と研究に特化した, 学術的卓越性と革新性の国際的な中心地です.</p> -->
-                                                <p>倍率30倍のプログラム MSc Data Science に、日本人としておそらく初めて採択されました。全プログラムで優 (Distinction) を取り, Facebook との共同研究プロジェクトに従事しました. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--    Item 02   -->
-                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
-                                        <div class="timeline-icon data-background" data-color="#fbdd62"></div>
-                                        <div class="timeline-contents">
-                                            <div class="time-line-header">
-                                                <h6 class="timeline-title"><a href="https://www.kth.se/en" style="color:#212529">Royal Institute of Technology, KTH</a></h6>
-                                                <p class="timeline-year">数理工学科 (School of Engineering Sciences)</p>
-                                            </div>
-                                            <div class="timeline-content">
-                                                <!-- <p>KTHはストックホルムにある理工系総合大学で、特に情報理工学と自然科学の領域において世界的に評価されるヨーロッパ有数の工科大学です.</p> -->
-                                                <p>機会があり、スウェーデンで機械学習や確率論に関する研究とプロジェクトを行ないました。
-                                                    データサイエンティストとしての基礎はここで身についたと思います。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--    Item 03   -->
-                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
-                                        <div class="timeline-icon data-background" data-color="#0bceaf"></div>
-                                        <div class="timeline-contents">
-                                            <div class="time-line-header">
-                                                <h6 class="timeline-title"><a href="https://www.titech.ac.jp/" style="color:#212529">東京工業大学</a></h6>
-                                                <p class="timeline-year">工学部 社会工学科 (Department of Social Engineering)</p>
-                                            </div>
-                                            <div class="timeline-content">
-                                                <!-- <p>東工大は, 130年以上の歴史を持つ, 日本を代表する科学技術系の国立大学です.</p> -->
-                                                <p>「社会を数理的に解く」をテーマに、応用数学、統計、経済学を勉強しました。新しい経済手法を提案した学士論文が最優秀に採択され, 副総代として卒業しました。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--    TimeLine End   -->
-                        <!--  Skill Start  -->
-                        <div class="row mt-5">
-                            <!-- Skill -->
-                            <div class="col-lg-6">
-                                <div>
-                                    <h3 class="mb-0 mt-5 mt-lg-0">データサイエンス <span class="base-color"> 領域</span></h3>
-                                </div>
-                                <div class="language-bar box-border">
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">統計解析 - <span>Statistical Analysis</span></h4>
-                                    </div>
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">(統計的)機械学習 - <span>Statistical Machine Learning</span></h4>
-                                    </div>
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">自然言語処理 - <span>Natural Language Processing</span></h4>
-                                    </div>
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">検索エンジン・レコメンドエンジン - <span>Search Engine / Recommender System</span></h4>
-                                    </div>
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">強化学習 - <span>Reinforcement Learning</span></h4>
-                                    </div>
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">深層学習 - <span>Deep Learning</span></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div>
-                                    <h3 class="mb-0 mt-5 mt-lg-0">よく使うツール <span class="base-color"> ソフトウェア</span></h3>
-                                </div>
-                                <div class="language-bar box-border">
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">Python <span> </span></h4>
-                                    </div>
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">R <span> </span></h4>
-                                    </div>
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">PostgreSQL <span> </span></h4>
-                                    </div>
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">MySQL/MariaDB <span> </span></h4>
-                                    </div>
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">BigQuery/RDS <span> </span></h4>
-                                    </div>
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">Bash/Zsh <span> </span></h4>
-                                    </div>
-                                    <div class="language-skill row">
-                                        <h4 class="col-12 text-left mb-0">AWS, Git, VI, VSCode, Jupyter<span> </span></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--   Skill End   -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--     Resume End    -->
-
-        <!-- Portfolio Start -->
-        <section id="portfolio" class="section portfolio">
-            <div class="display-table">
-                <div class="display-content">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="text-center title">
-                                    <h2 class="text-dark">My <span class="base-color">Works</span></h2>
-                                    <p class="text-muted mb-5 max-width-450">In a professional context it often happens that private clients corder a publication to be made.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <!--   Portfolio Filters   -->
-                            <ul id="portfolio-filter" class="list-unstyled list-inline mb-0 col-lg-12 text-center portfolio-filter">
-                                <li class="button-border list-inline-item">
-                                    <a href="#" data-filter="*" class="pill-button active">All</a>
-                                </li>
-                                <li class="button-border list-inline-item">
-                                    <a href="#" data-filter=".webdesign" class="pill-button">Web Design</a>
-                                </li>
-                                <li class="button-border list-inline-item">
-                                    <a href="#" data-filter=".mobiledesign" class="pill-button">Mobile Design</a>
-                                </li>
-                                <li class="button-border list-inline-item">
-                                    <a href="#" data-filter=".seo" class="pill-button">Seo</a>
-                                </li>
-                                <li class="button-border list-inline-item">
-                                    <a href="#" data-filter=".graphic" class="pill-button">Graphic</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="portfolio-items row">
-                            <!-- Item 01 -->
-                            <div class="col-lg-4 portfolio-item seo">
-                                <div class="image-border">
-                                    <div class="portfolio-item-content">
-                                        <img src="https://placehold.co/600x450" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>
-                                                    <a href="https://placehold.co/600x450" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
-                                                </div>
-                                                <h5 class="mt-3 mb-0">体脂肪率の予測モデル作成</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 02 -->
-                            <div class="col-lg-4 portfolio-item graphic webdesign">
-                                <div class="image-border">
-                                    <div class="portfolio-item-content">
-                                        <img src="https://placehold.co/600x450" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>
-                                                    <a href="https://placehold.co/600x450" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
-                                                </div>
-                                                <h5 class="mt-3 mb-0">車両保険の保険料算定</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 03 -->
-                            <div class="col-lg-4 portfolio-item webdesign graphic">
-                                <div class="image-border">
-                                    <div class="portfolio-item-content">
-                                        <img src="https://placehold.co/600x450" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>
-                                                    <a href="https://placehold.co/600x450" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
-                                                </div>
-                                                <h5 class="mt-3 mb-0">新しい経済手法の考案</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 04 -->
-                            <div class="col-lg-4 portfolio-item mobiledesign webdesign">
-                                <div class="image-border">
-                                    <div class="portfolio-item-content">
-                                        <img src="https://placehold.co/600x450" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>
-                                                    <a href="https://placehold.co/600x450" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
-                                                </div>
-                                                <h5 class="mt-3 mb-0">交通時間可視化アプリ開発</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 05 -->
-                            <div class="col-lg-4 portfolio-item mobiledesign seo">
-                                <div class="image-border">
-                                    <div class="portfolio-item-content">
-                                        <img src="https://placehold.co/600x450" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>
-                                                    <a href="https://placehold.co/600x450" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
-                                                </div>
-                                                <h5 class="mt-3 mb-0">スパースモデルの比較研究</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 06 -->
-                            <div class="col-lg-4 portfolio-item mobiledesign">
-                                <div class="image-border">
-                                    <div class="portfolio-item-content">
-                                        <img src="https://placehold.co/600x450" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>
-                                                    <a href="https://placehold.co/600x450" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
-                                                </div>
-                                                <h5 class="mt-3 mb-0">外貨の連動分析</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 07 -->
-                            <div class="col-lg-4 portfolio-item mobiledesign webdesign">
-                                <div class="image-border">
-                                    <div class="portfolio-item-content">
-                                        <img src="https://placehold.co/600x450" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>
-                                                    <a href="https://placehold.co/600x450" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
-                                                </div>
-                                                <h5 class="mt-3 mb-0">オンラインな異常点検知</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 08 -->
-                            <div class="col-lg-4 portfolio-item webdesign graphic">
-                                <div class="image-border">
-                                    <div class="portfolio-item-content">
-                                        <img src="https://placehold.co/600x450" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>
-                                                    <a href="https://placehold.co/600x450" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
-                                                </div>
-                                                <h5 class="mt-3 mb-0">感染地域分析可視化</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 09 -->
-                            <div class="col-lg-4 portfolio-item seo">
-                                <div class="image-border">
-                                    <div class="portfolio-item-content">
-                                        <img src="https://placehold.co/600x450" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>
-                                                    <a href="https://placehold.co/600x450" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
-                                                </div>
-                                                <h5 class="mt-3 mb-0">経済的ショックの株価への影響</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 10 -->
-                            <div class="col-lg-4 portfolio-item mobiledesign seo">
-                                <div class="image-border">
-                                    <div class="portfolio-item-content">
-                                        <img src="https://placehold.co/600x450" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>
-                                                    <a href="https://placehold.co/600x450" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
-                                                </div>
-                                                <h5 class="mt-3 mb-0">変数選択手法</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 11 -->
-                            <div class="col-lg-4 portfolio-item webdesign graphic">
-                                <div class="image-border">
-                                    <div class="portfolio-item-content">
-                                        <img src="https://placehold.co/600x450" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>
-                                                    <a href="https://placehold.co/600x450" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
-                                                </div>
-                                                <h5 class="mt-3 mb-0">モデルの評価指標</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 12 -->
-                            <div class="col-lg-4 portfolio-item seo graphic">
-                                <div class="image-border">
-                                    <div class="portfolio-item-content">
-                                        <img src="https://placehold.co/600x450" alt="/" class="img-fluid">
-                                        <div class="img-overlay text-center">
-                                            <div class="img-overlay-content">
-                                                <div class="portfolio-icon">
-                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>
-                                                    <a href="https://placehold.co/600x450" class="js-zoom-gallery">
-                                                        <i class="lni-search"></i>
-                                                    </a>
-                                                </div>
-                                                <h5 class="mt-3 mb-0">動的トピックモデル</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-12 text-center pt-2">
-                                <div class="button-border d-inline-block mr-2 mr-sm-4">
-                                    <button class="pill-button showMore" id="showMore">Show More</button>
-                                    <span id="showMore-initials" class="d-none" class="d-none" data-initial="6" data-next="3"></span>
-                                </div>
-                                <div class="button-border d-inline-block">
-                                    <a href="portfolio.html" class="pill-button">Portfolio Page</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--  Portfolio End  -->
-
-        <!--  Blog Start  -->
-        <section id="blog" class="section blog">
-            <div class="display-table">
-                <div class="display-content">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="text-center title">
-                                    <h2 class="text-dark">News <span class="base-color">Post</span></h2>
-                                    <p class="text-muted mb-5 max-width-450">In a professional context it often happens that private clients corder a publication to be made.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <!--  Item 01 -->
-                            <div class="col-lg-4">
-                                <div class="blog-item box-border">
-                                    <div class="blog-image">
-                                        <div class="blog-intro">
-                                            <img src="https://placehold.co/720x480" alt="/">
-                                        </div>
-                                    </div>
-                                    <div class="blog-content">
-                                        <ul class="list-inline mt-4">
-                                                <li class="list-inline-item">
-                                                    <i class="lni-calendar data-text-color" data-color="#ff5380"></i>
-                                                    <span class="text-muted">June 02, 2020 </span>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <i class="lni-comment data-text-color" data-color="#fbdd62"></i>
-                                                    <span class="text-muted">5</span>
-                                                </li>
-                                            </ul>
-                                            <h5 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single"> Be Your Best Version</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-                                        <div class="blog-link">
-                                            <a class="base-color" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">Read More...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--  Item 02 -->
-                            <div class="col-lg-4">
-                                <div class="blog-item box-border">
-                                    <div class="blog-image">
-                                        <div class="blog-intro">
-                                            <img src="https://placehold.co/720x480" alt="/">
-                                        </div>
-                                    </div>
-                                    <div class="blog-content">
-                                        <ul class="list-inline mt-4">
-                                                <li class="list-inline-item">
-                                                    <i class="lni-calendar data-text-color" data-color="#ff5380"></i>
-                                                    <span class="text-muted">June 08, 2020 </span>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <i class="lni-comment data-text-color" data-color="#fbdd62"></i>
-                                                    <span class="text-muted">3</span>
-                                                </li>
-                                            </ul>
-                                            <h5 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single"> 5 Tips In UI/UX Web Design</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-                                        <div class="blog-link">
-                                            <a class="base-color" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">Read More...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--  Item 03 -->
-                            <div class="col-lg-4">
-                                <div class="blog-item box-border">
-                                    <div class="blog-image">
-                                        <div class="blog-intro">
-                                            <img src="https://placehold.co/720x480" alt="/">
-                                        </div>
-                                    </div>
-                                    <div class="blog-content">
-                                        <ul class="list-inline mt-4">
-                                                <li class="list-inline-item">
-                                                    <i class="lni-calendar data-text-color" data-color="#ff5380"></i>
-                                                    <span class="text-muted">June 12, 2020 </span>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <i class="lni-comment data-text-color" data-color="#fbdd62"></i>
-                                                    <span class="text-muted">8</span>
-                                                </li>
-                                            </ul>
-                                            <h5 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single"> Write Your Dreams</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-                                        <div class="blog-link">
-                                            <a class="base-color" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">Read More...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--  Item 04 -->
-                            <div class="col-lg-4">
-                                <div class="blog-item box-border">
-                                    <div class="blog-image">
-                                        <div class="blog-intro">
-                                            <img src="https://placehold.co/720x480" alt="/">
-                                        </div>
-                                    </div>
-                                    <div class="blog-content">
-                                        <ul class="list-inline mt-4">
-                                                <li class="list-inline-item">
-                                                    <i class="lni-calendar data-text-color" data-color="#ff5380"></i>
-                                                    <span class="text-muted">June 20, 2020 </span>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <i class="lni-comment data-text-color" data-color="#fbdd62"></i>
-                                                    <span class="text-muted">2</span>
-                                                </li>
-                                            </ul>
-                                            <h5 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single"> Be Your Best Version</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-                                        <div class="blog-link">
-                                            <a class="base-color" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">Read More...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--  Item 05 -->
-                            <div class="col-lg-4">
-                                <div class="blog-item box-border">
-                                    <div class="blog-image">
-                                        <div class="blog-intro">
-                                            <img src="https://placehold.co/720x480" alt="/">
-                                        </div>
-                                    </div>
-                                    <div class="blog-content">
-                                        <ul class="list-inline mt-4">
-                                                <li class="list-inline-item">
-                                                    <i class="lni-calendar data-text-color" data-color="#ff5380"></i>
-                                                    <span class="text-muted">June 20, 2020 </span>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <i class="lni-comment data-text-color" data-color="#fbdd62"></i>
-                                                    <span class="text-muted">10</span>
-                                                </li>
-                                            </ul>
-                                            <h5 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single"> 5 Tips In UI/UX Web Design</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-                                        <div class="blog-link">
-                                            <a class="base-color" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">Read More...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--  Item 06 -->
-                            <div class="col-lg-4">
-                                <div class="blog-item box-border">
-                                    <div class="blog-image">
-                                        <div class="blog-intro">
-                                            <img src="https://placehold.co/720x480" alt="/">
-                                        </div>
-                                    </div>
-                                    <div class="blog-content">
-                                        <ul class="list-inline mt-4">
-                                                <li class="list-inline-item">
-                                                    <i class="lni-calendar data-text-color" data-color="#ff5380"></i>
-                                                    <span class="text-muted">June 25, 2020 </span>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <i class="lni-comment data-text-color" data-color="#fbdd62"></i>
-                                                    <span class="text-muted">12</span>
-                                                </li>
-                                            </ul>
-                                        <h5 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single"> Write Your Dreams</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-                                        <div class="blog-link">
-                                            <a class="base-color" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">Read More...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <div class="button-border">
-                                    <a href="blog.html" class="pill-button">View More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--   Blog End   -->
-
-       <!-- Contact Start -->
-       <section id="contact" class="section contact">
+      <!--  Hero Start  -->
+      <section id="title" class="section hero-06 active">
         <div class="display-table">
-            <div class="display-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center title">
-                                <h2 class="text-dark"><span class="base-color">Contact</span></h2>
-                                <p class="text-muted mb-5 max-width-450">SNSやリンクなど</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row contact-info">
-                        <div class="col-lg-4 mt-5">
-                            <div class="text-center">
-                                <div class="base-color">
-                                    <a href="https://twitter.com/st_data_science">
-                                        <img src="assets/img/twitter-circle.svg" alt="">
-                                    </a>
-                                </div>
-                                <div class="mt-3">
-                                    <h5 class="text-dark mb-0">Twitter</h5>
-                                    <small class="text-muted">@st-data-science</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mt-5">
-                            <div class="text-center">
-                                <div class="base-color">
-                                    <a href="mailto:s.tanaka@bdlab.or.jp">
-                                        <img src="assets/img/send.svg" alt="">
-                                    </a>
-                                </div>
-                                <div class="mt-3">
-                                    <h5 class="text-dark mb-0 contact_detail-title">Email</h5>
-                                    <small class="text-muted">s.tanaka@bdlab.or.jp</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mt-5">
-                            <div class="text-center">
-                                <div class="base-color">
-                                    <a href="https://www.bdlab.or.jp">
-                                        <img src="assets/img/bdlab.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="mt-3">
-                                    <h5 class="text-dark mb-0">Big Data Lab</h5>
-                                    <small class="text-muted">bdlab.or.jp</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row copy-right">
-                        <div class="col-12 text-center">
-                            <p>Copyright © 2021 <span class="base-color">Suguru Tanaka</span></p>
-                        </div>
-                    </div>
+          <div class="display-content">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1">
+                  <div class="hero-content">
+                    <h1 class="mb-3">田中統 | Suguru K. Tanaka</h1>
+                    <h4 class="text-capitalize mb-0">
+                      <span
+                        class="element"
+                        data-elements="データサイエンティスト, Statistician(統計家), Big Data Lab 代表."
+                      ></span>
+                    </h4>
+                    <p class="max-width-450 mx-0 my-4">
+                      データからビジネスの価値を生むお仕事をしています.
+                    </p>
+                    <ul class="list-inline hero-social">
+                      <li class="list-inline-item">
+                        <a href="https://www.facebook.com/suguru.tanaka.167">
+                          <img src="assets/img/facebook.svg" alt="" />
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://twitter.com/st_data_science">
+                          <img src="assets/img/twitter.svg" alt="" />
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://github.com/st-data-science">
+                          <img src="assets/img/github.svg" alt="" />
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/suguru-tanaka">
+                          <img src="assets/img/linkedin.svg" alt="" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                  <div class="hero-images">
+                    <div class="square">
+                      <img src="assets/img/element_square.png" alt="/" />
+                    </div>
+                    <div class="circle"></div>
+                    <div class="circle-2"></div>
+                    <div class="circle-3"></div>
+                    <div class="floating"></div>
+                    <div class="rounded-circle">
+                      <img
+                        src="assets/img/home.JPG"
+                        alt="/"
+                        class="rounded-circle img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        </section>
-        <!--  Contact End  -->
+      </section>
+      <!--  Hero End  -->
 
+      <!--   About Start   -->
+      <section id="about" class="section about">
+        <div class="display-table">
+          <div class="display-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="text-center title">
+                    <h2 class="text-dark">
+                      About <span class="base-color">Me</span>
+                    </h2>
+                    <p class="text-muted max-width-450 mb-5">
+                      統計とエンジニアリングに興味のある<br />経営者 兼
+                      データサイエンティストです.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="image-border">
+                    <img src="assets/img/about.JPG" alt="/" />
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="personal-item">
+                    <!-- <h3 class="text-dark mt-4 mt-lg-0"><span class="base-color">田中統</span> データサイエンティスト</h3> -->
+                    <h3 class="text-dark mt-4 mt-lg-0">
+                      略歴 <span class="base-color"> Profile</span>
+                    </h3>
+                    <div class="row">
+                      <div class="col-12 personal-info">
+                        <ul class="list-unstyled pt-4">
+                          Big Data Lab 代表.
+                          英国の王立統計学会から認定を受けた統計学者.
+                          社会科学の分野で世界2位の研究機関 LSE で MSc Data
+                          Science のプログラムに参加し, M. Vojnovic に師事.
+                          データサイエンスの優等修士号(理学)を授与されている.
+                          <br /><br />
+                          幼少時代をカリフォルニア州で過ごす.
+                          東工大で社会工学を専攻し,
+                          在学中スウェーデン王立工科大学で統計科学および統計的機械学習の研究に従事した.
+                          東京工業大学を副総代として卒業後,
+                          新卒で某ユニコーン企業にデータサイエンティストとして参画.
+                          その後 Big Data Lab を創業し,
+                          データ解析・AI開発に関する業務を幅広く支援している.
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Count up Start -->
+
+              <!--  Count up End  -->
+              <!--  Service Start  -->
+              <div class="services colorfull-service">
+                <div class="row mt-5">
+                  <div class="col-12">
+                    <!-- <h3 class="mb-0 text-dark">What <span class="base-color">I'm Doing</span></h3> -->
+                    <h3 class="mb-0 text-dark">
+                      お仕事 <span class="base-color">What I do</span>
+                    </h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- Item 01 -->
+                  <div class="col-lg-4 text-left">
+                    <div class="image-border">
+                      <!-- <div class="services-item box-hover-border data-background" data-color="#fbdd62"> -->
+                      <div
+                        class="services-item box-hover-border data-background"
+                        data-color="#1c64ac"
+                      >
+                        <div
+                          class="float-left mt-lg-1 d-inline-block services-icon"
+                        >
+                          <img src="assets/img/stat.png" alt="/" />
+                        </div>
+                        <div class="services-content">
+                          <h5 class="mb-3 text-white">統計分析・モデリング</h5>
+                          <p class="text-white mb-0">
+                            主に統計的な視点から, データを分析します.
+                            システムやサービスの効果検証, 最適化など
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 02 -->
+                  <div class="col-lg-4 text-left">
+                    <div class="image-border">
+                      <div
+                        class="services-item box-hover-border data-background"
+                        data-color="#fbdd62"
+                      >
+                        <div
+                          class="float-left mt-lg-1 d-inline-block services-icon"
+                        >
+                          <img src="assets/img/code.png" alt="/" />
+                        </div>
+                        <div class="services-content">
+                          <h5 class="mb-3 text-dark">
+                            機械学習エンジニアリング
+                          </h5>
+                          <p class="text-muted mb-0">
+                            データを使ったアルゴリズムの実装やその運用をします.
+                            予測モデルやレコメンドモデルの実装 など
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 03 -->
+                  <div class="col-lg-4 text-left">
+                    <div class="image-border">
+                      <div
+                        class="services-item box-hover-border data-background"
+                        data-color="#1c64ac"
+                      >
+                        <div
+                          class="float-left mt-lg-1 d-inline-block services-icon"
+                        >
+                          <img src="assets/img/server.png" alt="/" />
+                        </div>
+                        <div class="services-content">
+                          <h5 class="mb-3 text-white">データ基盤開発</h5>
+                          <p class="text-white mb-0">
+                            データを取得し,蓄積しするデータ基盤を作って運用します.
+                            主にSQLを使います
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--   Service End   -->
+              <!--   Client Start  -->
+              <div class="testimonial mt-5">
+                <div class="col-12">
+                  <h3 class="mb-0 text-dark">
+                    ご推薦 <span class="base-color"> Testimonials</span>
+                  </h3>
+                </div>
+                <div class="owl-carousel">
+                  <!-- Testimonial Item-01 -->
+                  <div class="testimonial-item box-border">
+                    <div class="testimonial-image">
+                      <div class="testimonial-image-border">
+                        <img src="assets/img/michel.jpg" alt="/" />
+                      </div>
+                    </div>
+                    <p class="mb-0 mt-2 text-muted">
+                      優れた分析能力と数理統計学の深い知識を持つ,
+                      信頼のおける真のチームプレーヤーです
+                    </p>
+                    <span class="d-block mt-3 font-weight-bold mr-2"
+                      >Michel P.S.,
+                      <small class="text-muted">NASDAQ, Sweden</small></span
+                    >
+                  </div>
+                  <!-- Testimonial Item-02 -->
+                  <div class="testimonial-item box-border">
+                    <div class="testimonial-image">
+                      <div class="testimonial-image-border">
+                        <img src="assets/img/dima.jpg" alt="/" />
+                      </div>
+                    </div>
+                    <p class="mb-0 mt-2 text-muted">
+                      科学的な厳密さと,
+                      データの課題を解決するための実用的なアプローチに大きな情熱を持った,
+                      熟練のデータサイエンティストです
+                    </p>
+                    <span class="d-block mt-3 font-weight-bold mr-2"
+                      >Dima Karamshuk,
+                      <small class="text-muted">Facebook, UK</small></span
+                    >
+                  </div>
+                  <!-- Testimonial Item-03 -->
+                  <div class="testimonial-item box-border">
+                    <div class="testimonial-image">
+                      <div class="testimonial-image-border">
+                        <img src="assets/img/naganuma.jpg" alt="/" />
+                      </div>
+                    </div>
+                    <p class="mb-0 mt-2 text-muted">
+                      統計のバックグラウンドを必要とする研究で,
+                      初学者にとって混同しがちな概念を,
+                      丁寧に解説していただけました
+                    </p>
+                    <span class="d-block mt-3 font-weight-bold mr-2"
+                      >Hiroki Naganuma,
+                      <small class="text-muted">MILA, Canada</small></span
+                    >
+                  </div>
+                  <!-- Testimonial Item-04 -->
+                  <div class="testimonial-item box-border">
+                    <div class="testimonial-image">
+                      <div class="testimonial-image-border">
+                        <img src="assets/img/marion.jpg" alt="/" />
+                      </div>
+                    </div>
+                    <p class="mb-0 mt-2 text-muted">
+                      自身と異なる思想や文化への理解と柔軟さを兼ね備えた信頼のできる人物です
+                    </p>
+                    <span class="d-block mt-3 font-weight-bold mr-2"
+                      >Marion F.E.,
+                      <small class="text-muted">AXA, France</small></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!--    Client End   -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--    About End    -->
+
+      <!--    Resume Start   -->
+      <section id="resume" class="section resume">
+        <div class="display-table">
+          <div class="display-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="text-center title">
+                    <h2 class="text-dark">
+                      Skills <span class="base-color">&</span> Associations
+                    </h2>
+                    <p class="text-muted max-width-450 mb-5">
+                      過去と現在所属している組織や、スキルやツールです.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--    TimeLine Start   -->
+              <div class="row">
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                  <h3 class="text-dark">
+                    <i class="lni-pencil base-color"></i>現在の所属
+                  </h3>
+                  <div class="timeline-items box-border colorfull-timeline">
+                    <!--    Item 01   -->
+                    <div
+                      class="timeline-item timeline-border"
+                      data-color="#ff5380"
+                    >
+                      <div
+                        class="timeline-icon data-background"
+                        data-color="#ff5380"
+                      ></div>
+                      <div class="timeline-contents">
+                        <div class="time-line-header">
+                          <h6 class="timeline-title">
+                            <a
+                              href="https://www.bdlab.or.jp"
+                              style="color: #212529"
+                              >一般社団法人 Big Data Lab</a
+                            >
+                          </h6>
+                          <p class="timeline-year">代表理事 兼 CEO</p>
+                        </div>
+                        <div class="timeline-content">
+                          <p>
+                            Big Data Lab
+                            は組織や国境を超えたデータサイエンティストによる職能団体です.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--    Item 02   -->
+                    <div
+                      class="timeline-item timeline-border"
+                      data-color="#fbdd62"
+                    >
+                      <div
+                        class="timeline-icon data-background"
+                        data-color="#fbdd62"
+                      ></div>
+                      <div class="timeline-contents">
+                        <div class="time-line-header">
+                          <h6 class="timeline-title">
+                            <a
+                              href="https://www.rss.org.uk/"
+                              style="color: #212529"
+                              >Royal Statistical Society, RSS</a
+                            >
+                          </h6>
+                          <p class="timeline-year">
+                            専門資格認定会員 (Professionally Qualified Fellow)
+                          </p>
+                        </div>
+                        <div class="timeline-content">
+                          <p>
+                            RSSはイギリスに本拠地を置く,
+                            1834年に設立された世界最大の統計学会の内の一つです.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--    Item 03   -->
+                    <div
+                      class="timeline-item timeline-border"
+                      data-color="#0bceaf"
+                    >
+                      <div
+                        class="timeline-icon data-background"
+                        data-color="#0bceaf"
+                      ></div>
+                      <div class="timeline-contents">
+                        <div class="time-line-header">
+                          <h6 class="timeline-title">
+                            <a
+                              href="https://www.datascientist.or.jp/"
+                              style="color: #212529"
+                              >データサイエンティスト協会</a
+                            >
+                          </h6>
+                          <p class="timeline-year">正会員</p>
+                        </div>
+                        <div class="timeline-content">
+                          <p>
+                            データサイエンティスト協会は、新しい職種であるデータサイエンティストに必要となるスキル・知識を定義する団体です.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="text-dark">
+                    <i class="lni-graduation base-color"></i>
+                    所属していた機関
+                  </h3>
+                  <div class="timeline-items box-border colorfull-timeline">
+                    <!--    Item 01   -->
+                    <div
+                      class="timeline-item timeline-border"
+                      data-color="#ff5380"
+                    >
+                      <div
+                        class="timeline-icon data-background"
+                        data-color="#ff5380"
+                      ></div>
+                      <div class="timeline-contents">
+                        <div class="time-line-header">
+                          <h6 class="timeline-title">
+                            <a
+                              href="https://www.lse.ac.uk/"
+                              style="color: #212529"
+                              >London School of Economics and Political Science,
+                              LSE</a
+                            >
+                          </h6>
+                          <p class="timeline-year">
+                            統計学科 (Department of Statistics)
+                          </p>
+                        </div>
+                        <div class="timeline-content">
+                          <!-- <p>LSEは社会科学, 政治科学, 経済科学の分野の教育と研究に特化した, 学術的卓越性と革新性の国際的な中心地です.</p> -->
+                          <p>
+                            倍率30倍のプログラム MSc Data Science
+                            に、日本人としておそらく初めて採択されました。全プログラムで優
+                            (Distinction) を取り, Facebook
+                            との共同研究プロジェクトに従事しました.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--    Item 02   -->
+                    <div
+                      class="timeline-item timeline-border"
+                      data-color="#fbdd62"
+                    >
+                      <div
+                        class="timeline-icon data-background"
+                        data-color="#fbdd62"
+                      ></div>
+                      <div class="timeline-contents">
+                        <div class="time-line-header">
+                          <h6 class="timeline-title">
+                            <a
+                              href="https://www.kth.se/en"
+                              style="color: #212529"
+                              >Royal Institute of Technology, KTH</a
+                            >
+                          </h6>
+                          <p class="timeline-year">
+                            数理工学科 (School of Engineering Sciences)
+                          </p>
+                        </div>
+                        <div class="timeline-content">
+                          <!-- <p>KTHはストックホルムにある理工系総合大学で、特に情報理工学と自然科学の領域において世界的に評価されるヨーロッパ有数の工科大学です.</p> -->
+                          <p>
+                            機会があり、スウェーデンで機械学習や確率論に関する研究とプロジェクトを行ないました。
+                            データサイエンティストとしての基礎はここで身についたと思います。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--    Item 03   -->
+                    <div
+                      class="timeline-item timeline-border"
+                      data-color="#0bceaf"
+                    >
+                      <div
+                        class="timeline-icon data-background"
+                        data-color="#0bceaf"
+                      ></div>
+                      <div class="timeline-contents">
+                        <div class="time-line-header">
+                          <h6 class="timeline-title">
+                            <a
+                              href="https://www.titech.ac.jp/"
+                              style="color: #212529"
+                              >東京工業大学</a
+                            >
+                          </h6>
+                          <p class="timeline-year">
+                            工学部 社会工学科 (Department of Social Engineering)
+                          </p>
+                        </div>
+                        <div class="timeline-content">
+                          <!-- <p>東工大は, 130年以上の歴史を持つ, 日本を代表する科学技術系の国立大学です.</p> -->
+                          <p>
+                            「社会を数理的に解く」をテーマに、応用数学、統計、経済学を勉強しました。新しい経済手法を提案した学士論文が最優秀に採択され,
+                            副総代として卒業しました。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--    TimeLine End   -->
+              <!--  Skill Start  -->
+              <div class="row mt-5">
+                <!-- Skill -->
+                <div class="col-lg-6">
+                  <div>
+                    <h3 class="mb-0 mt-5 mt-lg-0">
+                      データサイエンス <span class="base-color"> 領域</span>
+                    </h3>
+                  </div>
+                  <div class="language-bar box-border">
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">
+                        統計解析 - <span>Statistical Analysis</span>
+                      </h4>
+                    </div>
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">
+                        (統計的)機械学習 -
+                        <span>Statistical Machine Learning</span>
+                      </h4>
+                    </div>
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">
+                        自然言語処理 - <span>Natural Language Processing</span>
+                      </h4>
+                    </div>
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">
+                        検索エンジン・レコメンドエンジン -
+                        <span>Search Engine / Recommender System</span>
+                      </h4>
+                    </div>
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">
+                        強化学習 - <span>Reinforcement Learning</span>
+                      </h4>
+                    </div>
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">
+                        深層学習 - <span>Deep Learning</span>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div>
+                    <h3 class="mb-0 mt-5 mt-lg-0">
+                      よく使うツール
+                      <span class="base-color"> ソフトウェア</span>
+                    </h3>
+                  </div>
+                  <div class="language-bar box-border">
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">
+                        Python <span> </span>
+                      </h4>
+                    </div>
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">R <span> </span></h4>
+                    </div>
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">
+                        PostgreSQL <span> </span>
+                      </h4>
+                    </div>
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">
+                        MySQL/MariaDB <span> </span>
+                      </h4>
+                    </div>
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">
+                        BigQuery/RDS <span> </span>
+                      </h4>
+                    </div>
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">
+                        Bash/Zsh <span> </span>
+                      </h4>
+                    </div>
+                    <div class="language-skill row">
+                      <h4 class="col-12 text-left mb-0">
+                        AWS, Git, VI, VSCode, Jupyter<span> </span>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--   Skill End   -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--     Resume End    -->
+
+      <!-- Portfolio Start -->
+      <section id="portfolio" class="section portfolio">
+        <div class="display-table">
+          <div class="display-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="text-center title">
+                    <h2 class="text-dark">
+                      My <span class="base-color">Works</span>
+                    </h2>
+                    <p class="text-muted mb-5 max-width-450">
+                      In a professional context it often happens that private
+                      clients corder a publication to be made.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!--   Portfolio Filters   -->
+                <ul
+                  id="portfolio-filter"
+                  class="list-unstyled list-inline mb-0 col-lg-12 text-center portfolio-filter"
+                >
+                  <li class="button-border list-inline-item">
+                    <a href="#" data-filter="*" class="pill-button active"
+                      >All</a
+                    >
+                  </li>
+                  <li class="button-border list-inline-item">
+                    <a href="#" data-filter=".webdesign" class="pill-button"
+                      >Web Design</a
+                    >
+                  </li>
+                  <li class="button-border list-inline-item">
+                    <a href="#" data-filter=".mobiledesign" class="pill-button"
+                      >Mobile Design</a
+                    >
+                  </li>
+                  <li class="button-border list-inline-item">
+                    <a href="#" data-filter=".seo" class="pill-button">Seo</a>
+                  </li>
+                  <li class="button-border list-inline-item">
+                    <a href="#" data-filter=".graphic" class="pill-button"
+                      >Graphic</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-items row">
+                <!-- Item 01 -->
+                <div class="col-lg-4 portfolio-item seo">
+                  <div class="image-border">
+                    <div class="portfolio-item-content">
+                      <img
+                        src="https://placehold.co/600x450"
+                        alt="/"
+                        class="img-fluid"
+                      />
+                      <div class="img-overlay text-center">
+                        <div class="img-overlay-content">
+                          <div class="portfolio-icon">
+                            <a
+                              href="javascript:void();"
+                              type="button"
+                              data-toggle="modal"
+                              data-target="#portfolio-single"
+                              ><i class="lni-link"></i
+                            ></a>
+                            <a
+                              href="https://placehold.co/600x450"
+                              class="js-zoom-gallery"
+                            >
+                              <i class="lni-search"></i>
+                            </a>
+                          </div>
+                          <h5 class="mt-3 mb-0">体脂肪率の予測モデル作成</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 02 -->
+                <div class="col-lg-4 portfolio-item graphic webdesign">
+                  <div class="image-border">
+                    <div class="portfolio-item-content">
+                      <img
+                        src="https://placehold.co/600x450"
+                        alt="/"
+                        class="img-fluid"
+                      />
+                      <div class="img-overlay text-center">
+                        <div class="img-overlay-content">
+                          <div class="portfolio-icon">
+                            <a
+                              href="javascript:void();"
+                              type="button"
+                              data-toggle="modal"
+                              data-target="#portfolio-single"
+                              ><i class="lni-link"></i
+                            ></a>
+                            <a
+                              href="https://placehold.co/600x450"
+                              class="js-zoom-gallery"
+                            >
+                              <i class="lni-search"></i>
+                            </a>
+                          </div>
+                          <h5 class="mt-3 mb-0">車両保険の保険料算定</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 03 -->
+                <div class="col-lg-4 portfolio-item webdesign graphic">
+                  <div class="image-border">
+                    <div class="portfolio-item-content">
+                      <img
+                        src="https://placehold.co/600x450"
+                        alt="/"
+                        class="img-fluid"
+                      />
+                      <div class="img-overlay text-center">
+                        <div class="img-overlay-content">
+                          <div class="portfolio-icon">
+                            <a
+                              href="javascript:void();"
+                              type="button"
+                              data-toggle="modal"
+                              data-target="#portfolio-single"
+                              ><i class="lni-link"></i
+                            ></a>
+                            <a
+                              href="https://placehold.co/600x450"
+                              class="js-zoom-gallery"
+                            >
+                              <i class="lni-search"></i>
+                            </a>
+                          </div>
+                          <h5 class="mt-3 mb-0">新しい経済手法の考案</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 04 -->
+                <div class="col-lg-4 portfolio-item mobiledesign webdesign">
+                  <div class="image-border">
+                    <div class="portfolio-item-content">
+                      <img
+                        src="https://placehold.co/600x450"
+                        alt="/"
+                        class="img-fluid"
+                      />
+                      <div class="img-overlay text-center">
+                        <div class="img-overlay-content">
+                          <div class="portfolio-icon">
+                            <a
+                              href="javascript:void();"
+                              type="button"
+                              data-toggle="modal"
+                              data-target="#portfolio-single"
+                              ><i class="lni-link"></i
+                            ></a>
+                            <a
+                              href="https://placehold.co/600x450"
+                              class="js-zoom-gallery"
+                            >
+                              <i class="lni-search"></i>
+                            </a>
+                          </div>
+                          <h5 class="mt-3 mb-0">交通時間可視化アプリ開発</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 05 -->
+                <div class="col-lg-4 portfolio-item mobiledesign seo">
+                  <div class="image-border">
+                    <div class="portfolio-item-content">
+                      <img
+                        src="https://placehold.co/600x450"
+                        alt="/"
+                        class="img-fluid"
+                      />
+                      <div class="img-overlay text-center">
+                        <div class="img-overlay-content">
+                          <div class="portfolio-icon">
+                            <a
+                              href="javascript:void();"
+                              type="button"
+                              data-toggle="modal"
+                              data-target="#portfolio-single"
+                              ><i class="lni-link"></i
+                            ></a>
+                            <a
+                              href="https://placehold.co/600x450"
+                              class="js-zoom-gallery"
+                            >
+                              <i class="lni-search"></i>
+                            </a>
+                          </div>
+                          <h5 class="mt-3 mb-0">スパースモデルの比較研究</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 06 -->
+                <div class="col-lg-4 portfolio-item mobiledesign">
+                  <div class="image-border">
+                    <div class="portfolio-item-content">
+                      <img
+                        src="https://placehold.co/600x450"
+                        alt="/"
+                        class="img-fluid"
+                      />
+                      <div class="img-overlay text-center">
+                        <div class="img-overlay-content">
+                          <div class="portfolio-icon">
+                            <a
+                              href="javascript:void();"
+                              type="button"
+                              data-toggle="modal"
+                              data-target="#portfolio-single"
+                              ><i class="lni-link"></i
+                            ></a>
+                            <a
+                              href="https://placehold.co/600x450"
+                              class="js-zoom-gallery"
+                            >
+                              <i class="lni-search"></i>
+                            </a>
+                          </div>
+                          <h5 class="mt-3 mb-0">外貨の連動分析</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 07 -->
+                <div class="col-lg-4 portfolio-item mobiledesign webdesign">
+                  <div class="image-border">
+                    <div class="portfolio-item-content">
+                      <img
+                        src="https://placehold.co/600x450"
+                        alt="/"
+                        class="img-fluid"
+                      />
+                      <div class="img-overlay text-center">
+                        <div class="img-overlay-content">
+                          <div class="portfolio-icon">
+                            <a
+                              href="javascript:void();"
+                              type="button"
+                              data-toggle="modal"
+                              data-target="#portfolio-single"
+                              ><i class="lni-link"></i
+                            ></a>
+                            <a
+                              href="https://placehold.co/600x450"
+                              class="js-zoom-gallery"
+                            >
+                              <i class="lni-search"></i>
+                            </a>
+                          </div>
+                          <h5 class="mt-3 mb-0">オンラインな異常点検知</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 08 -->
+                <div class="col-lg-4 portfolio-item webdesign graphic">
+                  <div class="image-border">
+                    <div class="portfolio-item-content">
+                      <img
+                        src="https://placehold.co/600x450"
+                        alt="/"
+                        class="img-fluid"
+                      />
+                      <div class="img-overlay text-center">
+                        <div class="img-overlay-content">
+                          <div class="portfolio-icon">
+                            <a
+                              href="javascript:void();"
+                              type="button"
+                              data-toggle="modal"
+                              data-target="#portfolio-single"
+                              ><i class="lni-link"></i
+                            ></a>
+                            <a
+                              href="https://placehold.co/600x450"
+                              class="js-zoom-gallery"
+                            >
+                              <i class="lni-search"></i>
+                            </a>
+                          </div>
+                          <h5 class="mt-3 mb-0">感染地域分析可視化</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 09 -->
+                <div class="col-lg-4 portfolio-item seo">
+                  <div class="image-border">
+                    <div class="portfolio-item-content">
+                      <img
+                        src="https://placehold.co/600x450"
+                        alt="/"
+                        class="img-fluid"
+                      />
+                      <div class="img-overlay text-center">
+                        <div class="img-overlay-content">
+                          <div class="portfolio-icon">
+                            <a
+                              href="javascript:void();"
+                              type="button"
+                              data-toggle="modal"
+                              data-target="#portfolio-single"
+                              ><i class="lni-link"></i
+                            ></a>
+                            <a
+                              href="https://placehold.co/600x450"
+                              class="js-zoom-gallery"
+                            >
+                              <i class="lni-search"></i>
+                            </a>
+                          </div>
+                          <h5 class="mt-3 mb-0">
+                            経済的ショックの株価への影響
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 10 -->
+                <div class="col-lg-4 portfolio-item mobiledesign seo">
+                  <div class="image-border">
+                    <div class="portfolio-item-content">
+                      <img
+                        src="https://placehold.co/600x450"
+                        alt="/"
+                        class="img-fluid"
+                      />
+                      <div class="img-overlay text-center">
+                        <div class="img-overlay-content">
+                          <div class="portfolio-icon">
+                            <a
+                              href="javascript:void();"
+                              type="button"
+                              data-toggle="modal"
+                              data-target="#portfolio-single"
+                              ><i class="lni-link"></i
+                            ></a>
+                            <a
+                              href="https://placehold.co/600x450"
+                              class="js-zoom-gallery"
+                            >
+                              <i class="lni-search"></i>
+                            </a>
+                          </div>
+                          <h5 class="mt-3 mb-0">変数選択手法</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 11 -->
+                <div class="col-lg-4 portfolio-item webdesign graphic">
+                  <div class="image-border">
+                    <div class="portfolio-item-content">
+                      <img
+                        src="https://placehold.co/600x450"
+                        alt="/"
+                        class="img-fluid"
+                      />
+                      <div class="img-overlay text-center">
+                        <div class="img-overlay-content">
+                          <div class="portfolio-icon">
+                            <a
+                              href="javascript:void();"
+                              type="button"
+                              data-toggle="modal"
+                              data-target="#portfolio-single"
+                              ><i class="lni-link"></i
+                            ></a>
+                            <a
+                              href="https://placehold.co/600x450"
+                              class="js-zoom-gallery"
+                            >
+                              <i class="lni-search"></i>
+                            </a>
+                          </div>
+                          <h5 class="mt-3 mb-0">モデルの評価指標</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 12 -->
+                <div class="col-lg-4 portfolio-item seo graphic">
+                  <div class="image-border">
+                    <div class="portfolio-item-content">
+                      <img
+                        src="https://placehold.co/600x450"
+                        alt="/"
+                        class="img-fluid"
+                      />
+                      <div class="img-overlay text-center">
+                        <div class="img-overlay-content">
+                          <div class="portfolio-icon">
+                            <a
+                              href="javascript:void();"
+                              type="button"
+                              data-toggle="modal"
+                              data-target="#portfolio-single"
+                              ><i class="lni-link"></i
+                            ></a>
+                            <a
+                              href="https://placehold.co/600x450"
+                              class="js-zoom-gallery"
+                            >
+                              <i class="lni-search"></i>
+                            </a>
+                          </div>
+                          <h5 class="mt-3 mb-0">動的トピックモデル</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12 text-center pt-2">
+                  <div class="button-border d-inline-block mr-2 mr-sm-4">
+                    <button class="pill-button showMore" id="showMore">
+                      Show More
+                    </button>
+                    <span
+                      id="showMore-initials"
+                      class="d-none"
+                      class="d-none"
+                      data-initial="6"
+                      data-next="3"
+                    ></span>
+                  </div>
+                  <div class="button-border d-inline-block">
+                    <a href="portfolio.html" class="pill-button"
+                      >Portfolio Page</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  Portfolio End  -->
+
+      <!--  Blog Start  -->
+      <section id="blog" class="section blog">
+        <div class="display-table">
+          <div class="display-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="text-center title">
+                    <h2 class="text-dark">
+                      News <span class="base-color">Post</span>
+                    </h2>
+                    <p class="text-muted mb-5 max-width-450">
+                      In a professional context it often happens that private
+                      clients corder a publication to be made.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!--  Item 01 -->
+                <div class="col-lg-4">
+                  <div class="blog-item box-border">
+                    <div class="blog-image">
+                      <div class="blog-intro">
+                        <img src="https://placehold.co/720x480" alt="/" />
+                      </div>
+                    </div>
+                    <div class="blog-content">
+                      <ul class="list-inline mt-4">
+                        <li class="list-inline-item">
+                          <i
+                            class="lni-calendar data-text-color"
+                            data-color="#ff5380"
+                          ></i>
+                          <span class="text-muted">June 02, 2020 </span>
+                        </li>
+                        <li class="list-inline-item">
+                          <i
+                            class="lni-comment data-text-color"
+                            data-color="#fbdd62"
+                          ></i>
+                          <span class="text-muted">5</span>
+                        </li>
+                      </ul>
+                      <h5 class="mb-3">
+                        <a
+                          class="text-dark"
+                          href="javascript:void(0)"
+                          target="_blank"
+                          data-toggle="modal"
+                          data-target="#blog-single"
+                        >
+                          Be Your Best Version</a
+                        >
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore.
+                      </p>
+                      <div class="blog-link">
+                        <a
+                          class="base-color"
+                          href="javascript:void(0)"
+                          target="_blank"
+                          data-toggle="modal"
+                          data-target="#blog-single"
+                          >Read More...</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  Item 02 -->
+                <div class="col-lg-4">
+                  <div class="blog-item box-border">
+                    <div class="blog-image">
+                      <div class="blog-intro">
+                        <img src="https://placehold.co/720x480" alt="/" />
+                      </div>
+                    </div>
+                    <div class="blog-content">
+                      <ul class="list-inline mt-4">
+                        <li class="list-inline-item">
+                          <i
+                            class="lni-calendar data-text-color"
+                            data-color="#ff5380"
+                          ></i>
+                          <span class="text-muted">June 08, 2020 </span>
+                        </li>
+                        <li class="list-inline-item">
+                          <i
+                            class="lni-comment data-text-color"
+                            data-color="#fbdd62"
+                          ></i>
+                          <span class="text-muted">3</span>
+                        </li>
+                      </ul>
+                      <h5 class="mb-3">
+                        <a
+                          class="text-dark"
+                          href="javascript:void(0)"
+                          target="_blank"
+                          data-toggle="modal"
+                          data-target="#blog-single"
+                        >
+                          5 Tips In UI/UX Web Design</a
+                        >
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore.
+                      </p>
+                      <div class="blog-link">
+                        <a
+                          class="base-color"
+                          href="javascript:void(0)"
+                          target="_blank"
+                          data-toggle="modal"
+                          data-target="#blog-single"
+                          >Read More...</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  Item 03 -->
+                <div class="col-lg-4">
+                  <div class="blog-item box-border">
+                    <div class="blog-image">
+                      <div class="blog-intro">
+                        <img src="https://placehold.co/720x480" alt="/" />
+                      </div>
+                    </div>
+                    <div class="blog-content">
+                      <ul class="list-inline mt-4">
+                        <li class="list-inline-item">
+                          <i
+                            class="lni-calendar data-text-color"
+                            data-color="#ff5380"
+                          ></i>
+                          <span class="text-muted">June 12, 2020 </span>
+                        </li>
+                        <li class="list-inline-item">
+                          <i
+                            class="lni-comment data-text-color"
+                            data-color="#fbdd62"
+                          ></i>
+                          <span class="text-muted">8</span>
+                        </li>
+                      </ul>
+                      <h5 class="mb-3">
+                        <a
+                          class="text-dark"
+                          href="javascript:void(0)"
+                          target="_blank"
+                          data-toggle="modal"
+                          data-target="#blog-single"
+                        >
+                          Write Your Dreams</a
+                        >
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore.
+                      </p>
+                      <div class="blog-link">
+                        <a
+                          class="base-color"
+                          href="javascript:void(0)"
+                          target="_blank"
+                          data-toggle="modal"
+                          data-target="#blog-single"
+                          >Read More...</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  Item 04 -->
+                <div class="col-lg-4">
+                  <div class="blog-item box-border">
+                    <div class="blog-image">
+                      <div class="blog-intro">
+                        <img src="https://placehold.co/720x480" alt="/" />
+                      </div>
+                    </div>
+                    <div class="blog-content">
+                      <ul class="list-inline mt-4">
+                        <li class="list-inline-item">
+                          <i
+                            class="lni-calendar data-text-color"
+                            data-color="#ff5380"
+                          ></i>
+                          <span class="text-muted">June 20, 2020 </span>
+                        </li>
+                        <li class="list-inline-item">
+                          <i
+                            class="lni-comment data-text-color"
+                            data-color="#fbdd62"
+                          ></i>
+                          <span class="text-muted">2</span>
+                        </li>
+                      </ul>
+                      <h5 class="mb-3">
+                        <a
+                          class="text-dark"
+                          href="javascript:void(0)"
+                          target="_blank"
+                          data-toggle="modal"
+                          data-target="#blog-single"
+                        >
+                          Be Your Best Version</a
+                        >
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore.
+                      </p>
+                      <div class="blog-link">
+                        <a
+                          class="base-color"
+                          href="javascript:void(0)"
+                          target="_blank"
+                          data-toggle="modal"
+                          data-target="#blog-single"
+                          >Read More...</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  Item 05 -->
+                <div class="col-lg-4">
+                  <div class="blog-item box-border">
+                    <div class="blog-image">
+                      <div class="blog-intro">
+                        <img src="https://placehold.co/720x480" alt="/" />
+                      </div>
+                    </div>
+                    <div class="blog-content">
+                      <ul class="list-inline mt-4">
+                        <li class="list-inline-item">
+                          <i
+                            class="lni-calendar data-text-color"
+                            data-color="#ff5380"
+                          ></i>
+                          <span class="text-muted">June 20, 2020 </span>
+                        </li>
+                        <li class="list-inline-item">
+                          <i
+                            class="lni-comment data-text-color"
+                            data-color="#fbdd62"
+                          ></i>
+                          <span class="text-muted">10</span>
+                        </li>
+                      </ul>
+                      <h5 class="mb-3">
+                        <a
+                          class="text-dark"
+                          href="javascript:void(0)"
+                          target="_blank"
+                          data-toggle="modal"
+                          data-target="#blog-single"
+                        >
+                          5 Tips In UI/UX Web Design</a
+                        >
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore.
+                      </p>
+                      <div class="blog-link">
+                        <a
+                          class="base-color"
+                          href="javascript:void(0)"
+                          target="_blank"
+                          data-toggle="modal"
+                          data-target="#blog-single"
+                          >Read More...</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  Item 06 -->
+                <div class="col-lg-4">
+                  <div class="blog-item box-border">
+                    <div class="blog-image">
+                      <div class="blog-intro">
+                        <img src="https://placehold.co/720x480" alt="/" />
+                      </div>
+                    </div>
+                    <div class="blog-content">
+                      <ul class="list-inline mt-4">
+                        <li class="list-inline-item">
+                          <i
+                            class="lni-calendar data-text-color"
+                            data-color="#ff5380"
+                          ></i>
+                          <span class="text-muted">June 25, 2020 </span>
+                        </li>
+                        <li class="list-inline-item">
+                          <i
+                            class="lni-comment data-text-color"
+                            data-color="#fbdd62"
+                          ></i>
+                          <span class="text-muted">12</span>
+                        </li>
+                      </ul>
+                      <h5 class="mb-3">
+                        <a
+                          class="text-dark"
+                          href="javascript:void(0)"
+                          target="_blank"
+                          data-toggle="modal"
+                          data-target="#blog-single"
+                        >
+                          Write Your Dreams</a
+                        >
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore.
+                      </p>
+                      <div class="blog-link">
+                        <a
+                          class="base-color"
+                          href="javascript:void(0)"
+                          target="_blank"
+                          data-toggle="modal"
+                          data-target="#blog-single"
+                          >Read More...</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <div class="button-border">
+                    <a href="blog.html" class="pill-button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--   Blog End   -->
+
+      <!-- Contact Start -->
+      <section id="contact" class="section contact">
+        <div class="display-table">
+          <div class="display-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="text-center title">
+                    <h2 class="text-dark">
+                      <span class="base-color">Contact</span>
+                    </h2>
+                    <p class="text-muted mb-5 max-width-450">SNSやリンクなど</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row contact-info">
+                <div class="col-lg-4 mt-5">
+                  <div class="text-center">
+                    <div class="base-color">
+                      <a href="https://twitter.com/st_data_science">
+                        <img src="assets/img/twitter-circle.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="mt-3">
+                      <h5 class="text-dark mb-0">Twitter</h5>
+                      <small class="text-muted">@st-data-science</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                  <div class="text-center">
+                    <div class="base-color">
+                      <a href="mailto:s.tanaka@bdlab.or.jp">
+                        <img src="assets/img/send.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="mt-3">
+                      <h5 class="text-dark mb-0 contact_detail-title">Email</h5>
+                      <small class="text-muted">s.tanaka@bdlab.or.jp</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                  <div class="text-center">
+                    <div class="base-color">
+                      <a href="https://www.bdlab.or.jp">
+                        <img src="assets/img/bdlab.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="mt-3">
+                      <h5 class="text-dark mb-0">Big Data Lab</h5>
+                      <small class="text-muted">bdlab.or.jp</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row copy-right">
+                <div class="col-12 text-center">
+                  <p>
+                    Copyright © 2021
+                    <span class="base-color">Suguru Tanaka</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  Contact End  -->
     </main>
 
     <!--   Next and Prev Page -->
     <div class="next-prev-page">
-        <button type="button" class="prev-page bg-base-color"><i class="fa fa-angle-up text-white"></i></button>
-        <button type="button" class="next-page bg-base-color mt-3"><i class="fa fa-angle-down text-white"></i></button>
+      <button type="button" class="prev-page bg-base-color">
+        <i class="fa fa-angle-up text-white"></i>
+      </button>
+      <button type="button" class="next-page bg-base-color mt-3">
+        <i class="fa fa-angle-down text-white"></i>
+      </button>
     </div>
 
     <!-- Start Options -->
-    <div id="color-switcher" class="color-switcher" >
-        <div class="text-center color-pallet hide">
-            <h6 class="theme-skin-title">Theme Skin</h6>
-            <ul class="theme-skin list-inline">
-                <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="flat-skin active">Flat</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="neo-skin">Neo</a>
-                </li>
-            </ul>
-            <h6 class="my-2 color-scheme-title">Light & Dark Version</h6>
-            <ul class="color-scheme list-inline">
-                <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="light-scheme active"><i class="lni-sun"></i> Light</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="dark-scheme"><i class="lni-night"></i> Dark</a>
-                </li>
-            </ul>
-        </div>
-        <!-- <div class="pallet-button hide"> -->
-            <!-- <a href="#" class="cp-toggle"><i class="fa fa-cog fa-spin"></i></a> -->
-        <!-- </div> -->
+    <div id="color-switcher" class="color-switcher">
+      <div class="text-center color-pallet hide">
+        <h6 class="theme-skin-title">Theme Skin</h6>
+        <ul class="theme-skin list-inline">
+          <li class="list-inline-item">
+            <a href="javascript:void(0)" class="flat-skin active">Flat</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="javascript:void(0)" class="neo-skin">Neo</a>
+          </li>
+        </ul>
+        <h6 class="my-2 color-scheme-title">Light & Dark Version</h6>
+        <ul class="color-scheme list-inline">
+          <li class="list-inline-item">
+            <a href="javascript:void(0)" class="light-scheme active"
+              ><i class="lni-sun"></i> Light</a
+            >
+          </li>
+          <li class="list-inline-item">
+            <a href="javascript:void(0)" class="dark-scheme"
+              ><i class="lni-night"></i> Dark</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="pallet-button hide"> -->
+      <!-- <a href="#" class="cp-toggle"><i class="fa fa-cog fa-spin"></i></a> -->
+      <!-- </div> -->
     </div>
     <!-- End Options -->
 
@@ -1298,6 +2109,5 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <!--  Custom JS  -->
     <script src="assets/js/arshia.js"></script>
-
-    </body>
+  </body>
 </html>
